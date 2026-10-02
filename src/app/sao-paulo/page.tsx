@@ -4,7 +4,7 @@ import { ArrowRight, Building2, Clock3, MapPin, Route } from "lucide-react";
 import { neighborhoodsSp } from "@/data/neighborhoods-sp";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/site/PageHero";
-import { EditorialSections } from "@/components/site/EditorialSections";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export const metadata: Metadata = buildMetadata({
   title: "Motoboy de Guarulhos para São Paulo",
@@ -175,19 +175,52 @@ export default function SaoPauloHubPage() {
             <p>
               As páginas de região abaixo organizam destinos pesquisados com frequência. Elas não prometem tempo de percurso nem substituem a avaliação de disponibilidade. Atendimento ocorre de segunda a sexta, das 8h às 18h; não há operação noturna, em fins de semana ou feriados. Para conhecer as condições de valor de uma rota simples, consulte a <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link>; para uma travessia, envie o roteiro completo pelo WhatsApp.
             </p>
+            <p>
+              O planejamento das travessias intermunicipais considera as restrições viárias da capital paulista, como o rodízio municipal de veículos e as áreas de circulação restrita. Além disso, o fluxo de retorno para Guarulhos no período da tarde exige atenção aos congestionamentos crônicos na saída da Marginal Tietê rumo à Rodovia Presidente Dutra e à Ayrton Senna. Nossa central orienta o remetente sobre as melhores janelas de despacho para evitar retenções severas.
+            </p>
+            <p>
+              Para empresas que mantêm trocas de malotes diárias entre a sede em Guarulhos e escritórios ou filiais em São Paulo, formatamos cronogramas dedicados com piloto fixo na rota. Essa regularidade reduz tentativas frustradas de entrega, garante que o profissional já conheça os procedimentos de segurança da portaria e simplifica a conferência de comprovantes e notas de entrega.
+            </p>
           </div>
         </div>
       </section>
 
-      <EditorialSections variant="saoPaulo" />
-      <section className="bg-primary-700 py-14 text-white" aria-labelledby="sp-cta">
+      <section className="bg-surface-warm py-16 sm:py-24" aria-labelledby="rotas-metropolitanas">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Corredores de tráfego</p>
+            <h2 id="rotas-metropolitanas" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
+              Deslocamento eficiente entre Guarulhos e a capital.
+            </h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              A conexão entre Guarulhos e as diferentes zonas de São Paulo depende diretamente da escolha dos eixos viários certos e dos horários de corte de trânsito. Rotas em direção à Zona Leste (Brás, Mooca, Tatuapé e Penha) utilizam principalmente a Rodovia Ayrton Senna conectada à Radial Leste, permitindo tempos porta a porta reduzidos fora dos picos de início da manhã e fim de tarde.
+            </p>
+            <p>
+              Já os destinos na região central (Sé, República, Paulista) e Zona Sul/Oeste (Pinheiros, Itaim Bibi, Moema e Vila Mariana) exigem planejamento pelas Marginais Tietê e Pinheiros ou pela Avenida do Estado. A Moto11 avalia previamente o mapa de trânsito em tempo real antes da saída do piloto, informando ao remetente uma estimativa precisa e viável para cumprimento do prazo acordado.
+            </p>
+            <p>
+              Em qualquer chamado metropolitano, as duas pontas contam com rastreabilidade pelo canal direto do WhatsApp: aviso de coleta realizada, atualizações do percurso em caso de congestionamentos inesperados e comprovante digital com nome e horário de recebimento enviado assim que a missão é finalizada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-brand-950 py-16 text-white" aria-labelledby="sp-cta">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 id="sp-cta" className="font-display text-3xl font-bold sm:text-4xl">Quer cotar a travessia?</h2>
-            <p className="mt-2 text-orange-50">Envie os endereços completos, o item e o horário desejado.</p>
+            <h2 id="sp-cta" className="font-display text-3xl font-bold sm:text-4xl">Quer cotar a travessia para São Paulo?</h2>
+            <p className="mt-2 text-slate-300">Envie os endereços completos, o item e o horário desejado.</p>
           </div>
-          <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-7 py-3 font-bold text-primary-700 hover:bg-brand-950 hover:text-white">
-            Enviar rota completa <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quote-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-success px-7 py-3 font-bold text-white transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2"
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Calcular orçamento no WhatsApp
           </a>
         </div>
       </section>

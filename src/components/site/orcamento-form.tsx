@@ -95,7 +95,7 @@ export function OrcamentoForm() {
           href={waLink(msg)}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 font-bold text-zinc-950 hover:bg-emerald-400"
+          className="mt-6 inline-flex items-center justify-center rounded-full bg-success px-6 py-3 font-bold text-white hover:bg-brand-900"
         >
           Confirmar valor no WhatsApp
         </a>

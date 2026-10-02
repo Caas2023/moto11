@@ -26,6 +26,22 @@ export default function Page() {
         </p>
         <Link className="mt-4 inline-block font-semibold text-primary-700 underline underline-offset-4" href="/precos">Ver tabela de preços</Link>
       </section>
+
+      <section className="prose max-w-3xl space-y-5 text-muted">
+        <h2 className="font-display text-2xl font-bold text-brand-950">Por que a Moto11 não divulga operação 24 horas</h2>
+        <p>
+          Muitos anúncios na internet usam o termo “motoboy 24 horas” como chamariz comercial para atrair cliques a qualquer momento do dia ou da madrugada. No entanto, na prática operacional da maioria das cidades brasileiras, manter plantões noturnos contínuos e atendimento de madrugada exige equipes em escalas diferenciadas de segurança, adicionais de periculosidade e regras viárias estritas.
+        </p>
+        <p>
+          A Moto11 adota uma postura de total transparência com o cliente: nosso expediente oficial é de segunda a sexta-feira, das 08h00 às 18h00. Fora desse período, nosso canal no WhatsApp recebe as mensagens e registra as informações enviadas (origem, destino, item e horário desejado), mas o retorno com a cotação definitiva e o agendamento da coleta ocorrem a partir das primeiras horas do próximo dia útil.
+        </p>
+        <p>
+          Manter o foco exclusivo no horário comercial diurno nos permite concentrar a frota nos períodos de maior demanda produtiva em Guarulhos e na Grande São Paulo: o horário bancário, o funcionamento de fóruns e cartórios, os horários de expedição e recebimento de cargas industriais ao longo da Via Dutra e os picos de faturamento das empresas.
+        </p>
+        <p>
+          Dessa forma, garantimos que cada piloto designado para a sua rota esteja devidamente descansado, com motocicleta revisada, baú higienizado e equipamentos de proteção individual adequados, cumprindo as normas regulamentadas pelo município e pelo Contran. Para nós, a segurança e a pontualidade na entrega de documentos sigilosos, contratos e mercadorias vêm sempre antes de promessas de atendimento ininterrupto que não refletem a operação real.
+        </p>
+      </section>
       <WhatsAppCTA title="Consulte sua rota" subtitle="Atendimento de segunda a sexta, das 8h às 18h." message="Olá! Quero cotar uma rota em horário comercial. Origem: / Destino: / Item: " />
     </article>
   );

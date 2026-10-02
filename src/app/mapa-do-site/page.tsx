@@ -5,7 +5,6 @@ import { neighborhoodsGu } from "@/data/neighborhoods-gu";
 import { neighborhoodsSp } from "@/data/neighborhoods-sp";
 import { buildMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/site/PageHero";
-import { EditorialSections } from "@/components/site/EditorialSections";
 
 export const metadata: Metadata = buildMetadata({
   title: "Mapa do site | Moto11",
@@ -64,6 +63,8 @@ export default function SitemapPage() {
             <p>Use esta página para escolher o próximo passo sem depender de uma busca por palavra-chave. Se você já sabe que precisa contratar, comece por <Link className="font-semibold text-primary-700 underline" href="/contato">Contato</Link> e envie origem, destino, item e horário. Se ainda está comparando condições, consulte <Link className="font-semibold text-primary-700 underline" href="/precos">Preços</Link> e <Link className="font-semibold text-primary-700 underline" href="/faq">Perguntas frequentes</Link>.</p>
             <p>A lista de bairros organiza consultas de cobertura, mas não transforma o nome da região em garantia de disponibilidade ou prazo. As rotas locais detalhadas permanecem sob revisão editorial e não são usadas para criar volume artificial de páginas indexáveis. Para uma travessia entre municípios, abra o hub de São Paulo e informe os dois endereços completos.</p>
             <p>As páginas deste mapa seguem uma hierarquia simples: serviço explica o que pode ser feito, preço explica a regra, contato recebe a missão e o atendimento confirma a rota real. Páginas legais ficam disponíveis para transparência e podem não participar da indexação. Links que apontam para páginas antigas são encaminhados para o destino canônico correspondente.</p>
+            <p>Para empresas e escritórios que realizam coletas frequentes, o mapa do site permite verificar rapidamente todas as modalidades de atendimento disponíveis (expresso, agendado, faturamento mensal e transporte de malotes) e selecionar o canal de contato mais adequado para estruturar o fluxo de transporte.</p>
+            <p>Em caso de dúvidas sobre rotas não listadas explicitamente no diretório geográfico, recomendamos o contato direto via WhatsApp. Nossa equipe operacional analisa as vias de acesso, calcula a distância precisa pela quilometragem da rota e apresenta o orçamento fechado com estimativa realista de horário antes de qualquer deslocamento de piloto.</p>
           </div>
         </section>
         <section aria-labelledby="paginas-principais">
@@ -74,7 +75,6 @@ export default function SitemapPage() {
             ))}
           </ul>
         </section>
-        <EditorialSections variant="map" />
         <Directory title="Bairros de Guarulhos" intro="Links para consultas por região. A disponibilidade da entrega depende dos endereços completos, do horário e das condições da rota." links={neighborhoodsGu} />
         <Directory title="Regiões de São Paulo" intro="Links para rotas entre Guarulhos e São Paulo. Informe os dois endereços para confirmar valor e disponibilidade." links={neighborhoodsSp} />
       </div>

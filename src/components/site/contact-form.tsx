@@ -45,7 +45,7 @@ export function ContactForm() {
         <label htmlFor="mensagem" className="font-semibold">Mensagem</label>
         <textarea id="mensagem" rows={5} value={mensagem} onChange={(e) => setMensagem(e.target.value)} placeholder="Descreva origem, destino, volume e prazo desejado" className="mt-1 w-full rounded-lg border px-3 py-2" />
       </div>
-      <button type="submit" className="rounded-full bg-emerald-500 px-7 py-3 font-bold text-zinc-950 hover:bg-emerald-400">
+      <button type="submit" className="rounded-full bg-success px-7 py-3 font-bold text-white hover:bg-brand-900">
         Enviar pelo WhatsApp
       </button>
       <p className="text-xs text-zinc-500">Ao enviar, seus dados abrem no WhatsApp. Não armazenamos mensagens neste formulário demonstrativo.</p>

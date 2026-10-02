@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowRight, Clock3, MapPin, Route, Search } from "lucide-react";
 import { neighborhoodsGu } from "@/data/neighborhoods-gu";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
-import { EditorialSections } from "@/components/site/EditorialSections";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
@@ -148,19 +147,52 @@ export default function AreasAtendidasPage() {
             <p>
               Se o seu bairro não estiver na lista ou a entrega sair de Guarulhos para outro município, isso não significa recusa automática. Envie os dois endereços e o item para avaliação. Para destinos na capital, visite também as <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/sao-paulo">rotas entre Guarulhos e São Paulo</Link>. O objetivo é confirmar uma entrega possível, e não prometer cobertura baseada apenas em uma página.
             </p>
+            <p>
+              A logística municipal em Guarulhos interliga dezenas de distritos com particularidades severas de tráfego. Bairros industriais como Cumbica, Jardim Presidente Dutra e Cidade Industrial Satélite exigem atenção redobrada aos horários de entrada e saída de caminhões nas rodovias Presidente Dutra e Ayrton Senna. Já as zonas residenciais tradicionais, a exemplo de Vila Galvão, Gopoúva, Picanço e Maia, concentram rotas de delivery com paradas em portarias de edifícios e comércios locais de alimentação e farmácia.
+            </p>
+            <p>
+              Para todas as solicitações, a Moto11 mantém o cálculo transparente baseado na distância percorrida pela moto, com ponto de partida avaliado conforme o piloto mais próximo disponível no momento da solicitação. Caso necessite de coletas programadas com paradas múltiplas entre matriz e filiais, a equipe comercial estrutura a rota otimizada para reduzir a quilometragem total e garantir o menor custo operacional possível.
+            </p>
           </div>
         </div>
       </section>
 
-      <EditorialSections variant="areas" />
+      <section className="bg-surface-warm py-16 sm:py-24" aria-labelledby="polos-logisticos-guarulhos">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Polos industriais e comerciais</p>
+            <h2 id="polos-logisticos-guarulhos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
+              Atendimento estratégico nas principais regiões produtivas.
+            </h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              A malha de Guarulhos é polarizada por eixos com rotinas próprias. A região de Cumbica e a Cidade Industrial Satélite concentram metalúrgicas, distribuidoras e transportadoras na margem da Rodovia Presidente Dutra. Nossos chamados nessa área frequentemente envolvem reposição imediata de peças com ordem de compra, retirada de amostras laboratoriais e coleta de conhecimentos de transporte nas filiais de cargas.
+            </p>
+            <p>
+              O corredor central — englobando o Centro, a Vila Augusta, a Avenida Salgado Filho e o entorno do Bosque Maia — reúne a maior densidade de escritórios de advocacia, administradoras e clínicas médicas da cidade. As rotinas exigem pontualidade na colheita de assinaturas em cartórios, protocolos no Fórum de Guarulhos e na Prefeitura, além de malotes bancários com lacre numerado.
+            </p>
+            <p>
+              Já os polos do Bonsucesso e dos Pimentas demandam logística de apoio ao varejo de bairro, centros de distribuição e serviços de saúde pública e privada. A equipe da Moto11 avalia previamente os acessos viários pela Rodovia Ayrton Senna ou pela Estrada do Bonsucesso para garantir que a estimativa informada ao cliente seja viável dentro do expediente comercial de segunda a sexta, das 8h às 18h.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-brand-950 py-16 text-white" aria-labelledby="area-cta">
         <div className="mx-auto flex max-w-6xl flex-col gap-7 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-3xl">
             <h2 id="area-cta" className="font-display text-3xl font-bold sm:text-4xl">Seu bairro não apareceu ou a rota cruza municípios?</h2>
             <p className="mt-3 leading-7 text-slate-300">Envie os dois endereços. A equipe confirma a possibilidade de atendimento e apresenta o orçamento antes da saída.</p>
           </div>
-          <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-primary-700 px-7 py-3 font-bold hover:bg-white hover:text-brand-950">
-            Confirmar minha rota <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quote-cta inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-success px-7 py-3 font-bold text-white transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2"
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Calcular orçamento no WhatsApp
           </a>
         </div>
       </section>

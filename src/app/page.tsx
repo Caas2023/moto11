@@ -11,7 +11,6 @@ import {
   Store,
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
-import { EditorialSections } from "@/components/site/EditorialSections";
 import {
   PHONE_DISPLAY,
   PHONE_TEL_LINK,
