@@ -29,7 +29,7 @@ export function waLink(message: string, phone = SITE.whatsappNumber) {
 }
 
 export const DEFAULT_WA_MESSAGE =
-  "Olá! Preciso de um motoboy em Guarulhos. Pode me passar o valor e o prazo?";
+  "Olá! Quero calcular uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar) / Horário desejado: (informar).";
 
 /**
  * JSON-LD LocalBusiness complementar para páginas transacionais.

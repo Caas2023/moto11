@@ -137,6 +137,23 @@ export function jsonLdOrganization() {
     url: SITE_URL,
     telephone: PHONE_TEL_LINK,
     description: DEFAULT_DESCRIPTION,
+    makesOffer: [
+      "Documentos",
+      "Pequenos volumes",
+      "Coleta agendada",
+      "Apoio para empresas",
+      "Comércio e e-commerce",
+      "Locais com acesso especial",
+    ].map((name) => ({
+      "@type": "Offer",
+      url: canonical("/servicos"),
+      itemOffered: {
+        "@type": "Service",
+        name,
+        url: canonical("/servicos"),
+        provider: { "@id": `${SITE_URL}/#empresa` },
+      },
+    })),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Guarulhos",

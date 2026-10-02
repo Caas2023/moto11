@@ -1,9 +1,9 @@
-import { MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { PHONE_WA } from "@/lib/seo";
 
 export function WhatsAppButton({ className }: { className?: string }) {
-  const href = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent("Olá! Preciso de um motoboy em Guarulhos.")}`;
+  const href = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent("Olá! Quero calcular uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar) / Horário desejado: (informar).")}`;
 
   return (
     <a
@@ -12,11 +12,11 @@ export function WhatsAppButton({ className }: { className?: string }) {
       rel="noopener noreferrer"
       aria-label="Conversar com a Moto11 no WhatsApp"
       className={cn(
-        "fixed right-4 bottom-4 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-success text-white shadow-lg transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2 focus-visible:outline-none",
+        "quote-cta fixed bottom-4 right-4 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-success text-white shadow-lg transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2",
         className,
       )}
     >
-      <MessageCircle className="h-7 w-7" aria-hidden="true" />
+      <WhatsAppIcon className="h-7 w-7" />
     </a>
   );
 }

@@ -7,6 +7,7 @@ import {
   neighborhoodsSp,
 } from "@/data/neighborhoods-sp";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
+import { PageHero } from "@/components/site/PageHero";
 
 export const dynamicParams = false;
 
@@ -47,7 +48,12 @@ export default async function SaoPauloPage({
 
   return (
     <main id="conteudo-principal" className="bg-surface">
-      <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
+      <PageHero
+        compact
+        eyebrow="Rota metropolitana sob consulta"
+        title={<>Motoboy entre Guarulhos e {area.nome}</>}
+        description="Envie os endereços completos, o item e o horário desejado. A Moto11 verifica distância, condições e disponibilidade antes de apresentar valor e previsão para a rota."
+      >
         <nav aria-label="Breadcrumb" className="text-sm text-muted">
           <Link href="/" className="hover:text-brand-950">Início</Link>
           <span aria-hidden="true"> / </span>
@@ -55,18 +61,9 @@ export default async function SaoPauloPage({
           <span aria-hidden="true"> / </span>
           <span aria-current="page">{area.nome}</span>
         </nav>
+      </PageHero>
 
-        <header className="mt-10 border-b border-line pb-10">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Rota metropolitana sob consulta</p>
-          <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-brand-950 sm:text-6xl">
-            Motoboy entre Guarulhos e {area.nome}
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
-            Envie os endereços completos, o item e o horário desejado. A Moto11
-            verifica distância, condições e disponibilidade antes de apresentar
-            valor e previsão para a rota.
-          </p>
-        </header>
+      <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
 
         <section className="py-12" aria-labelledby="dados-rota-sp">
           <h2 id="dados-rota-sp" className="font-display text-3xl font-bold text-brand-950">O que precisamos confirmar</h2>

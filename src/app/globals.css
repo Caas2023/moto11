@@ -70,8 +70,23 @@ li {
 }
 
 :where(a, button, input, textarea, select, summary):focus-visible {
-  outline: 3px solid var(--primary-600);
+  outline: 3px solid #fff;
   outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--brand-950);
+}
+
+@keyframes quote-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--success) 35%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 7px color-mix(in srgb, var(--success) 0%, transparent);
+  }
+}
+
+.quote-cta {
+  animation: quote-pulse 2.4s ease-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -82,5 +97,9 @@ li {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .quote-cta {
+    animation: none;
   }
 }

@@ -7,14 +7,11 @@ import {
   Check,
   Clock3,
   FileText,
-  MapPin,
-  MessageCircle,
-  PackageCheck,
   Route,
-  ShieldCheck,
   Store,
 } from "lucide-react";
-import { PRICING, formatBRL } from "@/data/pricing";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
+import { EditorialSections } from "@/components/site/EditorialSections";
 import {
   PHONE_DISPLAY,
   PHONE_TEL_LINK,
@@ -27,7 +24,7 @@ import {
 export const metadata: Metadata = buildMetadata({
   title: "Motoboy em Guarulhos para entregas e coletas",
   description:
-    "Motoboy em Guarulhos para entregas, coletas agendadas e rotas empresariais. Até 8 km por R$ 35. Atendimento de segunda a sexta, das 8h às 18h.",
+    "Motoboy em Guarulhos para entregas, coletas agendadas e rotas empresariais. Atendimento de segunda a sexta, das 8h às 18h.",
   path: "/",
   keywords: [
     "motoboy em Guarulhos",
@@ -86,7 +83,7 @@ const faq = [
   {
     pergunta: "Quanto custa um motoboy em Guarulhos?",
     resposta:
-      "A tabela da Moto11 é R$ 35,00 para trajetos de até 8 km. Acima de 8 km, são acrescentados R$ 2,50 por quilômetro excedente. Cartórios, shopping e aeroporto recebem cotação específica.",
+      "O valor depende da rota e das condições de coleta. Consulte a tabela de preços ou envie os endereços para uma cotação. Cartórios, shopping e aeroporto recebem cotação específica.",
   },
   {
     pergunta: "Qual é o horário de atendimento?",
@@ -96,7 +93,7 @@ const faq = [
   {
     pergunta: "Como funciona a cobrança por espera?",
     resposta:
-      "Há 15 minutos de tolerância. Depois desse período, a espera custa R$ 0,60 por minuto. A regra é informada antes da confirmação quando houver risco de fila ou demora no local.",
+      "Há um período de tolerância; depois, a espera pode ser cobrada. Consulte os detalhes na tabela de preços e avise se houver risco de fila.",
   },
   {
     pergunta: "A Moto11 atende São Paulo capital?",
@@ -124,100 +121,101 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ(faq)) }}
       />
 
-      <section className="relative isolate bg-brand-950 text-white">
+      <section className="relative isolate overflow-hidden bg-brand-950 text-white lg:min-h-[calc(100svh-4.5rem)] flex items-center">
         <div
-          className="absolute inset-0 -z-10 opacity-30"
           aria-hidden="true"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px)",
-            backgroundSize: "44px 44px",
-            maskImage: "linear-gradient(to bottom right, black, transparent 78%)",
-          }}
+          className="absolute inset-0 -z-20 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/hero-moto11.png')" }}
         />
-        <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[1.15fr_.85fr] lg:items-center lg:py-28">
-          <div>
-            <div className="mb-6 inline-flex items-center gap-2 border-l-2 border-primary-400 pl-3 text-sm font-semibold tracking-wide text-orange-100">
-              <MapPin className="h-4 w-4" aria-hidden="true" />
-              Atendimento local em Guarulhos e rotas sob consulta
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-brand-950/90" />
+        <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-10 lg:py-6">
+          <div className="grid gap-6 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
+            <div>
+              <p className="text-xs sm:text-sm font-semibold tracking-wide text-orange-200">
+                Guarulhos e rotas para São Paulo · Seg–sex, 8h–18h
+              </p>
+              <h1 className="mt-2 font-display text-2xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-[2.65rem]">
+                Motoboy em Guarulhos com preço claro antes da saída.
+              </h1>
+              <p className="mt-2.5 max-w-xl text-sm leading-relaxed text-slate-200 sm:text-base">
+                Envie origem, destino e item. Calculamos a rota pela quilometragem real e confirmamos as condições pelo WhatsApp antes de qualquer coleta.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2.5 sm:gap-3">
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="quote-cta inline-flex min-h-[46px] items-center justify-center gap-2 rounded-full bg-success px-6 py-2.5 text-sm sm:text-base font-bold text-white shadow-lg shadow-black/20 transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2 focus-visible:ring-offset-brand-950"
+                >
+                  <WhatsAppIcon className="h-5 w-5" />
+                  Calcular orçamento
+                </a>
+                <a
+                  href={`tel:${PHONE_TEL_LINK}`}
+                  className="inline-flex min-h-[46px] items-center justify-center rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:border-white hover:bg-white/10"
+                >
+                  Ligar {PHONE_DISPLAY}
+                </a>
+              </div>
+              <ul className="mt-4 grid grid-cols-3 gap-2 text-xs text-slate-300 sm:text-sm">
+                <li className="flex items-center gap-1.5">
+                  <Check className="h-3.5 w-3.5 shrink-0 text-primary-400" aria-hidden="true" />
+                  <span>Seg–sex, 8h–18h</span>
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <Check className="h-3.5 w-3.5 shrink-0 text-primary-400" aria-hidden="true" />
+                  <span>Preço fechado</span>
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <Check className="h-3.5 w-3.5 shrink-0 text-primary-400" aria-hidden="true" />
+                  <span>Cotação por rota</span>
+                </li>
+              </ul>
             </div>
-            <h1 className="max-w-4xl font-display text-[clamp(2.5rem,7vw,5.2rem)] font-bold leading-[1.02] tracking-[-0.045em]">
-              Motoboy em Guarulhos com preço claro antes da saída.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              Envie a origem, o destino e o item. A Moto11 calcula a rota,
-              informa as condições e confirma o orçamento pelo WhatsApp — sem
-              inventar prazo, taxa ou disponibilidade.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary-700 px-6 py-3 font-bold text-white transition-colors hover:bg-white hover:text-brand-950"
-              >
-                <MessageCircle className="h-5 w-5" aria-hidden="true" />
-                Calcular pelo WhatsApp
-              </a>
-              <a
-                href={`tel:${PHONE_TEL_LINK}`}
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition-colors hover:border-white hover:bg-white/10"
-              >
-                Ligar {PHONE_DISPLAY}
-              </a>
-            </div>
-            <ul className="mt-8 grid gap-3 text-sm text-slate-200 sm:grid-cols-3">
-              <li className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-primary-400" aria-hidden="true" />
-                Seg–sex, 8h–18h
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-primary-400" aria-hidden="true" />
-                Valor antes da coleta
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-primary-400" aria-hidden="true" />
-                Cotação por rota
-              </li>
-            </ul>
-          </div>
 
-          <aside className="relative border border-white/15 bg-white p-6 text-foreground shadow-2xl sm:p-8" aria-label="Resumo da tabela de preços">
-            <div className="absolute -right-3 -top-3 h-20 w-20 bg-primary-400" aria-hidden="true" />
-            <div className="relative">
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-primary-700">
-                Tabela oficial Moto11
-              </p>
-              <p className="mt-4 font-display text-5xl font-bold tracking-tight text-brand-950">
-                {formatBRL(PRICING.basePrice)}
-              </p>
-              <p className="mt-1 text-lg font-semibold text-brand-900">
-                para trajetos de até {PRICING.baseKm} km
-              </p>
-              <div className="my-6 h-px bg-line" />
-              <dl className="space-y-4 text-sm">
-                <div className="flex items-start justify-between gap-4">
-                  <dt className="text-muted">Quilômetro excedente</dt>
-                  <dd className="font-bold text-brand-950">+ {formatBRL(PRICING.extraPerKm)}/km</dd>
+            <aside className="rounded-2xl border border-white/20 bg-white/95 p-5 text-foreground shadow-2xl backdrop-blur-sm sm:p-6" aria-label="Como solicitar uma cotação">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-primary-700">Cotação rápida</p>
+                <h2 className="mt-1 font-display text-xl font-bold tracking-tight text-brand-950 sm:text-2xl">Envie 4 dados para receber o valor</h2>
+                <div className="my-3 h-px bg-line" />
+                <ul className="grid grid-cols-2 gap-2 text-xs text-brand-950 sm:text-sm">
+                  <li className="rounded-lg bg-surface-warm p-2"><strong>1. Origem:</strong> endereço com número</li>
+                  <li className="rounded-lg bg-surface-warm p-2"><strong>2. Destino:</strong> endereço e contato</li>
+                  <li className="rounded-lg bg-surface-warm p-2"><strong>3. Item:</strong> peso e dimensões</li>
+                  <li className="rounded-lg bg-surface-warm p-2"><strong>4. Janela:</strong> horário desejado</li>
+                </ul>
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="quote-cta mt-4 inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-full bg-success px-5 py-2.5 text-sm sm:text-base font-bold text-white transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2">
+                  Enviar dados da rota <WhatsAppIcon className="h-4 w-4" />
+                </a>
+                <div className="mt-2.5 flex items-center justify-between text-xs font-medium text-muted">
+                  <span>Cartório/aeroporto: cotação à parte</span>
+                  <Link href="/precos" className="font-bold text-primary-700 hover:underline inline-flex items-center gap-1">
+                    Tabela <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </Link>
                 </div>
-                <div className="flex items-start justify-between gap-4">
-                  <dt className="text-muted">Tolerância de espera</dt>
-                  <dd className="font-bold text-brand-950">{PRICING.waitToleranceMin} minutos</dd>
-                </div>
-                <div className="flex items-start justify-between gap-4">
-                  <dt className="text-muted">Após a tolerância</dt>
-                  <dd className="font-bold text-brand-950">{formatBRL(PRICING.waitPerMin)}/min</dd>
-                </div>
-              </dl>
-              <p className="mt-6 border-l-2 border-primary-600 pl-3 text-sm leading-6 text-muted">
-                Cartórios, shopping e aeroporto são cotados à parte por causa
-                de acesso, estacionamento e possível espera.
-              </p>
-              <Link href="/precos" className="mt-6 inline-flex items-center gap-2 font-bold text-primary-700 hover:underline">
-                Ver detalhes da tabela <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
-          </aside>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-16 sm:py-24" aria-labelledby="guia-home">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Antes da coleta</p>
+            <h2 id="guia-home" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">Uma boa entrega começa antes da moto sair.</h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              Entregas de moto parecem simples até surgir uma portaria sem autorização, um destinatário que não está no local ou um item sem embalagem adequada. Por isso, o pedido mais útil é o que descreve a rota inteira: endereço completo de coleta, destino, nome e telefone de quem entrega e de quem recebe, além do tipo de item. Se existe senha, protocolo, retorno ou horário-limite, essa informação também precisa entrar na primeira mensagem.
+            </p>
+            <p>
+              A confirmação da rota evita que uma cotação seja baseada só no nome de um bairro. Condomínios, centros comerciais, cartórios e aeroportos têm regras próprias de acesso e podem exigir tempo adicional. A Moto11 atende de segunda a sexta, das 8h às 18h; fora desse período, a mensagem pode ficar para o próximo dia útil. Para consultar a regra de cobrança, use a <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link>. Informe também se haverá assinatura, protocolo, retorno ou múltiplas paradas. Esses dados ajudam a equipe a explicar o escopo antes do preço e reduzem o risco de uma etapa importante ficar fora da solicitação inicial.
+            </p>
+            <p>
+              Se a entrega cruza municípios, informe os dois endereços sem abreviações. Uma rota entre Guarulhos e São Paulo não tem uma duração fixa: trânsito, sentido da viagem, horário de recebimento e acesso ao destino mudam a viabilidade. Nas páginas de <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/areas-atendidas">áreas atendidas</Link> e <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/sao-paulo">rotas para São Paulo</Link>, você encontra os locais organizados para consulta; o atendimento confirma a rota real. Para entregas empresariais, vale reunir contatos, janelas e instruções em uma mensagem única. Para pedidos particulares, descreva o item e diga quem estará disponível para receber. A clareza no início protege o remetente, o destinatário e o profissional que executa a missão.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -351,37 +349,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-brand-950 py-16 text-white sm:py-24" aria-labelledby="compromisso-home">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
-            <div>
-              <ShieldCheck className="h-9 w-9 text-primary-400" aria-hidden="true" />
-              <h2 id="compromisso-home" className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-5xl">
-                Clareza antes da velocidade.
-              </h2>
+      <section className="bg-surface py-16 sm:py-24" aria-labelledby="guia-operacional-home">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Logística de precisão</p>
+            <h2 id="guia-operacional-home" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
+              Operação de motoboy desenhada para a realidade de Guarulhos.
+            </h2>
+            <div className="mt-6">
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="quote-cta inline-flex min-h-[46px] items-center justify-center gap-2 rounded-full bg-success px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-black/20 transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                Cotar entrega agora
+              </a>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div className="border-t border-white/25 pt-5">
-                <PackageCheck className="h-6 w-6 text-primary-400" aria-hidden="true" />
-                <h3 className="mt-4 font-display text-xl font-bold">Item validado</h3>
-                <p className="mt-2 leading-7 text-slate-300">Antes da confirmação, avaliamos se o volume e o tipo de item são adequados ao transporte em moto.</p>
-              </div>
-              <div className="border-t border-white/25 pt-5">
-                <Route className="h-6 w-6 text-primary-400" aria-hidden="true" />
-                <h3 className="mt-4 font-display text-xl font-bold">Rota informada</h3>
-                <p className="mt-2 leading-7 text-slate-300">Origem, destino e exceções entram na cotação. O cliente decide depois de receber as condições.</p>
-              </div>
-              <div className="border-t border-white/25 pt-5">
-                <Clock3 className="h-6 w-6 text-primary-400" aria-hidden="true" />
-                <h3 className="mt-4 font-display text-xl font-bold">Horário real</h3>
-                <p className="mt-2 leading-7 text-slate-300">Não anunciamos operação noturna ou de fim de semana: o expediente é de segunda a sexta, das 8h às 18h.</p>
-              </div>
-              <div className="border-t border-white/25 pt-5">
-                <MessageCircle className="h-6 w-6 text-primary-400" aria-hidden="true" />
-                <h3 className="mt-4 font-display text-xl font-bold">Contato direto</h3>
-                <p className="mt-2 leading-7 text-slate-300">A confirmação acontece pelo número oficial {PHONE_DISPLAY}, evitando canais e informações divergentes.</p>
-              </div>
-            </div>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              Guarulhos possui dinâmicas viárias singulares que exigem planejamento preventivo de rotas. O fluxo intenso ao longo da Rodovia Presidente Dutra, da Rodovia Ayrton Senna, do corredor Tiradentes e do acesso ao Aeroporto Internacional de Guarulhos (GRU) pode transformar uma entrega simples em atraso se o piloto não conhecer os desvios locais e os horários de carregamento de cada polo comercial. A Moto11 monitora o trânsito antes do deslocamento e confirma a previsão real de atendimento no momento da cotação.
+            </p>
+            <p>
+              Para escritórios, clínicas e indústrias, a pontualidade na entrega de malotes bancários, contratos para assinatura, laudos médicos e reposição de componentes de linha de produção depende de protocolos formais. Todos os chamados contam com confirmação nominal de quem recebeu, registro de horário e retorno digital do comprovante. Isso garante rastreabilidade completa para a controladoria e para o departamento fiscal das empresas contratantes, sem surpresas no encerramento do expediente.
+            </p>
+            <p>
+              A transparência de preços é o pilar central da nossa relação com o cliente. Trabalhamos com a tabela oficial de R$ 35,00 fixos para percursos de 0 a 8 km e acréscimo de R$ 2,50 por quilômetro excedente, oferecendo 15 minutos de tolerância sem cobrança para esperas pontuais em portarias ou balcões. O valor informado no WhatsApp antes do início do trajeto é exatamente o valor final da entrega, eliminando tarifas dinâmicas ocultas ou adicionais não combinados.
+            </p>
+            <p>
+              Atendemos de segunda a sexta-feira, das 8h às 18h, priorizando a segurança viária dos nossos profissionais e a integridade dos itens transportados. Operamos com baús vedados resistentes à água e adequados para cargas de até 20 kg. Caso sua missão envolva cartórios, shoppings ou o Terminal de Cargas do Aeroporto, os detalhes de credenciamento e acesso são avaliados previamente para que a entrega ocorra com total previsibilidade.
+            </p>
           </div>
         </div>
       </section>
@@ -400,7 +399,7 @@ export default function Home() {
           <div className="divide-y divide-line border-y border-line">
             {faq.map((item) => (
               <details key={item.pergunta} className="group py-5">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-display text-lg font-bold text-brand-950">
+                <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-5 font-display text-lg font-bold text-brand-950">
                   {item.pergunta}
                   <span className="text-2xl font-normal text-primary-700 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
                 </summary>

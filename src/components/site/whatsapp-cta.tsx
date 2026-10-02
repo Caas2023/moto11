@@ -1,4 +1,5 @@
 import { SITE, waLink, DEFAULT_WA_MESSAGE } from "@/lib/site";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export function WhatsAppCTA({
   title = "Precisa de motoboy agora em Guarulhos?",
@@ -36,9 +37,9 @@ export function WhatsAppCTA({
           href={waLink(message)}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex shrink-0 items-center justify-center rounded-full bg-emerald-500 px-7 py-3.5 text-base font-bold text-zinc-950 transition hover:bg-emerald-400"
+          className="quote-cta inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-success px-7 py-3.5 text-base font-bold text-white transition hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
         >
-          Chamar no WhatsApp
+          <><WhatsAppIcon className="h-5 w-5" /> Chamar no WhatsApp</>
         </a>
       </div>
     </section>

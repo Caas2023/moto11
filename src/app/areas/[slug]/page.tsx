@@ -6,8 +6,8 @@ import {
   getNeighborhoodGu,
   neighborhoodGuSlugs,
 } from "@/data/neighborhoods-gu";
-import { PRICING, formatBRL } from "@/data/pricing";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
+import { PageHero } from "@/components/site/PageHero";
 
 export const dynamicParams = false;
 
@@ -48,7 +48,12 @@ export default async function AreaPage({
 
   return (
     <main id="conteudo-principal" className="bg-surface">
-      <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
+      <PageHero
+        compact
+        eyebrow="Consulta de cobertura local"
+        title={<>Motoboy em {area.nome}, Guarulhos</>}
+        description={<>Solicite uma cotação informando o endereço completo em {area.nome}, a outra ponta da rota, o item e o prazo desejado. A disponibilidade e a previsão são confirmadas no atendimento, sem tempo genérico por bairro.</>}
+      >
         <nav aria-label="Breadcrumb" className="text-sm text-muted">
           <Link href="/" className="hover:text-brand-950">Início</Link>
           <span aria-hidden="true"> / </span>
@@ -56,18 +61,9 @@ export default async function AreaPage({
           <span aria-hidden="true"> / </span>
           <span aria-current="page">{area.nome}</span>
         </nav>
+      </PageHero>
 
-        <header className="mt-10 border-b border-line pb-10">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Consulta de cobertura local</p>
-          <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-brand-950 sm:text-6xl">
-            Motoboy em {area.nome}, Guarulhos
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
-            Solicite uma cotação informando o endereço completo em {area.nome},
-            a outra ponta da rota, o item e o prazo desejado. A disponibilidade
-            e a previsão são confirmadas no atendimento, sem tempo genérico por bairro.
-          </p>
-        </header>
+      <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
 
         <section className="py-12" aria-labelledby="como-cotar-area">
           <h2 id="como-cotar-area" className="font-display text-3xl font-bold text-brand-950">Como cotar uma rota nesta região</h2>
@@ -91,13 +87,11 @@ export default async function AreaPage({
         </section>
 
         <section className="bg-surface-warm p-6 sm:p-8" aria-labelledby="preco-area">
-          <h2 id="preco-area" className="font-display text-2xl font-bold text-brand-950">Tabela de referência confirmada</h2>
+          <h2 id="preco-area" className="font-display text-2xl font-bold text-brand-950">Cotação para a sua rota</h2>
           <p className="mt-4 leading-7 text-muted">
-            Até {PRICING.baseKm} km: {formatBRL(PRICING.basePrice)}. Acima disso:
-            mais {formatBRL(PRICING.extraPerKm)} por quilômetro excedente. Há
-            {` ${PRICING.waitToleranceMin} minutos`} de tolerância de espera e,
-            depois, {formatBRL(PRICING.waitPerMin)} por minuto. Cartórios,
-            shopping e aeroporto são cotados à parte.
+            Informe origem, destino e item para confirmar o valor antes da coleta.
+            A tabela completa está na página de preços. Cartórios, shopping e aeroporto
+            são cotados à parte.
           </p>
         </section>
 

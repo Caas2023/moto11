@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ArrowRight, Clock3, MapPin, Route, Search } from "lucide-react";
 import { neighborhoodsGu } from "@/data/neighborhoods-gu";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
+import { PageHero } from "@/components/site/PageHero";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export const metadata: Metadata = buildMetadata({
   title: "Áreas atendidas por motoboy em Guarulhos",
@@ -24,24 +26,17 @@ const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
 export default function AreasAtendidasPage() {
   return (
     <main id="conteudo-principal">
-      <header className="bg-brand-950 text-white">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+      <PageHero
+        eyebrow="Cobertura local"
+        title="Motoboy nos bairros de Guarulhos, com rota confirmada antes da coleta."
+        description="Use a lista para localizar sua região e entender como solicitar. Atendimento, disponibilidade e previsão não são definidos apenas pelo nome do bairro: precisamos dos endereços completos e do horário desejado."
+      >
           <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
             <Link href="/" className="hover:text-white">Início</Link>
             <span aria-hidden="true"> / </span>
             <span aria-current="page">Áreas atendidas</span>
           </nav>
-          <p className="mt-10 text-sm font-bold uppercase tracking-[0.18em] text-primary-400">Cobertura local</p>
-          <h1 className="mt-3 max-w-4xl font-display text-[clamp(2.5rem,7vw,5rem)] font-bold leading-[1.04] tracking-[-0.04em]">
-            Motoboy nos bairros de Guarulhos, com rota confirmada antes da coleta.
-          </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-            Use a lista para localizar sua região e entender como solicitar.
-            Atendimento, disponibilidade e previsão não são definidos apenas
-            pelo nome do bairro: precisamos dos endereços completos e do horário desejado.
-          </p>
-        </div>
-      </header>
+      </PageHero>
 
       <section className="bg-surface py-16 sm:py-24" aria-labelledby="lista-bairros">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -133,6 +128,30 @@ export default function AreasAtendidasPage() {
         </div>
       </section>
 
+      <section className="bg-surface py-16 sm:py-24" aria-labelledby="guia-bairro">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Guia de cobertura</p>
+            <h2 id="guia-bairro" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">O bairro ajuda a encontrar a página. A coleta depende do endereço.</h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              Guarulhos reúne regiões residenciais, comerciais, industriais e aeroportuárias com rotinas diferentes. Uma referência de bairro facilita a conversa, mas não diz sozinha onde o item será retirado, se a rua é acessível, se há portaria ou se o destinatário estará disponível. Por isso, as páginas locais servem como ponto de partida para pesquisa, enquanto a confirmação é feita com origem, destino e horário completos.
+            </p>
+            <p>
+              Antes de pedir, confira o número, complemento, bloco, sala e ponto de referência. Se o local usa portaria, avise o nome de quem autoriza a entrada e deixe um contato que possa atender. Para empresas, confirme se a retirada acontece no balcão, na doca ou em outro ponto interno. Para documentos, diga se há assinatura, protocolo ou devolução. Esses detalhes não são burocracia: eles definem o que a moto precisa fazer ao chegar.
+            </p>
+            <p>
+              A previsão de uma rota não é uma promessa automática por bairro. O trânsito, a disponibilidade no momento da solicitação, o sentido da viagem e as condições de recebimento mudam o percurso. Atendimento é de segunda a sexta, das 8h às 18h. Para serviços que envolvem cartório, shopping ou aeroporto, explique a tarefa e consulte a cotação antes de confirmar. A <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link> mostra a regra de rotas simples.
+            </p>
+            <p>
+              Se o seu bairro não estiver na lista ou a entrega sair de Guarulhos para outro município, isso não significa recusa automática. Envie os dois endereços e o item para avaliação. Para destinos na capital, visite também as <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/sao-paulo">rotas entre Guarulhos e São Paulo</Link>. O objetivo é confirmar uma entrega possível, e não prometer cobertura baseada apenas em uma página.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <EditorialSections variant="areas" />
       <section className="bg-brand-950 py-16 text-white" aria-labelledby="area-cta">
         <div className="mx-auto flex max-w-6xl flex-col gap-7 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-3xl">

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ArrowRight, Building2, Clock3, MapPin, Route } from "lucide-react";
 import { neighborhoodsSp } from "@/data/neighborhoods-sp";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
+import { PageHero } from "@/components/site/PageHero";
+import { EditorialSections } from "@/components/site/EditorialSections";
 
 export const metadata: Metadata = buildMetadata({
   title: "Motoboy de Guarulhos para São Paulo",
@@ -24,24 +26,17 @@ const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
 export default function SaoPauloHubPage() {
   return (
     <main id="conteudo-principal">
-      <header className="bg-brand-950 text-white">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+      <PageHero
+        eyebrow="Rotas metropolitanas"
+        title="Motoboy entre Guarulhos e São Paulo com cotação por endereço."
+        description="Para atravessar os dois municípios, bairro e distância fazem muita diferença. Envie origem, destino, item e prazo desejado. A Moto11 avalia a rota e informa as condições antes da confirmação."
+      >
           <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
             <Link href="/" className="hover:text-white">Início</Link>
             <span aria-hidden="true"> / </span>
             <span aria-current="page">São Paulo</span>
           </nav>
-          <p className="mt-10 text-sm font-bold uppercase tracking-[0.18em] text-primary-400">Rotas metropolitanas</p>
-          <h1 className="mt-3 max-w-4xl font-display text-[clamp(2.5rem,7vw,5rem)] font-bold leading-[1.04] tracking-[-0.04em]">
-            Motoboy entre Guarulhos e São Paulo com cotação por endereço.
-          </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-            Para atravessar os dois municípios, bairro e distância fazem muita
-            diferença. Envie origem, destino, item e prazo desejado. A Moto11
-            avalia a rota e informa as condições antes da confirmação.
-          </p>
-        </div>
-      </header>
+      </PageHero>
 
       <section className="bg-surface py-16 sm:py-24" aria-labelledby="regioes-sp">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -164,6 +159,27 @@ export default function SaoPauloHubPage() {
         </div>
       </section>
 
+      <section className="bg-surface py-16 sm:py-24" aria-labelledby="guia-sp">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Planejamento da rota</p>
+            <h2 id="guia-sp" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">Para cruzar municípios, a informação precisa acompanhar o item.</h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              “São Paulo” não é um destino suficiente para programar uma entrega saindo de Guarulhos. A cidade tem regiões muito diferentes entre si, e o sentido da rota também muda a operação. Informe o endereço completo nos dois pontos, o horário desejado, o item e os contatos de coleta e entrega. Se houver uma hora-limite, diga o horário real em que o local deixa de receber, em vez de resumir o pedido como urgente.
+            </p>
+            <p>
+              Edifícios comerciais, condomínios, hospitais, órgãos públicos e centros de compras podem exigir cadastro, identificação, retirada em doca ou entrega em balcão. Um pedido claro informa essas etapas antes do deslocamento. Isso ajuda a avaliar espera, retorno, autorização e acesso sem transformar um detalhe do destino em surpresa depois que a rota foi confirmada.
+            </p>
+            <p>
+              As páginas de região abaixo organizam destinos pesquisados com frequência. Elas não prometem tempo de percurso nem substituem a avaliação de disponibilidade. Atendimento ocorre de segunda a sexta, das 8h às 18h; não há operação noturna, em fins de semana ou feriados. Para conhecer as condições de valor de uma rota simples, consulte a <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link>; para uma travessia, envie o roteiro completo pelo WhatsApp.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <EditorialSections variant="saoPaulo" />
       <section className="bg-primary-700 py-14 text-white" aria-labelledby="sp-cta">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div>

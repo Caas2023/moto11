@@ -1,6 +1,10 @@
 import Link from "next/link";
-import { ArrowUpRight, Clock, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
+import { Clock, MapPin, Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { PHONE_DISPLAY, PHONE_TEL_LINK, PHONE_WA } from "@/lib/seo";
+
+const QUOTE_MESSAGE = "Olá! Quero calcular uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar) / Horário desejado: (informar).";
 
 const SERVICOS = [
   { label: "Entrega expressa", href: "/servicos" },
@@ -12,22 +16,19 @@ const SERVICOS = [
 const NAVEGACAO = [
   { label: "Serviços", href: "/servicos" },
   { label: "Áreas atendidas", href: "/areas-atendidas" },
-  { label: "Blog", href: "/blog" },
   { label: "Sobre nós", href: "/sobre-nos" },
   { label: "Contato", href: "/contato" },
+  { label: "Mapa do site", href: "/mapa-do-site" },
 ];
 
 export function Footer() {
-  const waLink = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent("Olá! Quero solicitar um orçamento com a Moto11.")}`;
+  const waLink = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(QUOTE_MESSAGE)}`;
 
   return (
     <footer className="w-full bg-brand-950 text-slate-300">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="font-display text-xl font-bold text-white">Moto11</p>
-          <p className="mt-1 text-sm font-medium text-slate-400">
-            Moto11 – Empresa de Motoboy
-          </p>
+          <Image src="/images/logo-moto11-oficial.png" alt="Moto11 Motoboy" width={217} height={72} className="h-auto w-48" />
           <address className="mt-4 space-y-2 text-sm leading-6 not-italic">
             <p className="flex items-start gap-2">
                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary-400" aria-hidden="true" />
@@ -48,9 +49,9 @@ export function Footer() {
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
-             className="mt-5 inline-flex h-11 items-center gap-2 rounded-full bg-primary-700 px-5 text-sm font-bold text-white transition-colors hover:bg-white hover:text-brand-950"
+             className="quote-cta mt-5 inline-flex h-11 items-center gap-2 rounded-full bg-success px-5 text-sm font-bold text-white transition-colors hover:bg-brand-900"
           >
-            Pedir orçamento <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+            <><WhatsAppIcon className="h-4 w-4" /> Calcular orçamento</>
           </a>
         </div>
 

@@ -10,8 +10,9 @@ import {
   Route,
   Store,
 } from "lucide-react";
-import { PRICING, formatBRL } from "@/data/pricing";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
+import { PageHero } from "@/components/site/PageHero";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export const metadata: Metadata = buildMetadata({
   title: "Serviços de motoboy em Guarulhos",
@@ -66,25 +67,17 @@ const categories = [
 export default function ServicesPage() {
   return (
     <main id="conteudo-principal">
-      <header className="bg-brand-950 text-white">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+      <PageHero
+        eyebrow="Serviços Moto11"
+        title="Serviço de motoboy definido pela necessidade da sua rota."
+        description="Uma entrega confiável começa por um escopo claro. A Moto11 recebe solicitações em Guarulhos para documentos, pequenos volumes, coletas agendadas e demandas empresariais, sempre em horário comercial: segunda a sexta, das 8h às 18h."
+      >
           <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
             <Link href="/" className="hover:text-white">Início</Link>
             <span aria-hidden="true"> / </span>
             <span aria-current="page">Serviços</span>
           </nav>
-          <p className="mt-10 text-sm font-bold uppercase tracking-[0.18em] text-primary-400">Serviços Moto11</p>
-          <h1 className="mt-3 max-w-4xl font-display text-[clamp(2.5rem,7vw,5rem)] font-bold leading-[1.04] tracking-[-0.04em]">
-            Serviço de motoboy definido pela necessidade da sua rota.
-          </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-            Uma entrega confiável começa por um escopo claro. A Moto11 recebe
-            solicitações em Guarulhos para documentos, pequenos volumes,
-            coletas agendadas e demandas empresariais, sempre em horário
-            comercial: segunda a sexta, das 8h às 18h.
-          </p>
-        </div>
-      </header>
+      </PageHero>
 
       <section className="bg-surface py-16 sm:py-24" aria-labelledby="categorias-servico">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -116,15 +109,11 @@ export default function ServicesPage() {
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
             <p>
-              Para trajetos de até {PRICING.baseKm} km, o valor base é {formatBRL(PRICING.basePrice)}.
-              Acima dessa distância, acrescentamos {formatBRL(PRICING.extraPerKm)} por quilômetro
-              excedente. Essa regra ajuda o cliente a entender a conta antes de
-              enviar os endereços, mas a distância final precisa ser verificada
-              na rota real.
+              A distância e as condições de cada rota são verificadas antes da confirmação.
+              Consulte os valores na tabela de preços ou envie os endereços para uma cotação.
             </p>
             <p>
-              A espera tem {PRICING.waitToleranceMin} minutos de tolerância. Depois disso, a cobrança
-              é de {formatBRL(PRICING.waitPerMin)} por minuto. Quando o serviço envolve balcão, portaria,
+              A espera pode alterar o valor. Quando o serviço envolve balcão, portaria,
               retirada com senha ou pessoa específica, vale avisar já no primeiro
               contato. Assim, o orçamento não omite uma etapa importante.
             </p>
@@ -192,14 +181,87 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="bg-surface py-16 sm:py-24" aria-labelledby="guia-servicos">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Guia prático</p>
+            <h2 id="guia-servicos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">Como escolher o serviço certo sem supor condições.</h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              Para documentos, o ponto principal costuma ser a informação que acompanha o envelope. Diga se existe protocolo, assinatura, devolução, senha ou prazo-limite. A pessoa que solicita a entrega também deve indicar quem pode receber no destino. Isso reduz a chance de o piloto chegar a uma recepção sem autorização, de o documento ficar aguardando ou de uma segunda tentativa ser necessária.
+            </p>
+            <p>
+              Para pequenos volumes, descreva o conteúdo sem esconder características importantes. Peso aproximado, dimensões, embalagem e fragilidade ajudam a avaliar se o item é adequado ao transporte em moto. Uma caixa que cabe no baú pode não ser segura se estiver mal fechada; um objeto pequeno pode exigir cuidado adicional se for sensível a impacto ou temperatura. Quando existir uma condição especial, ela deve ser confirmada antes da coleta, não no momento em que a moto chega.
+            </p>
+            <p>
+              Coletas agendadas funcionam melhor quando o item já está liberado e o responsável pelo local sabe que haverá retirada. Informe a janela desejada, o horário de funcionamento e um telefone alternativo. Em empresas, vale concentrar as informações recorrentes em uma mensagem clara: origem, destinos, frequência, contatos e restrições de acesso. Isso permite avaliar cada pedido pela operação real, em vez de publicar um pacote ou prazo genérico que pode não servir à sua rotina.
+            </p>
+            <p>
+              Cartórios, shopping e aeroporto merecem atenção extra. Esses locais podem ter fila, estacionamento, balcão, credenciamento ou restrição de entrada. O caminho correto é informar o local exato, a tarefa esperada e o horário em que o atendimento está disponível. Consulte a <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link> para a regra de rotas simples e solicite cotação específica quando o serviço tiver etapas adicionais.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface-warm py-16 sm:py-24" aria-labelledby="protocolos-servicos">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Rastreabilidade e segurança</p>
+            <h2 id="protocolos-servicos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
+              Cadeia de custódia e comprovação em cada etapa.
+            </h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              O transporte de documentos jurídicos, licitações, procurações e balanços contábeis exige procedimentos formais de custódia. Na Moto11, os envelopes são retirados lacrados, com conferência presencial da quantidade de vias e identificação imediata do destinatário. A baixa é realizada exclusivamente mediante protocolo carimbado ou assinatura com nome legível e horário exato, garantindo arquivo probatório digital imediato para sua empresa via WhatsApp.
+            </p>
+            <p>
+              Para mercadorias de e-commerce e peças de reposição industrial, aplicamos checklists de conferência de volume e integridade externa da embalagem na coleta. Nosso baú profissional conta com isolamento contra intempéries e forração protetora para evitar impactos. Itens com valor agregado relevante ou prazos de entrega no mesmo dia útil recebem prioridade de roteirização para evitar baldeações desnecessárias ou paradas intermediárias não autorizadas.
+            </p>
+            <p>
+              Empresas que demandam rotas programadas semanais ou mensais contam com atendimento dedicado e faturamento facilitado. Alinhamos antecipadamente os dias de coleta, as janelas de passagem e os contatos responsáveis em cada unidade, criando um fluxo operacional silencioso que libera sua equipe interna de tarefas externas de trânsito.
+            </p>
+            <p>
+              Caso ocorra qualquer imprevisto no destino — como destinatário ausente, portaria fechada ou necessidade de conferência prolongada além da tolerância de 15 minutos —, o piloto entra em contato imediato pelo WhatsApp antes de tomar qualquer decisão. O contratante sempre mantém o controle da missão, podendo autorizar a continuidade da espera a R$ 0,60 por minuto, reagendar a entrega ou determinar o retorno com segurança.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-16 sm:py-24" aria-labelledby="faturamento-servicos">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-700">Gestão corporativa</p>
+            <h2 id="faturamento-servicos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
+              Faturamento mensal e relatórios para empresas conveniadas.
+            </h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-muted">
+            <p>
+              Para escritórios e empresas que realizam coletas com frequência semanal ou diária em Guarulhos e na Grande São Paulo, a Moto11 disponibiliza modalidade de faturamento periódico com relatório consolidado. Cada chamado executado é discriminado por data, horário exato de retirada e de entrega, endereço de origem, ponto de destino, nome legível do recebedor e valor contratado segundo a tabela de distância oficial.
+            </p>
+            <p>
+              Essa estrutura elimina a necessidade de adiantamento em dinheiro ou reembolsos manuais contínuos para a equipe administrativa. A emissão de documento fiscal e o envio do fechamento para a controladoria facilitam a conciliação financeira e garantem total conformidade contábil. Para solicitar a abertura de cadastro corporativo, envie a estimativa de saídas semanais e as rotas habituais para nossa equipe pelo canal oficial do WhatsApp.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-brand-950 py-16 text-white" aria-labelledby="servico-cta">
         <div className="mx-auto flex max-w-6xl flex-col gap-7 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-3xl">
             <h2 id="servico-cta" className="font-display text-3xl font-bold sm:text-4xl">Não sabe qual modalidade escolher?</h2>
             <p className="mt-3 leading-7 text-slate-300">Envie a missão em linguagem simples. A equipe avalia a rota e explica o formato disponível antes de você confirmar.</p>
           </div>
-          <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-primary-700 px-7 py-3 font-bold text-white hover:bg-white hover:text-brand-950">
-            Descrever a entrega <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quote-cta inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-success px-7 py-3 font-bold text-white transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2"
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Calcular orçamento no WhatsApp
           </a>
         </div>
       </section>
