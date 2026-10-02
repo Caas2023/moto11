@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Clock3, MapPin, Route, Search } from "lucide-react";
 import { neighborhoodsGu } from "@/data/neighborhoods-gu";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
+import { EditorialSections } from "@/components/site/EditorialSections";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
