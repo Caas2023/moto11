@@ -95,13 +95,6 @@ export default async function AreaPage({
           </p>
         </section>
 
-        <section className="mt-12 space-y-5 text-muted" aria-labelledby="detalhes-locais">
-          <h2 id="detalhes-locais" className="font-display text-2xl font-bold text-brand-950">Particularidades da rota em {area.nome}</h2>
-          <div className="space-y-4 leading-relaxed text-sm sm:text-base">
-            <p className="whitespace-pre-line">{area.conteudoUnico}</p>
-          </div>
-        </section>
-
         <div className="mt-10 flex flex-col gap-3 sm:flex-row">
           <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center rounded-full bg-primary-700 px-6 py-3 font-bold text-white hover:bg-brand-950">
             Cotar rota em {area.nome}
