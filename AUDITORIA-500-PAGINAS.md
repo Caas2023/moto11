@@ -8,6 +8,12 @@ Auditar candidatas uma a uma, em blocos de 10 minutos, e publicar/indexar apenas
 - Uma página recebe um status: `indexar`, `noindex`, `301` ou `descartar`.
 - A próxima só começa após registrar o resultado da anterior. Não há publicação em lote.
 
+## Linha de base atual
+- 9 páginas indexáveis e presentes no sitemap.
+- 85 páginas renderizadas em `noindex` (82 geográficas e 3 institucionais).
+- 100 URLs legadas redirecionadas; elas não entram como candidatas de conteúdo.
+- Para chegar a 500 páginas indexáveis seriam necessárias 491 pautas realmente distintas e comprovadas; não será usado cruzamento automático de bairro × serviço.
+
 ## Equipe de agentes
 | Papel | Responsabilidade | Não pode fazer |
 |---|---|---|
