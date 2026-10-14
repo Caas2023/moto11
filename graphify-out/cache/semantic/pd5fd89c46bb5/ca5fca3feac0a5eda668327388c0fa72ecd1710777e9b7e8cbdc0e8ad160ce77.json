@@ -1,0 +1,1 @@
+{"nodes": [{"confidence_score": 0.95, "evidence": "EXTRACTED", "file_type": "document", "id": "$graphify-root$_opencode_skills_design_references_slides-html-template", "label": "HTML slide template base structure with Chart.js and 16:9 deck", "source_file": ".opencode/skills/design/references/slides-html-template.md", "type": "concept"}], "edges": [], "hyperedges": []}

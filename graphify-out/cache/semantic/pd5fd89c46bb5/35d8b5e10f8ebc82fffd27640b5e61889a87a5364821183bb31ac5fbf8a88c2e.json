@@ -1,0 +1,1 @@
+{"nodes": [{"confidence_score": 1.0, "file_type": "code", "id": "$graphify-root$_opencode_skills_ui_styling_scripts_requirements_deps", "label": "ui-styling requirements: pytest stack, Node 18+, stdlib-only skill", "source_file": ".opencode/skills/ui-styling/scripts/requirements.txt", "status": "EXTRACTED"}], "edges": [], "hyperedges": []}

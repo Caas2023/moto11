@@ -1,0 +1,1 @@
+{"nodes": [{"id": "$graphify-root$_opencode_skills_brand_references_update_md_update", "label": "brand_update_workflow", "entity": "sync brand-guidelines to design-tokens via script", "file_type": "document", "extraction": "EXTRACTED", "confidence_score": 0.9, "source_file": ".opencode/skills/brand/references/update.md"}], "edges": [], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "agents_skills_i18n_localization_skill_md_i18n_localization", "label": "i18n/l10n: locale files/RTL/react-i18next", "file_type": "document", "source_file": ".agents/skills/i18n-localization/SKILL.md", "extraction": "EXTRACTED", "confidence_score": 0.95, "type": "skill"}], "edges": [], "hyperedges": []}

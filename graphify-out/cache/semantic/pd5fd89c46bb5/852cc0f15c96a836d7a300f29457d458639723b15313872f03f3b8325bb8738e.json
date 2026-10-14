@@ -1,0 +1,1 @@
+{"nodes": [{"confidence_score": 1.0, "file_type": "document", "id": "$graphify-root$_web_agents_nextjs_rules", "label": "AGENTS.md: Next.js breaking-changes rule, read node_modules docs first", "source_file": "web/AGENTS.md", "status": "EXTRACTED"}], "edges": [], "hyperedges": []}

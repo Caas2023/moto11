@@ -1,0 +1,1 @@
+{"nodes": [{"confidence_score": 0.9, "evidence": "EXTRACTED", "file_type": "document", "id": "$graphify-root$_opencode_skills_design_references_slides-create", "label": "Slides creation task entrypoint ($ARGUMENTS)", "source_file": ".opencode/skills/design/references/slides-create.md", "type": "concept"}], "edges": [], "hyperedges": []}

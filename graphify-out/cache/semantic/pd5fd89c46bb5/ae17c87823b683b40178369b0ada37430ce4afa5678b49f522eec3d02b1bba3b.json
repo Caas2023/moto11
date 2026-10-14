@@ -1,0 +1,1 @@
+{"nodes": [{"confidence_score": 0.95, "evidence": "EXTRACTED", "file_type": "document", "id": "$graphify-root$_opencode_skills_ponytail-audit_skill_ponytail-audit", "label": "Ponytail-audit whole-repo over-engineering audit ranked output", "source_file": ".opencode/skills/ponytail-audit/SKILL.md", "type": "concept"}], "edges": [], "hyperedges": []}

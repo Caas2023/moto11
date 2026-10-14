@@ -1,0 +1,1 @@
+{"nodes": [{"confidence_score": 1.0, "extraction": "EXTRACTED", "file_type": "document", "id": "$graphify-root$_web_readme_nextjs_project", "label": "Next.js project README (create-next-app boilerplate)", "source_file": "web/README.md"}], "edges": [], "hyperedges": []}
