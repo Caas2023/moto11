@@ -15,7 +15,7 @@ export const metadata: Metadata = buildMetadata({
 const pages = [
   ["Início", "/"],
   ["Serviços", "/servicos"],
-  ["Tabela de preços", "/precos"],
+  ["Cotação e Preços", "/precos"],
   ["Áreas atendidas em Guarulhos", "/areas-atendidas"],
   ["Rotas para São Paulo", "/sao-paulo"],
   ["Perguntas frequentes", "/faq"],

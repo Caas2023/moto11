@@ -1,48 +1,98 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Breadcrumb } from "@/components/site/Breadcrumb";
-import { WhatsAppCTA } from "@/components/site/whatsapp-cta";
-import { SITE } from "@/lib/site";
+import { Clock, ShieldCheck, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
+import { PHONE_WA } from "@/lib/seo";
+import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Horário de atendimento da Moto11 em Guarulhos",
+  title: "Horário de Atendimento da Moto11 em Guarulhos",
   description: "A Moto11 atende de segunda a sexta, das 8h às 18h. Não há atendimento noturno, aos fins de semana ou feriados.",
   alternates: { canonical: `${SITE.baseUrl}/motoboy-24-horas` },
   robots: { index: false, follow: true },
 };
 
-export default function Page() {
+const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
+  "Olá! Quero cotar uma entrega em horário comercial. Origem: (informar) / Destino: (informar) / Item: (informar).",
+)}`;
+
+export default function Motoboy24HorasPage() {
   return (
-    <article className="max-w-3xl space-y-8">
-      <Breadcrumb items={[{ label: "Início", href: "/" }, { label: "Horário de atendimento" }]} />
-       <PageHero compact eyebrow="Horário real" title="A Moto11 não atende 24 horas" description="Atendemos de segunda a sexta, das 8h às 18h. Não operamos à noite, de madrugada, aos fins de semana ou em feriados. Mantemos este endereço antigo para esclarecer quem chega procurando atendimento 24 horas." />
-      <section className="rounded-3xl border border-line bg-surface-warm p-7">
-        <h2 className="font-display text-2xl font-bold text-brand-950">Precisa de uma entrega?</h2>
-        <p className="mt-3 leading-relaxed text-muted">
-          Envie origem, destino e item pelo WhatsApp. Durante o expediente, consulte o valor e
-          a disponibilidade. Mensagens enviadas fora do horário podem ser respondidas no próximo
-          dia útil. Para cartórios, shopping e aeroporto, a cotação é feita à parte.
-        </p>
-        <Link className="mt-4 inline-block font-semibold text-primary-700 underline underline-offset-4" href="/precos">Ver tabela de preços</Link>
+    <>
+      <PageHero
+        eyebrow="Horário Oficial"
+        title="A Moto11 não atende 24 horas."
+        description="Atendimento exclusivo de segunda a sexta, das 8h às 18h. Não operamos à noite, de madrugada, aos fins de semana ou em feriados para garantir a segurança viária dos pilotos e a pontualidade na sua entrega."
+      >
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
+          <Link href="/" className="hover:text-white">Início</Link>
+          <span aria-hidden="true"> / </span>
+          <span aria-current="page">Horário de atendimento</span>
+        </nav>
+      </PageHero>
+
+      <section className="bg-surface py-16 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="rounded-2xl border border-line bg-surface-warm p-8 sm:p-10">
+            <div className="flex items-center gap-3">
+              <Clock className="h-6 w-6 text-primary-700 shrink-0" aria-hidden="true" />
+              <h2 className="font-display text-2xl font-bold text-brand-950">
+                Precisa de uma entrega em horário comercial?
+              </h2>
+            </div>
+            <p className="mt-4 text-base leading-relaxed text-muted">
+              Envie origem, destino e item pelo WhatsApp. Durante o expediente (8h às 18h), você recebe o valor fechado e a disponibilidade imediata. Mensagens enviadas fora do horário são registradas e respondidas a partir das primeiras horas do próximo dia útil.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <Link
+                href="/precos"
+                className="inline-flex items-center gap-2 font-bold text-primary-700 hover:underline"
+              >
+                Como funciona a cotação <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="prose max-w-none mt-12 space-y-6 text-muted">
+            <h2 className="font-display text-2xl font-bold text-brand-950">
+              Por que a Moto11 não divulga operação 24 horas
+            </h2>
+            <p className="leading-relaxed">
+              Muitos anúncios na internet usam o termo “motoboy 24 horas” apenas como chamariz comercial. No entanto, na prática de Guarulhos e São Paulo, manter plantões noturnos contínuos e de madrugada exige operações diferenciadas que muitas vezes comprometem a segurança dos profissionais.
+            </p>
+            <p className="leading-relaxed">
+              A Moto11 adota transparência absoluta: nosso expediente é de segunda a sexta-feira, das 08h00 às 18h00. Focamos nossa frota nos períodos de maior demanda produtiva da cidade: o expediente bancário, cartórios, fóruns judiciais e a expedição de indústrias e comércios da Via Dutra e de Cumbica.
+            </p>
+            <p className="leading-relaxed">
+              Dessa forma, garantimos que cada piloto esteja descansado, com moto revisada, baú higienizado e focado em entregar seus documentos ou produtos com rapidez e protocolo assinado.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section className="prose max-w-3xl space-y-5 text-muted">
-        <h2 className="font-display text-2xl font-bold text-brand-950">Por que a Moto11 não divulga operação 24 horas</h2>
-        <p>
-          Muitos anúncios na internet usam o termo “motoboy 24 horas” como chamariz comercial para atrair cliques a qualquer momento do dia ou da madrugada. No entanto, na prática operacional da maioria das cidades brasileiras, manter plantões noturnos contínuos e atendimento de madrugada exige equipes em escalas diferenciadas de segurança, adicionais de periculosidade e regras viárias estritas.
-        </p>
-        <p>
-          A Moto11 adota uma postura de total transparência com o cliente: nosso expediente oficial é de segunda a sexta-feira, das 08h00 às 18h00. Fora desse período, nosso canal no WhatsApp recebe as mensagens e registra as informações enviadas (origem, destino, item e horário desejado), mas o retorno com a cotação definitiva e o agendamento da coleta ocorrem a partir das primeiras horas do próximo dia útil.
-        </p>
-        <p>
-          Manter o foco exclusivo no horário comercial diurno nos permite concentrar a frota nos períodos de maior demanda produtiva em Guarulhos e na Grande São Paulo: o horário bancário, o funcionamento de fóruns e cartórios, os horários de expedição e recebimento de cargas industriais ao longo da Via Dutra e os picos de faturamento das empresas.
-        </p>
-        <p>
-          Dessa forma, garantimos que cada piloto designado para a sua rota esteja devidamente descansado, com motocicleta revisada, baú higienizado e equipamentos de proteção individual adequados, cumprindo as normas regulamentadas pelo município e pelo Contran. Para nós, a segurança e a pontualidade na entrega de documentos sigilosos, contratos e mercadorias vêm sempre antes de promessas de atendimento ininterrupto que não refletem a operação real.
-        </p>
+      {/* Banner CTA Final Padronizado */}
+      <section className="bg-primary-700 py-14 text-white" aria-labelledby="cta-final-24h">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h2 id="cta-final-24h" className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              Deseja agendar uma entrega para o próximo dia útil?
+            </h2>
+            <p className="mt-2 text-orange-50">
+              Deixe sua mensagem no WhatsApp com os dois endereços e retornamos com a cotação.
+            </p>
+          </div>
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quote-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-7 py-3 font-bold text-primary-700 hover:bg-brand-950 hover:text-white"
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Enviar no WhatsApp
+          </a>
+        </div>
       </section>
-      <WhatsAppCTA title="Consulte sua rota" subtitle="Atendimento de segunda a sexta, das 8h às 18h." message="Olá! Quero cotar uma rota em horário comercial. Origem: / Destino: / Item: " />
-    </article>
+    </>
   );
 }

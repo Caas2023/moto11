@@ -1,37 +1,65 @@
 import type { Metadata } from "next";
-import { Breadcrumb } from "@/components/site/Breadcrumb";
-import { WhatsAppCTA } from "@/components/site/whatsapp-cta";
+import Link from "next/link";
+import { ArrowRight, CheckCircle2, HelpCircle } from "lucide-react";
 import { JsonLd } from "@/components/site/json-ld";
-import { SITE } from "@/lib/site";
 import { PageHero } from "@/components/site/PageHero";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
+import { SITE } from "@/lib/site";
+import { PHONE_WA } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Perguntas frequentes sobre motoboy em Guarulhos",
+  title: "Perguntas Frequentes sobre Motoboy em Guarulhos | Moto11",
   description:
-    "Respostas confirmadas sobre preço, horário, espera, cobertura e contratação de motoboy em Guarulhos.",
+    "Tire suas dúvidas sobre cotação, horários de atendimento, tempo de espera, áreas atendidas e como solicitar sua entrega de moto.",
   alternates: { canonical: `${SITE.baseUrl}/faq` },
   openGraph: {
-    title: "FAQ Motoboy em Guarulhos",
-    description: "Respostas diretas sobre preço, horário, cobertura e contratação.",
+    title: "FAQ Motoboy em Guarulhos | Moto11",
+    description: "Respostas diretas sobre cotação, horários, cobertura e contratação de motoboy.",
     url: `${SITE.baseUrl}/faq`,
     type: "website",
   },
 };
 
-const FAQS: { q: string; a: string }[] = [
-  { q: "Quanto custa um motoboy em Guarulhos?", a: "Consulte a tabela de preços. O valor final depende dos endereços e das condições da rota e é confirmado antes da coleta." },
-  { q: "Qual é o horário de atendimento?", a: "Atendemos de segunda a sexta, das 8h às 18h. Fora do horário comercial, chame no WhatsApp e retornamos no próximo dia útil." },
-  { q: "Como é calculado o tempo de espera?", a: "Há um período de tolerância; depois, a espera pode ser cobrada conforme a tabela de preços. Se houver risco de fila, informe antes de confirmar." },
-  { q: "Cartório, shopping e aeroporto seguem a tabela comum?", a: "Não automaticamente. Esses locais recebem cotação à parte por causa de acesso, estacionamento e possível espera." },
-  { q: "Qual é o prazo de coleta?", a: "A previsão depende do endereço, do trânsito e da disponibilidade no momento do pedido. Ela é informada antes da confirmação; não publicamos um prazo único para toda Guarulhos." },
-  { q: "Quais bairros são atendidos?", a: "Recebemos solicitações para bairros de Guarulhos. A cobertura de cada chamado é confirmada pelos endereços completos e pela disponibilidade no horário solicitado." },
-  { q: "A Moto11 faz rotas para São Paulo?", a: "Rotas entre Guarulhos e São Paulo podem ser cotadas. Envie origem e destino completos para receber valor e previsão." },
-  { q: "O que preciso enviar para cotar?", a: "Origem, destino, descrição do item, contatos nas duas pontas, prazo desejado e informação sobre espera, retorno ou múltiplas paradas." },
-  { q: "O orçamento é confirmado antes da coleta?", a: "Sim. Você recebe a estimativa ou o valor aplicável à rota e decide se deseja confirmar o chamado antes do deslocamento." },
-  { q: "Posso pedir fora do horário comercial?", a: "Você pode deixar a mensagem no WhatsApp. Como não há atendimento noturno ou de fim de semana confirmado, o retorno pode ocorrer no próximo dia útil." },
+const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
+  "Olá! Gostaria de tirar uma dúvida sobre entregas com a Moto11.",
+)}`;
+
+const FAQS = [
+  {
+    q: "Como é calculada a cotação de motoboy?",
+    a: "O valor é calculado com base na quilometragem viária real de moto entre os pontos de coleta e entrega, considerando o tipo de volume e as particularidades do local. Você recebe o valor fechado no WhatsApp antes da saída, sem taxas ocultas.",
+  },
+  {
+    q: "Qual é o horário de atendimento da Moto11?",
+    a: "Nosso atendimento opera de segunda a sexta-feira, das 08h às 18h. Não realizamos entregas noturnas, de madrugada ou aos finais de semana. Mensagens enviadas fora do expediente são respondidas no início do próximo dia útil.",
+  },
+  {
+    q: "Como funciona a tolerância de espera?",
+    a: "Oferecemos uma tolerância de cortesia para localização de responsáveis e liberação em portarias ou balcões. Caso o local exija espera prolongada (como filas em cartórios), combinamos as condições previamente pelo WhatsApp antes de aguardar.",
+  },
+  {
+    q: "Cartório, shopping e aeroporto têm regras especiais?",
+    a: "Sim. Esses locais exigem procedimentos específicos de estacionamento, credenciamento em docas ou espera em guichês. Por isso, recebem cotação sob medida no momento do pedido para total previsibilidade.",
+  },
+  {
+    q: "Qual é a previsão de chegada do motoboy?",
+    a: "A previsão depende do ponto de coleta, do trânsito viário no momento e da disponibilidade de pilotos na região. O prazo estimado é sempre informado no WhatsApp antes de você confirmar a corrida.",
+  },
+  {
+    q: "Quais regiões e bairros são atendidos?",
+    a: "Atendemos todos os bairros e polos industriais de Guarulhos (Centro, Cumbica, Macedo, Bonsucesso, Pimentas, Vila Augusta, etc.) e realizamos rotas diárias para São Paulo Capital e Região Metropolitana.",
+  },
+  {
+    q: "O que preciso enviar para cotar uma entrega?",
+    a: "Basta informar: 1. Endereço completo de coleta; 2. Endereço completo de entrega; 3. O que vai transportar (documentos, caixas, etc.); 4. Horário desejado.",
+  },
+  {
+    q: "O valor informado pode mudar após a corrida?",
+    a: "Não. A transparência é nosso compromisso. O preço fechado no WhatsApp antes do início do trajeto é exatamente o valor final da entrega, eliminando tarifas dinâmicas ou surpresas.",
+  },
 ];
 
-export default function Page() {
+export default function FAQPage() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -41,69 +69,99 @@ export default function Page() {
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
   };
+
   return (
-    <article className="space-y-8">
+    <>
       <JsonLd data={faqJsonLd} />
-      <Breadcrumb items={[{ label: "Início", href: "/" }, { label: "FAQ" }]} />
-      <PageHero compact eyebrow="Dúvidas frequentes" title="Perguntas frequentes sobre motoboy em Guarulhos" description="Consulte preço, horário, espera, cobertura e os dados necessários para pedir uma cotação com clareza." />
 
-      <div className="grid gap-3">
-        {FAQS.map((f, i) => (
-          <details key={f.q} className="rounded-xl border p-4 open:bg-surface-warm">
-            <summary className="cursor-pointer font-bold">
-              {String(i + 1).padStart(2, "0")}. {f.q}
-            </summary>
-            <p className="mt-2 text-muted">{f.a}</p>
-          </details>
-        ))}
-      </div>
+      <PageHero
+        eyebrow="Tire suas Dúvidas"
+        title="Perguntas frequentes sobre o serviço de motoboy."
+        description="Respostas claras sobre cotação, horários de funcionamento, regras de espera e como solicitar a sua entrega com segurança e agilidade."
+      >
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
+          <Link href="/" className="hover:text-white">Início</Link>
+          <span aria-hidden="true"> / </span>
+          <span aria-current="page">FAQ</span>
+        </nav>
+      </PageHero>
 
-      <div className="prose max-w-3xl space-y-5 text-muted">
-        <h2 className="text-2xl font-bold text-brand-950">Como usar estas respostas</h2>
-        <p>
-          Este FAQ explica as condições gerais para pedir uma cotação de motoboy em Guarulhos e em rotas para São Paulo. Ele não substitui a confirmação do endereço, do item e da disponibilidade no momento do atendimento. A previsão muda com trânsito, sentido da viagem, horário de recebimento, acesso ao local e necessidade de espera. Por isso, uma resposta que descreve a regra ajuda a preparar o pedido, mas o valor e a possibilidade da missão são confirmados antes da coleta.
-        </p>
-        <p>
-          Para acelerar a conversa, envie rua, número, complemento e referência de origem; endereço completo de destino; nome e telefone de quem entrega e de quem recebe; descrição, peso e dimensões aproximadas do item; horário-limite; e qualquer etapa adicional, como assinatura, protocolo, fila, retorno ou múltiplas paradas. Cartórios, shopping e aeroporto exigem cotação específica porque podem ter estacionamento, credenciamento e espera diferentes de uma entrega simples.
-        </p>
-        <p>
-          Cada resposta foi escrita para refletir o atendimento informado pela Moto11: segunda a sexta, das 8h às 18h, com retorno de mensagens fora desse período no próximo dia útil. A página de preços concentra a fórmula publicada, enquanto o WhatsApp confirma a rota real. Não anunciamos prazo absoluto, operação noturna ou cobertura automática apenas porque um bairro aparece em uma lista. Se sua dúvida não estiver aqui, descreva a missão completa e peça uma avaliação direta.
-        </p>
-        <h2 className="text-2xl font-bold text-brand-950">Como evitar uma cotação incompleta</h2>
-        <p>
-          O erro mais comum em uma solicitação é enviar somente o nome do bairro e perguntar quanto custa. O bairro ajuda a localizar a missão, mas não informa a rua, o acesso, o sentido da rota ou a distância até o destino. Uma cotação confiável precisa de dois endereços, mesmo quando a coleta e a entrega ficam no mesmo município. Para condomínios, empresas e centros comerciais, inclua torre, doca, portaria ou referência que ajude o piloto a encontrar a pessoa certa.
-        </p>
-        <p>
-          Também é importante diferenciar o objeto da tarefa. Levar um envelope fechado de um ponto a outro é diferente de protocolar documento, aguardar atendimento, trazer uma assinatura de volta ou cumprir várias paradas. Escreva todas as etapas no primeiro contato. Isso permite avaliar espera, retorno e acesso antes de apresentar valor, em vez de descobrir uma cobrança ou limitação quando o piloto já estiver no local.
-        </p>
-        <p>
-          A descrição do item deve ser objetiva. Informe se é documento, caixa, peça, alimento, medicamento, equipamento ou outro volume; indique peso e tamanho aproximados; e diga se há fragilidade, temperatura ou embalagem especial. A Moto11 pode recusar ou redirecionar materiais que não sejam compatíveis com transporte em moto. Essa análise não é burocracia: evita risco de queda, dano, exposição indevida ou chegada sem condição segura de recebimento.
-        </p>
-        <p>
-          Em rotas para São Paulo, envie a origem em Guarulhos e o endereço completo na capital. Trânsito, chuva, bloqueio, horário e acesso alteram a previsão, portanto o tempo informado no atendimento é uma estimativa contextual, não uma promessa universal. Se houver compromisso com hora-limite, escreva esse horário e diga o que acontece se a entrega não puder ser concluída. A equipe pode então explicar a viabilidade antes de você confirmar.
-        </p>
-        <p>
-          O FAQ não substitui o atendimento porque cada missão tem uma combinação própria de fatores. Uma coleta em empresa pode depender de portaria e autorização; uma entrega em residência pode depender de alguém disponível para receber; uma tarefa em cartório pode exigir fila, protocolo e devolução. A resposta correta para esses casos nasce da descrição completa, não de uma frase pronta associada ao nome do bairro.
-        </p>
-        <p>
-          Se o item for documento, diga se precisa de assinatura, carimbo, protocolo ou retorno. Se for encomenda, diga tamanho, peso, embalagem e fragilidade. Se for peça, amostra ou material de empresa, informe como deve ser conferido na retirada e quem autoriza a entrega. Essas instruções não são detalhes secundários: elas determinam o que precisa ser feito e ajudam a evitar uma segunda tentativa.
-        </p>
-        <p>
-          A confirmação também deve considerar a comunicação entre as pontas. Mantenha o telefone de quem entrega e de quem recebe disponível, avise sobre interfone ou doca e informe se o local tem horário restrito. Quando uma pessoa não estiver autorizada a receber, explique o procedimento antes da saída. O piloto não deve improvisar acesso, assinar algo em nome de terceiro ou deixar material em local não combinado.
-        </p>
-        <p>
-          Para empresas, dúvidas frequentes costumam virar instruções recorrentes: como nomear pedidos, como enviar lista de paradas, como organizar comprovantes e quem aprova adicionais. Registre essas regras internamente e encaminhe a versão atual ao atendimento. Se o roteiro mudar, atualize a mensagem. A operação fica mais previsível quando todos trabalham com o mesmo endereço, horário e responsável.
-        </p>
-        <p>
-          Por fim, compare sempre o valor com o escopo que foi confirmado. Uma proposta pode incluir deslocamento, mas não uma espera longa ou uma etapa de retorno. Pergunte antes de confirmar se o protocolo, a assinatura, a devolução e as tentativas estão contemplados. A Moto11 prefere esclarecer a condição antes da coleta a apresentar um preço baixo que não descreve a missão inteira.
-        </p>
-      </div>
+      {/* Seção 1: Accordion FAQ */}
+      <section className="bg-surface py-16 sm:py-24" aria-labelledby="faq-list-title">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="max-w-2xl mb-10">
+            <p className="text-sm font-semibold text-primary-700">Dúvidas Comuns</p>
+            <h2 id="faq-list-title" className="mt-2 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-4xl">
+              Informação direta para decidir com rapidez.
+            </h2>
+          </div>
 
-      <WhatsAppCTA
-        title="Ainda tem dúvidas? Pergunte agora"
-        subtitle="Atendimento de segunda a sexta, das 8h às 18h."
-        message="Olá! Li o FAQ e ainda tenho uma dúvida sobre motoboy em Guarulhos."
-      />
-    </article>
+          <div className="space-y-4">
+            {FAQS.map((f, i) => (
+              <details
+                key={f.q}
+                className="group rounded-2xl border border-line bg-surface p-6 transition-colors open:bg-surface-warm"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-bold text-brand-950">
+                  <span>
+                    <span className="mr-2 text-primary-600">{String(i + 1).padStart(2, "0")}.</span>
+                    {f.q}
+                  </span>
+                  <span className="text-2xl font-normal text-primary-700 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                </summary>
+                <p className="mt-4 leading-relaxed text-muted text-base pl-8 border-l-2 border-primary-600/30">
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Seção 2: Como Evitar Cotações Incompletas */}
+      <section className="bg-surface-warm py-16 sm:py-24" aria-labelledby="dicas-title">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+            <div>
+              <p className="text-sm font-semibold text-primary-700">Dica Prática</p>
+              <h2 id="dicas-title" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
+                Como agilizar sua cotação no WhatsApp.
+              </h2>
+            </div>
+            <div className="space-y-5 text-lg leading-8 text-muted">
+              <p>
+                O detalhe que mais acelera a liberação do motoboy é enviar os endereços completos logo na primeira mensagem. Apenas o nome do bairro ajuda a situar a região, mas não permite traçar a rota viária real de moto, calcular a distância e verificar o trânsito do trajeto.
+              </p>
+              <p>
+                Para condomínios, prédios empresariais ou centros comerciais, inclua bloco, sala, número de portaria ou nome do destinatário. Se houver protocolo de assinatura ou retorno de documento, mencione antecipadamente para que a missão seja planejada do início ao fim sem interrupções.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção 3: Banner CTA Final Padronizado */}
+      <section className="bg-primary-700 py-14 text-white" aria-labelledby="cta-final-faq">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h2 id="cta-final-faq" className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              Sua dúvida não estava aqui?
+            </h2>
+            <p className="mt-2 text-orange-50">
+              Chame nossa equipe pelo WhatsApp e receba a resposta para a sua rota na hora.
+            </p>
+          </div>
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="quote-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-7 py-3 font-bold text-primary-700 hover:bg-brand-950 hover:text-white"
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Falar no WhatsApp
+          </a>
+        </div>
+      </section>
+    </>
   );
 }
