@@ -4,7 +4,7 @@ import { Clock, MapPin, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { PHONE_DISPLAY, PHONE_TEL_LINK, PHONE_WA } from "@/lib/seo";
 
-const QUOTE_MESSAGE = "Olá! Quero calcular uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar) / Horário desejado: (informar).";
+const QUOTE_MESSAGE = "Olá! Gostaria de cotar uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar). Poderia me passar o valor e a previsão?";
 
 const SERVICOS = [
   { label: "Entrega expressa", href: "/servicos" },
@@ -14,6 +14,7 @@ const SERVICOS = [
 ];
 
 const NAVEGACAO = [
+  { label: "Cotação e Preços", href: "/precos" },
   { label: "Serviços", href: "/servicos" },
   { label: "Áreas atendidas", href: "/areas-atendidas" },
   { label: "Sobre nós", href: "/sobre-nos" },
@@ -51,7 +52,7 @@ export function Footer() {
             rel="noopener noreferrer"
              className="quote-cta mt-5 inline-flex h-11 items-center gap-2 rounded-full bg-success px-5 text-sm font-bold text-white transition-colors hover:bg-brand-900"
           >
-            <><WhatsAppIcon className="h-4 w-4" /> Calcular orçamento</>
+            <><WhatsAppIcon className="h-4 w-4" /> Pedir cotação</>
           </a>
         </div>
 
@@ -87,7 +88,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <p>© {new Date().getFullYear()} Moto11 – Empresa de Motoboy em Guarulhos/SP.</p>
           <p>Entregas rápidas, coletas agendadas e motoboy para empresas.</p>
         </div>

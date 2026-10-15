@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -11,6 +12,7 @@ import {
   Store,
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
+import { CotacaoForm } from "@/components/site/CotacaoForm";
 import {
   PHONE_DISPLAY,
   PHONE_TEL_LINK,
@@ -80,9 +82,9 @@ const steps = [
 
 const faq = [
   {
-    pergunta: "Quanto custa um motoboy em Guarulhos?",
+    pergunta: "Como é calculada a cotação de motoboy?",
     resposta:
-      "O valor depende da rota e das condições de coleta. Consulte a tabela de preços ou envie os endereços para uma cotação. Cartórios, shopping e aeroporto recebem cotação específica.",
+      "O valor depende da distância da rota viária, do tipo de volume e das condições de acesso. Você informa a origem e o destino no WhatsApp e recebe o valor fechado antes da moto sair.",
   },
   {
     pergunta: "Qual é o horário de atendimento?",
@@ -90,9 +92,9 @@ const faq = [
       "Atendemos de segunda a sexta, das 8h às 18h. Mensagens enviadas fora desse período podem ser respondidas no próximo dia útil.",
   },
   {
-    pergunta: "Como funciona a cobrança por espera?",
+    pergunta: "Como funciona a tolerância de espera?",
     resposta:
-      "Há um período de tolerância; depois, a espera pode ser cobrada. Consulte os detalhes na tabela de preços e avise se houver risco de fila.",
+      "Combinamos uma tolerância prévia para despachos em portarias e balcões comerciais. Se houver fila em cartório ou espera prolongada, tudo é alinhado com clareza antes do piloto aguardar.",
   },
   {
     pergunta: "A Moto11 atende São Paulo capital?",
@@ -121,10 +123,13 @@ export default function Home() {
       />
 
       <section className="relative isolate overflow-hidden bg-brand-950 text-white lg:min-h-[calc(100svh-4.5rem)] flex items-center">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-20 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-moto11.png')" }}
+        <Image
+          src="/images/hero-moto11.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="pointer-events-none -z-20 object-cover object-center"
         />
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-brand-950/90" />
         <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-10 lg:py-6">
@@ -147,7 +152,7 @@ export default function Home() {
                   className="quote-cta inline-flex min-h-[46px] items-center justify-center gap-2 rounded-full bg-success px-6 py-2.5 text-sm sm:text-base font-bold text-white shadow-lg shadow-black/20 transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2 focus-visible:ring-offset-brand-950"
                 >
                   <WhatsAppIcon className="h-5 w-5" />
-                  Calcular orçamento
+                  Pedir cotação
                 </a>
                 <a
                   href={`tel:${PHONE_TEL_LINK}`}
@@ -172,28 +177,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <aside className="rounded-2xl border border-white/20 bg-white/95 p-5 text-foreground shadow-2xl backdrop-blur-sm sm:p-6" aria-label="Como solicitar uma cotação">
-              <div>
-                <p className="text-xs font-semibold text-primary-700">Cotação rápida</p>
-                <h2 className="mt-1 font-display text-xl font-bold tracking-tight text-brand-950 sm:text-2xl">Envie 4 dados para receber o valor</h2>
-                <div className="my-3 h-px bg-line" />
-                <ul className="grid grid-cols-2 gap-2 text-xs text-brand-950 sm:text-sm">
-                  <li className="rounded-lg bg-surface-warm p-2"><strong>1. Origem:</strong> endereço com número</li>
-                  <li className="rounded-lg bg-surface-warm p-2"><strong>2. Destino:</strong> endereço e contato</li>
-                  <li className="rounded-lg bg-surface-warm p-2"><strong>3. Item:</strong> peso e dimensões</li>
-                  <li className="rounded-lg bg-surface-warm p-2"><strong>4. Janela:</strong> horário desejado</li>
-                </ul>
-                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="quote-cta mt-4 inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-full bg-success px-5 py-2.5 text-sm sm:text-base font-bold text-white transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2">
-                  Enviar dados da rota <WhatsAppIcon className="h-4 w-4" />
-                </a>
-                <div className="mt-2.5 flex items-center justify-between text-xs font-medium text-muted">
-                  <span>Cartório/aeroporto: cotação à parte</span>
-                  <Link href="/precos" className="font-bold text-primary-700 hover:underline inline-flex items-center gap-1">
-                    Tabela <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
-                  </Link>
-                </div>
-              </div>
-            </aside>
+            <CotacaoForm compact />
           </div>
         </div>
       </section>
@@ -209,7 +193,7 @@ export default function Home() {
               Entregas de moto parecem simples até surgir uma portaria sem autorização, um destinatário que não está no local ou um item sem embalagem adequada. Por isso, o pedido mais útil é o que descreve a rota inteira: endereço completo de coleta, destino, nome e telefone de quem entrega e de quem recebe, além do tipo de item. Se existe senha, protocolo, retorno ou horário-limite, essa informação também precisa entrar na primeira mensagem.
             </p>
             <p>
-              A confirmação da rota evita que uma cotação seja baseada só no nome de um bairro. Condomínios, centros comerciais, cartórios e aeroportos têm regras próprias de acesso e podem exigir tempo adicional. A Moto11 atende de segunda a sexta, das 8h às 18h; fora desse período, a mensagem pode ficar para o próximo dia útil. Para consultar a regra de cobrança, use a <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link>. Informe também se haverá assinatura, protocolo, retorno ou múltiplas paradas. Esses dados ajudam a equipe a explicar o escopo antes do preço e reduzem o risco de uma etapa importante ficar fora da solicitação inicial.
+              A confirmação da rota evita que uma cotação seja baseada só no nome de um bairro. Condomínios, centros comerciais, cartórios e aeroportos têm regras próprias de acesso e podem exigir tempo adicional. A Moto11 atende de segunda a sexta, das 8h às 18h; fora desse período, a mensagem pode ficar para o próximo dia útil. Para entender como avaliamos cada rota, acesse a página de <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">cotação e preços</Link>. Informe também se haverá assinatura, protocolo, retorno ou múltiplas paradas. Esses dados ajudam a equipe a explicar o escopo antes do preço e reduzem o risco de uma etapa importante ficar fora da solicitação inicial.
             </p>
             <p>
               Se a entrega cruza municípios, informe os dois endereços sem abreviações. Uma rota entre Guarulhos e São Paulo não tem uma duração fixa: trânsito, sentido da viagem, horário de recebimento e acesso ao destino mudam a viabilidade. Nas páginas de <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/areas-atendidas">áreas atendidas</Link> e <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/sao-paulo">rotas para São Paulo</Link>, você encontra os locais organizados para consulta; o atendimento confirma a rota real. Para entregas empresariais, vale reunir contatos, janelas e instruções em uma mensagem única. Para pedidos particulares, descreva o item e diga quem estará disponível para receber. A clareza no início protege o remetente, o destinatário e o profissional que executa a missão.
@@ -375,7 +359,7 @@ export default function Home() {
               Para escritórios, clínicas e indústrias, a pontualidade na entrega de malotes bancários, contratos para assinatura, laudos médicos e reposição de componentes de linha de produção depende de protocolos formais. Todos os chamados contam com confirmação nominal de quem recebeu, registro de horário e retorno digital do comprovante. Isso garante rastreabilidade completa para a controladoria e para o departamento fiscal das empresas contratantes, sem surpresas no encerramento do expediente.
             </p>
             <p>
-              A transparência de preços é o pilar central da nossa relação com o cliente. Trabalhamos com a tabela oficial de R$ 35,00 fixos para percursos de 0 a 8 km e acréscimo de R$ 2,50 por quilômetro excedente, oferecendo 15 minutos de tolerância sem cobrança para esperas pontuais em portarias ou balcões. O valor informado no WhatsApp antes do início do trajeto é exatamente o valor final da entrega, eliminando tarifas dinâmicas ocultas ou adicionais não combinados.
+              A transparência de preços é o pilar central da nossa relação com o cliente. O valor da entrega é calculado de forma justa pela quilometragem viária real de moto, com tolerância combinada antecipadamente para esperas pontuais em portarias ou balcões comerciais. O valor informado no WhatsApp antes do início do trajeto é exatamente o valor final da entrega, eliminando tarifas dinâmicas ocultas ou adicionais não combinados.
             </p>
             <p>
               Atendemos de segunda a sexta-feira, das 8h às 18h, priorizando a segurança viária dos nossos profissionais e a integridade dos itens transportados. Operamos com baús vedados resistentes à água e adequados para cargas de até 20 kg. Caso sua missão envolva cartórios, shoppings ou o Terminal de Cargas do Aeroporto, os detalhes de credenciamento e acesso são avaliados previamente para que a entrega ocorra com total previsibilidade.

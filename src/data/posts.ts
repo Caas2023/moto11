@@ -608,7 +608,7 @@ Para seguir, leia o guia completo, o artigo sobre mensalidade para empresas e o 
     readingMinutes: 6,
     content: `Se voce vende em Guarulhos e entrega de moto, o frete aparece em toda venda: quem paga, quanto e como nao sair no prejuizo. Cobrar errado custa dos dois lados, porque frete caro demais derruba a conversao e frete barato demais corroi a margem sem voce perceber. Este guia mostra os tres modelos de cobranca usados por lojistas da cidade, como montar uma tabela simples por bairro e quando terceirizar com um parceiro como a Moto11 sai mais barato que manter piloto proprio.
 
-Antes dos modelos, um ponto de partida honesto sobre custos. A tabela real praticada pela Moto11 e R$ 35,00 fixos para trajetos de ate 8 km, mais R$ 2,50 por quilometro extra. Como exemplo de orcamento: 5 km sai R$ 35,00; 10 km sai R$ 40,00; 15 km sai R$ 52,50; 20 km sai R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. O atendimento e de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425. Com essa base, da para precificar sem chute.
+Antes dos modelos, um ponto de partida honesto sobre custos. A cotacao da Moto11 e calculada com base na quilometragem real da rota viaria, considerando a distancia, o tipo de volume e a tolerancia de espera acordada. O atendimento e de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425. Com essa base, da para precificar sem chute.
 
 ## Repasse integral, subsídio ou frete grátis: os 3 modelos
 
@@ -618,13 +618,13 @@ O frete subsidiado divide a conta: voce absorve parte e o cliente paga o restant
 
 ## Montando sua tabela de frete por bairro de Guarulhos
 
-Monte a tabela por blocos de distancia, nao por bairro isolado, porque precificar rua por rua vira uma confusao operacional. Um desenho que funciona em Guarulhos tem tres faixas locais: entregas curtas dentro do proprio bairro e vizinhos, medias cruzando a cidade e longas para extremos e divisa. Para cada faixa, use a regra verdadeira como piso: ate 8 km, R$ 35,00; acima disso, some R$ 2,50 por km extra, com exemplos de 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Acrescente paradas extras e espera apos os 15 minutos de tolerancia quando o pedido exigir.
+Monte a tabela por blocos de distancia, nao por bairro isolado, porque precificar rua por rua vira uma confusao operacional. Um desenho que funciona em Guarulhos tem tres faixas locais: entregas curtas dentro do proprio bairro e vizinhos, medias cruzando a cidade e longas para extremos e divisa. Para cada faixa, use a regra verdadeira como piso: a cotacao e montada por faixa de quilometragem real e confirmada previamente antes do despacho. Acrescente paradas extras e espera apos os 15 minutos de tolerancia quando o pedido exigir.
 
 Na pratica, junte bairros proximos na mesma faixa: Centro, Vila Augusta e Ponte Grande costumam cair na faixa curta; Pimentas, Bonsucesso e Cumbica em relacao ao Centro ficam na media; extremos e travessias para Sao Paulo formam a faixa longa, sempre com valor fechado antes da coleta. Revise a tabela a cada dois meses confrontando o cobrado do cliente com o pago ao prestador por faixa. Se uma faixa vive no vermelho, ajuste o valor ou o raio de atendimento em vez de absorver prejuizo em silencio.
 
 ## Frete grátis com margem: a conta que fecha
 
-O frete gratis so fecha quando a margem do pedido paga a entrega com folga. A conta e direta: pegue o ticket medio dos pedidos com entrega, multiplique pela margem de contribuicao e compare com o custo medio do frete na sua principal faixa. Se o ticket medio e de R$ 120,00 com 30% de margem, cada pedido deixa R$ 36,00, o que cobre uma entrega curta de R$ 35,00 no limite. Abaixo disso, o gratis precisa de pedido minimo: exija R$ 150,00 ou R$ 200,00 para liberar a entrega sem taxa, elevando o ticket ate o ponto de equilibrio.
+O frete gratis so fecha quando a margem do pedido paga a entrega com folga. A conta e direta: pegue o ticket medio dos pedidos com entrega, multiplique pela margem de contribuicao e compare com o custo medio do frete na sua principal faixa. Se o ticket medio e de R$ 120,00 com 30% de margem, cada pedido deixa R$ 36,00, o que cobre o custo da entrega. Abaixo disso, o gratis precisa de pedido minimo: exija R$ 150,00 ou R$ 200,00 para liberar a entrega sem taxa, elevando o ticket ate o ponto de equilibrio.
 
 Teste o pedido minimo por bairro antes de anunciar para a cidade inteira. Rode duas semanas com minimo diferenciado por faixa e meça conversao, ticket e margem por pedido entregue, nao so o faturamento. Muitos lojistas descobrem que o gratis com minimo converte quase igual ao gratis total, com margem muito mais saudavel. E mantenha uma valvula: pedidos fora do raio principal ou com espera longa seguem no repasse, com o motivo explicado no checkout. Promessa de entrega sustentavel vale mais que promessa agressiva que quebra no primeiro mes.
 
@@ -661,7 +661,7 @@ Defina seu modelo nesta semana: escolha repasse, subsidio ou gratis com minimo, 
     readingMinutes: 7,
     content: `Certidao para matricula, escritura para financiamento, procuracao para inventario, autenticacao para concorrencia: quase todo projeto importante passa pelo balcao de um cartorio, e quase ninguem tem manha livre para enfrentar a fila. O motoboy para cartorio em Guarulhos existe para isso, retirando e entregando documentos com conferencia no balcao, recibo de emolumentos e protocolo de devolucao. Este guia mostra quais servicos podem ser delegados, como funciona a conferencia que evita retrabalho e o que informar no pedido para a viagem sair sem erro.
 
-Um aviso necessario sobre precos: missoes com coleta ou entrega em cartorios recebem cotacao a parte, porque envolvem espera em fila, conferencia e retorno em dias diferentes. A base de calculo segue a tabela real, R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00, acrescida da espera apos 15 minutos de tolerancia a R$ 0,60 o minuto. O atendimento e de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425.
+Um aviso necessario sobre precos: missoes com coleta ou entrega em cartorios recebem cotacao a parte, porque envolvem espera em fila, conferencia e retorno em dias diferentes. A cotacao avalia o trajeto viario real com tolerancia acordada para filas e procedimentos no local. O atendimento e de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425.
 
 ## Quais serviços de cartório o motoboy resolve
 
@@ -714,7 +714,7 @@ Cartorio sem fila para voce e uma questao de delegacao bem instruida: descreva o
     readingMinutes: 7,
     content: `Protocolo de peticao, distribuicao de processo, retirada de guias e certidoes, copia de autos fisicos, entrega de memoriais: a rotina de forum consome tardes inteiras de advogados e estagiarios em deslocamento, fila e balcao. O motoboy para o Forum de Guarulhos assume essas diligencias com conhecimento de cartorios, horarios e exigencias de cada balcao, devolvendo comprovante com data e hora. Este guia detalha o que pode ser terceirizado, por que o comprovante e o produto real do servico e como programar diligencias sem perder horario.
 
-Sobre valores, diligencias simples no Centro seguem a base real de R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera tem 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Missoes que envolvem cartorios judiciais com espera longa ou multiplas idas recebem cotacao a parte. O atendimento e de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425 antes da saida.
+Sobre valores, cada diligencia e orcada conforme o trajeto viario real e a previsao de espera necessaria. Missoes que envolvem cartorios judiciais com espera longa ou multiplas idas recebem cotacao a parte. O atendimento e de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425 antes da saida.
 
 ## Diligências que o motoboy executa no Fórum
 
@@ -767,7 +767,7 @@ Forum sem deslocar sua equipe e uma decisao operacional: checklist na saida, com
     readingMinutes: 7,
     content: `Peticao com prazo, contrato com assinatura pendente, certidao original insubstituivel, autos fisicos sob sua responsabilidade: documentos juridicos carregam valor que excede em muito o custo da corrida. A entrega profissional trata cada envelope com cadeia de custodia simples, sigilo absoluto e comprovante que sustenta tempestividade. Este guia mostra como montar esse cuidado em Guarulhos, do lacre ao comprovante, com atencao a privacidade e a programacao com margem para prazos processuais.
 
-Quanto a precos, a corrida ponto a ponto segue a tabela real: R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto adicional custa R$ 0,60. Missoes em cartorios e no forum com espera longa recebem cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425 antes da coleta.
+Quanto a precos, a corrida ponto a ponto e cotada com base na rota de moto real com tolerancia acordada de espera. Missoes em cartorios e no forum com espera longa recebem cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425 antes da coleta.
 
 ## Cadeia de custódia: do lacre ao comprovante
 
@@ -820,7 +820,7 @@ Documento juridico bem transportado e aquele que chega lacrado, conferido e comp
     readingMinutes: 6,
     content: `Escritura travada por certidao vencida, inventario parado por documento faltante, financiamento aguardando averbacao: a burocracia documental tem dois personagens que muita gente confunde, o despachante e o motoboy. O despachante documentalista orienta, prepara e acompanha atos; o motoboy executa a rua com coleta, protocolo e devolucao. Combinados, resolvem sem que voce falte ao trabalho. Este guia explica o papel de cada um, o fluxo completo ate o documento em maos e quando contratar um, outro ou ambos.
 
-Sobre custos de deslocamento, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente sai R$ 0,60. Missoes em cartorios recebem cotacao a parte pela espera e pelas idas de acompanhamento. Atendemos de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425.
+Sobre custos de deslocamento, o valor e orcado pelo trajeto viario com tolerancia combinada para paradas. Missoes em cartorios recebem cotacao a parte pela espera e pelas idas de acompanhamento. Atendemos de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425.
 
 ## Despachante x motoboy: papéis diferentes e complementares
 
@@ -873,7 +873,7 @@ Burocracia vencida e processo com dono em cada etapa: despachante orientando, mo
     readingMinutes: 6,
     content: `Matricula escolar pedindo certidao de nascimento, banco exigindo certidao de imoveis atualizada, inventario parado por um registro antigo: a segunda via de certidao e o documento mais pedido nos cartorios e tambem o mais simples de delegar. Retirar certidao em cartorio de Guarulhos com motoboy significa nao faltar ao trabalho, nao enfrentar fila e receber o documento conferido em casa ou no escritorio. Este passo a passo mostra o que pode ser retirado por terceiros, quais dados enviar e como programar a coleta.
 
-Sobre o custo do deslocamento, vale a base real: R$ 35,00 para trajetos de ate 8 km, mais R$ 2,50 por quilometro extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera tem 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Por envolver cartorio, cada missao recebe cotacao a parte, considerando espera e eventual retorno. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Sobre o custo do deslocamento, a cotacao e montada conforme a distancia real de moto e a previsao de espera. Por envolver cartorio, cada missao recebe cotacao a parte, considerando espera e eventual retorno. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## Quais certidões podem ser retiradas por terceiros
 
@@ -926,7 +926,7 @@ Modelo pronto de mensagem: tipo de certidao, nome completo, data e cidade do reg
     readingMinutes: 7,
     content: `Faltam duas horas para o fim do prazo, a peticao esta pronta e o advogado tem audiencia: quem leva ao forum. O protocolo de peticoes no Forum de Guarulhos com motoboy resolve exatamente esse gargalo, com piloto que conhece cartorios, balcoes, senhas e horarios, e devolve comprovante com data e hora. Este manual de bancada cobre o preparo sem devolucao, o passo a passo com o piloto, a validacao do comprovante e o plano de contingencia para recusas e filas.
 
-Quanto ao deslocamento, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto adicional custa R$ 0,60. Protocolos com espera longa ou multiplas tentativas recebem cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425 antes da saida.
+Quanto ao deslocamento, o valor e calculado pela rota exata e confirmado pelo WhatsApp antes da saida. Protocolos com espera longa ou multiplas tentativas recebem cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425 antes da saida.
 
 ## Preparando a petição para protocolo sem devolução
 
@@ -979,7 +979,7 @@ Protocolo sem susto e preparo no escritorio, piloto experiente no forum e compro
     readingMinutes: 7,
     content: `A semana de um escritorio de advocacia em Guarulhos tem um roteiro invisivel: forum na segunda, cartorios na terca, clientes e bancos na quarta, diligencias externas na quinta, fechamento na sexta. Cada item desse roteiro consome deslocamento, e deslocamento de advogado custa hora tecnica. A rotina juridica terceirizada com motoboy transfere a rua para piloto habitual, com janelas fixas, comprovantes padronizados e custo por diligencia menor que o deslocamento interno. Este artigo mostra onde o motoboy entra, como montar o SLA e quando preferir correspondente.
 
-Sobre valores de deslocamento, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Rotinas com volume recebem tabela recorrente ou pacote mensal. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Sobre valores de deslocamento, a cotacao e personalizada conforme o trajeto e a frequencia de chamados. Rotinas com volume recebem tabela recorrente ou pacote mensal. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## A rotina típica do escritório e onde o motoboy entra
 
@@ -1032,7 +1032,7 @@ Escritorio produtivo e escritorio onde advogado advoga e piloto pilota, cada um 
     readingMinutes: 6,
     content: `Contrato de locacao com tres socios em bairros diferentes, admissao com kit de documentos para o novo funcionario, proposta comercial que precisa de rubrica hoje: levar contratos e coletar assinaturas e uma operacao de multiplas paradas que consome o dia de quem tenta fazer sozinho. O servico de entrega de contratos com coleta de assinaturas em Guarulhos planeja o roteiro por regiao, confere vias e rubricas em cada parada e devolve tudo organizado. Este guia operacional mostra o planejamento, a conferencia e as regras de espera.
 
-Quanto ao custo, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Paradas extras e espera apos 15 minutos de tolerancia, a R$ 0,60 o minuto, entram no orcamento por roteiro. Atendemos de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425 antes da saida.
+Quanto ao custo, o valor e fechado por roteiro completo considerando paradas e tempo de atendimento. Atendemos de segunda a sexta, das 8h as 18h, e cada proposta e fechada no WhatsApp (11) 95724-8425 antes da saida.
 
 ## Planejando o roteiro de assinaturas por região
 
@@ -1085,7 +1085,7 @@ Contrato assinado sem drama e roteiro por regiao, conferencia em cada parada e r
     readingMinutes: 6,
     content: `Da para reconhecer firma por motoboy. A resposta curta e depende, e a resposta completa economiza uma viagem perdida. O reconhecimento de firma tem duas modalidades com exigencias diferentes, e so uma delas permite delegacao ampla. Este artigo esclarece a diferenca entre firma por semelhanca e por autenticidade, mostra o que o motoboy pode e nao pode fazer por voce e da o passo a passo para cada caso, com custos e prazos realistas.
 
-Quanto ao deslocamento, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera tem 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Por envolver cartorio, cada missao recebe cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Quanto ao deslocamento, o valor e orcado pelo trajeto viario real. Por envolver cartorio, cada missao recebe cotacao a parte considerando o tempo de espera. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## Firma por semelhança x autenticidade: o que muda
 
@@ -1138,7 +1138,7 @@ Reconhecer firma sem erro e saber a modalidade, confirmar a ficha e delegar o re
     readingMinutes: 6,
     content: `Toda banca de advocacia carrega uma lista invisivel de tarefas externas que nunca entra no processo, mas decide o processo: forum, cartorios, bancos, clientes, reparticoes. Somadas, essas diligencias consomem dias de estagiarios e advogados em deslocamento, com custo de hora tecnica e risco de audiencia simultanea. Terceirizar as diligencias externas com motoboy dedicado converte esse custo variavel e imprevisivel em rotina fixa com preco previsivel e comprovantes padronizados por diligencia. Este guia cataloga o que terceirizar, como montar o mix e quais controles exigir.
 
-Sobre deslocamentos, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Rotinas com volume recebem tabela recorrente ou pacote mensal. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Sobre deslocamentos, a cotacao e montada conforme a distancia viaria real e o tipo de rotina solicitada. Rotinas com volume recebem tabela recorrente ou pacote mensal. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## Catálogo de diligências terceirizáveis
 
@@ -1191,7 +1191,7 @@ Diligencia externa bem gerida e catalogo claro, mix ajustado, controle auditavel
     readingMinutes: 6,
     content: `Distribuir um processo parece burocracia menor ate a devolucao no balcao revelar pagina sem assinatura, guia nao recolhida ou competencia errada, com o prazo correndo. A distribuicao de processos no Forum de Guarulhos com motoboy combina preparo rigoroso no escritorio com piloto que conhece balcoes, senhas e conferencias. Este guia pratico detalha documentos e ordem, o que o piloto confere, como validar o comprovante e os erros que mais geram retrabalho.
 
-Quanto ao deslocamento, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto adicional custa R$ 0,60. Distribuicoes com multiplas tentativas recebem cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Quanto ao deslocamento, o valor e calculado pela rota exata e confirmado pelo WhatsApp antes da saida. Distribuicoes com multiplas tentativas recebem cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## Documentos e ordem para distribuição sem devolução
 
@@ -1244,7 +1244,7 @@ Distribuicao sem retrabalho e pasta em ordem, piloto que confere no balcao e com
     readingMinutes: 7,
     content: `Registro civil, imoveis, notas, protesto, titulos e documentos: cada tipo de cartorio resolve uma parte da sua vida documental, e procurar o cartorio errado custa fila e tarde perdidas. Este guia local explica os tipos de serventia, como escolher pela regiao e competencia, como funcionam horarios, senhas e dias de pico e como usar motoboy para resolver sem sair do escritorio. Uma nota de responsabilidade: enderecos e horarios de serventias mudam, por isso este guia nao lista enderecos fixos; confirme sempre a serventia competente pelos canais oficiais antes de sair.
 
-Sobre deslocamentos, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Por envolver cartorio, cada missao recebe cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Sobre deslocamentos, a cotacao e montada conforme a distancia viaria real e o tipo de rotina solicitada. Por envolver cartorio, cada missao recebe cotacao a parte. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## Tipos de cartório e qual resolve o seu caso
 
@@ -1297,7 +1297,7 @@ Cartorio certo, na serventia certa, com dados completos e margem de prazo: essa 
     readingMinutes: 7,
     content: `Documento esquecido no raio-x, peca que precisa embarcar no proximo voo, carga urgente no terminal, passageiro sem quem receba: o Aeroporto Internacional de Guarulhos concentra urgencias que nao admitem erro de acesso. O motoboy no GRU opera nos Terminais 1, 2 e 3 e no terminal de cargas com conhecimento de pontos de encontro, regras de parada e janelas de voo. Este manual mostra onde encontrar o piloto por terminal, quais missoes funcionam e como programar sem perder o voo.
 
-Quanto a valores, coletas e entregas na regiao aeroportuaria recebem cotacao a parte, pelas regras de acesso e espera. A base de calculo segue a tabela real, R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00, e 15 minutos de espera inclusos com R$ 0,60 por minuto adicional. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425 antes da saida.
+Quanto a valores, coletas e entregas na regiao aeroportuaria recebem cotacao a parte pelas regras de acesso, doca e espera, sempre informadas antes da saida. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425 antes da saida.
 
 ## Terminais 1, 2 e 3: onde encontrar o piloto
 
@@ -1350,7 +1350,7 @@ Aeroporto sem estresse e ponto de encontro exato, margem calculada de tras para 
     readingMinutes: 6,
     content: `Cumbica concentra o maior polo industrial e logistico de Guarulhos: fabricas, galpoes, transportadoras e o terminal de cargas do aeroporto dividindo as mesmas avenidas. Coletar nesse distrito exige mais que pilotar, exige credenciamento em portaria, janelas de recebimento e leitura de documentos fiscais. A coleta em Cumbica com motoboy atende industrias e distribuidoras com autorizacoes resolvidas antes da saida, protocolo assinado na guarita e comprovante digital em cada etapa do giro. Este guia B2B mostra as exigencias de acesso, como destravar portarias e como montar janelas programadas.
 
-Sobre custos, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Coletas com credenciamento complexo ou espera longa recebem proposta por roteiro. Atendemos de segunda a sexta, das 8h as 18h, com orcamento fechado no WhatsApp (11) 95724-8425.
+Sobre custos, a cotacao e calculada pela rota viaria real e acordada previamente antes da coleta. Coletas com credenciamento complexo ou espera longa recebem proposta por roteiro. Atendemos de segunda a sexta, das 8h as 18h, com orcamento fechado no WhatsApp (11) 95724-8425.
 
 ## O polo de Cumbica e suas exigências de acesso
 
@@ -1403,7 +1403,7 @@ Cumbica bem atendida e autorizacao previa, piloto credenciado e janela programad
     readingMinutes: 7,
     content: `Seu e-commerce vende para Guarulhos e regiao, mas a entrega ainda depende de correios lentos ou de corridas avulsas sem padrao. O motoboy entra na operacao do e-commerce como last mile local: same-day para a cidade, janelas agendadas, trocas e devolucoes com comprovante e rastreio que derruba o onde esta meu pedido. Este guia B2B mostra onde encaixar a moto na operacao, como vender o same-day como diferencial e como precificar o custo por pedido.
 
-Quanto a base de custo, a regra real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Roteiros com multiplas paradas diluem a taxa por pedido, e a espera inclui 15 minutos de tolerancia com R$ 0,60 por minuto adicional. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Quanto a custos, roteiros com multiplas paradas diluem a taxa por entrega e o valor final e fechado antes do inicio da rota. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## Onde o motoboy entra na operação do e-commerce
 
@@ -1456,7 +1456,7 @@ E-commerce local forte tem grade fixa de coleta, same-day como promessa, rastrei
     readingMinutes: 6,
     content: `Linha parada em Cumbica por falta de um sensor, caminhao encostado no patio aguardando bomba, torno sem ferramenta de reposicao: a peca pequena trava a operacao grande, e cada hora parada custa salarios, energia e atraso em cadeia. O motoboy para pecas em Cumbica executa o protocolo de emergencia com identificacao correta, limites claros e evolucao para reposicao programada. Este guia de chao de fabrica mostra como agir na emergencia, acabar com o erro de codigo e sair do apagao para o fluxo.
 
-Sobre o deslocamento, a base real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Emergencias com busca na capital seguem proposta por roteiro. Atendemos de segunda a sexta, das 8h as 18h, com acionamento no WhatsApp (11) 95724-8425.
+Sobre o deslocamento, o valor e orcado pelo trajeto viario real com tolerancia combinada para o atendimento. Emergencias com busca na capital seguem proposta por roteiro. Atendemos de segunda a sexta, das 8h as 18h, com acionamento no WhatsApp (11) 95724-8425.
 
 ## Linha parada: o protocolo de emergência
 
@@ -1509,7 +1509,7 @@ Peca certa, na hora certa, com codigo conferido e comprovante na portaria: esse 
     readingMinutes: 6,
     content: `Importadores, despachantes e transportadoras conhecem o gargalo: a carga pousou no GRU, mas a liberacao depende de documentos que estao em outro endereco, e cada hora de armazenagem custa. O motoboy no TECA, o terminal de cargas do aeroporto, transporta documentos para liberacao, cumpre autorizacoes e janelas e mantem a comunicacao a tres pontas entre cliente, despachante e piloto. Este guia tecnico simplifica a operacao para quem vive de comercio exterior: o que o piloto faz, o que levar e como programar.
 
-Quanto a valores, missoes no terminal de cargas recebem cotacao a parte, pelas regras de acesso e espera. A base de calculo segue a tabela real, R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00, e 15 minutos de espera inclusos com R$ 0,60 por minuto adicional. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Quanto a valores, missoes no terminal de cargas recebem cotacao sob medida pelas normas de acesso e conferencia de carga. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## O que é o TECA e quais missões o motoboy cumpre
 
@@ -1562,7 +1562,7 @@ Carga liberada sem correria e documento certo, autorizacao pronta e piloto que c
     readingMinutes: 7,
     content: `Ultima milha e o trecho mais caro e mais visivel da logistica: os poucos quilometros entre o centro de distribuicao e a porta do cliente concentram custo operacional, tentativas frustradas e a impressao final sobre a marca, que decide a recompra. Em Guarulhos, com eixos congestionados, verticalizacao crescente e portarias rigidas, o last mile exige desenho proprio, e o motoboy e o modal ideal para atravessa-lo. Este artigo estrategico diagnostica o desafio local, propoe micro-hubs e roteirizacao por regiao e define as metricas que governam a operacao.
 
-Na base de custos, a regra real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Roteiros densos diluem o custo por entrega, e a espera inclui 15 minutos de tolerancia com R$ 0,60 por minuto excedente. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Na base de custos, roteiros densos diluem o valor unitario por entrega, e a cotacao final e confirmada antes da saida. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## O desafio da última milha em Guarulhos
 
@@ -1615,7 +1615,7 @@ Ultima milha bem resolvida e diagnostico honesto com numeros do mes, blocos rote
     readingMinutes: 6,
     content: `Gondola vazia no ponto de venda e venda perdida para o concorrente, e reposicao que demora dois dias vira ruptura cronica. Distribuidoras e redes com pontos em Guarulhos usam o motoboy como apoio rapido: reposicao emergencial entre lojas, remanejamento de estoque com o centro de distribuicao e romaneios ageis com documentos fiscais. Este guia B2B mostra como cobrir rupturas em horas, remanejar entre unidades e formalizar o contrato de apoio com disponibilidade garantida.
 
-Quanto a base de custo, a regra real e R$ 35,00 ate 8 km mais R$ 2,50 por km extra, com exemplos de 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. A espera inclui 15 minutos de tolerancia, e o minuto excedente custa R$ 0,60. Rotas de apoio recorrentes recebem tabela propria. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
+Quanto a base de custo, o valor e orcado pela rota viaria real e o cliente recebe a confirmacao antes do piloto sair. Rotas de apoio recorrentes recebem tabela propria. Atendemos de segunda a sexta, das 8h as 18h, com proposta fechada no WhatsApp (11) 95724-8425.
 
 ## Ruptura no ponto de venda: cobrindo em horas
 

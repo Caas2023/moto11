@@ -47,7 +47,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Qual o valor da entrega expressa de moto em Guarulhos?",
-        a: "Seguimos a tabela real Moto11: 0–8 km por R$ 35,00 fixos, +R$ 2,50 por km extra, com 15 min de tolerância de espera (+R$ 0,60/min após). Você recebe o valor fechado no WhatsApp antes da coleta, sem taxa surpresa e com recibo digital ao final da entrega.",
+        a: "Avaliamos a rota viária real de moto, o tipo de volume e a urgência. Você recebe o valor fechado no WhatsApp antes da coleta, sem taxa surpresa e com recibo digital ao final da entrega.",
       },
       {
         q: "O que pode ser transportado no motoboy expresso?",
@@ -59,7 +59,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Vila Augusta",
@@ -70,7 +70,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Um escritorio no Centro precisa colher uma assinatura de contrato no Jardim Maia antes do almoco e nao pode deslocar ninguem da mesa. voce descreve o item e os dois enderecos no WhatsApp; recebe valor e previsao; o piloto mais proximo assume; coleta com foto; segue direto sem paradas; entrega com foto, nome de quem recebeu e horario. A rota usa Os pilotos ficam posicionados entre a Avenida Paulo Faccini, a Tiradentes e o calcadao da Dom Pedro II, escapando dos gargalos da Via Dutra pelo Anel Viario.",
       "Sobre limites, vale o recorte honesto: estao incluidos documentos, contratos, chaves, celulares, remedios e volumes ate 20 kg que caibam no bau vedado, com rastreio e protocolo por mensagem. Ja ficam de fora volumes acima de 20 kg, dinheiro em especie de valor relevante, armas, ilicitos e frageis sem embalagem adequada.",
-      "No horario comercial de segunda a sexta, das 8h as 18h, coletas no Centro e na Vila Augusta costumam ser assumidas rapidamente; bairros afastados como Bonsucesso e Cabucu pedem margem maior, e o prazo exato e informado como exemplo de orcamento antes da confirmacao. Pela tabela real Moto11, o calculo e R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra acima disso. Como exemplo de orcamento: 5 km sai R$ 35,00; 10 km sai R$ 40,00; 15 km sai R$ 52,50; 20 km sai R$ 65,00. A espera tem 15 minutos de tolerancia e, apos esse periodo, R$ 0,60 por minuto. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
+      "No horario comercial de segunda a sexta, das 8h as 18h, coletas no Centro e na Vila Augusta costumam ser assumidas rapidamente; bairros afastados como Bonsucesso e Cabucu pedem margem maior, e o prazo exato e informado como exemplo de orcamento antes da confirmacao. A cotacao e calculada pela rota viaria real de moto, considerando a distancia, o tipo de volume e a tolerancia de espera acordada. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
       "Para decidir se e para voce: e indicado para escritorios, clinicas, lojas e industrias que precisam de previsibilidade no mesmo dia util. Por outro lado, nao e o formato certo para quem precisa transportar moveis, fazer mudanca ou manter espera de horas em balcao. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar.",
     ],
 
@@ -115,7 +115,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Cumbica",
       "Cidade Industrial Satélite",
@@ -126,7 +126,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Uma distribuidora do polo de Cumbica precisa escoar quarenta caixas de e-commerce separadas por romaneio ainda hoje. voce envia a lista de volumes com origem e destinos; recebe proposta por faixa de distancia; o piloto confere etiquetas e romaneio na coleta; acomoda no bau de ate 100 litros com amarracao; cumpre as paradas com baixa individual e foto. A rota usa A operacao cobre a Avenida Santos Dumont, a Cidade Industrial Satelite, os acessos da Dutra nos kms 205 e 207 e o entorno do TECA do aeroporto.",
       "Quanto ao escopo, o combinado e claro: estao incluidos caixas e volumes ate 20 kg por bau, multiplos volumes com romaneio unificado, nota do servico para CNPJ e relatorio mensal. Ja ficam de fora cargas que excedam o bau e a amarracao segura, paletes, botijoes e materiais perigosos.",
-      "Em horario comercial de segunda a sexta, das 8h as 18h, as janelas fixas da manha e da tarde evitam o pico da Dutra; o tempo de cada frete e estimado como exemplo de orcamento conforme a zona, e cutoffs de transportadoras sao respeitados. O preco segue a tabela oficial: R$ 35,00 ate 8 km, mais R$ 2,50 por quilometro adicional. Para referencia de orcamento, considere 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Ha 15 minutos de espera inclusos; o excedente custa R$ 0,60 o minuto. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
+      "Em horario comercial de segunda a sexta, das 8h as 18h, as janelas fixas da manha e da tarde evitam o pico da Dutra; o tempo de cada frete e estimado como exemplo de orcamento conforme a zona, e cutoffs de transportadoras sao respeitados. A cotacao considera a quilometragem real percorrida e a tolerancia combinada para o atendimento em balcao ou portaria. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
       "Na escolha, considere o perfil ideal: e indicado para distribuidoras, autopecas, confeccoes e e-commerces com despacho diario ou semanal. Por outro lado, nao e o formato certo para quem precisa de caminhao, empilhadeira ou transporte de carga paletizada. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar.",
     ],
 
@@ -171,7 +171,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Vila Augusta",
@@ -182,7 +182,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Uma imobiliaria da Vila Augusta precisa levar um contrato de locacao para assinatura no Taboao e trazer a via assinada ainda hoje. voce informa quantidade de vias e destinatario; o piloto retira o envelope lacrado e confere as vias na sua frente; transporta em pasta executiva a prova de chuva; colhe protocolo assinado com carimbo; devolve a comprovacao por foto e mantem arquivo para auditoria. A rota usa O giro concentra-se no Centro, na Salgado Filho, na Vila Augusta e na Vila Galvao, com extensao ao Forum, a Prefeitura e aos cartorios centrais.",
       "Nos limites do servico, funciona assim: estao incluidos contratos, procuracoes, pastas de licitacao, certificados e dossies lacrados, com busca de retorno no mesmo dia. Ja ficam de fora abertura ou exposicao do conteudo, transporte de originais sem lacre quando exigido e atos que dependam de presenca das partes.",
-      "De segunda a sexta, das 8h as 18h, o tempo entre coleta e baixa varia por bairros de origem e destino; para hora marcada, a coleta e agendada com antecedencia e o prazo e tratado como exemplo de orcamento monitorado ate a confirmacao. Transparencia de valores: a base e R$ 35,00 para trajetos de ate 8 km, acrescida de R$ 2,50 por km que passar desse limite. Exemplos praticos de orcamento ficam assim: 5 km equivale a R$ 35,00; 10 km a R$ 40,00; 15 km a R$ 52,50; 20 km a R$ 65,00. Incluimos 15 minutos de espera; depois disso, cada minuto sai R$ 0,60. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, o tempo entre coleta e baixa varia por bairros de origem e destino; para hora marcada, a coleta e agendada com antecedencia e o prazo e tratado como exemplo de orcamento monitorado ate a confirmacao. A cotacao prioriza transparencia: o valor e orcado pelo trajeto viario real e informado antes do deslocamento. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para advocacias, contabilidades, imobiliarias e departamentos juridicos com protocolo diario. Por outro lado, nao e o formato certo para quem busca apenas entrega anonima sem comprovante ou transporte de valores em especie. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar.",
     ],
 
@@ -227,7 +227,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Parque Cecap",
       "Vila Galvão",
@@ -238,7 +238,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma confeiteira do Parque Cecap vendeu oito bolos pelo Instagram e precisa entregar todos na mesma tarde sem derreter a cobertura. voce manda a lista de enderecos com contatos; montamos a ordem mais eficiente; o piloto coleta os produtos embalados; acomoda cada item sem empilhamento; cumpre as paradas com foto de recebimento; envia as baixas para voce repassar aos compradores. A rota usa As rotas cobrem Vila Augusta, Jardim Maia, Parque Cecap, Vila Galvao, Ponte Grande e o comercio do Centro e do Bonsucesso.",
       "Sobre limites, vale o recorte honesto: estao incluidos produtos de loja, alimentos, cosmeticos e itens de maior valor com protecao contra balanco e chuva, alem de roteiros multi-paradas por rota. Ja ficam de fora pereceveis sem embalagem firme, botijoes de gas e volumes que nao caibam no bau com seguranca.",
-      "No horario comercial de segunda a sexta, das 8h as 18h, o roteiro e calculado por zona; cada parada recebe previsao como exemplo de orcamento, e a tolerancia de espera em portaria e combinada antes da saida. Sem taxa surpresa: cobramos R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra. Um exemplo de conta ajuda a planejar: 5 km custa R$ 35,00, 10 km custa R$ 40,00, 15 km custa R$ 52,50 e 20 km custa R$ 65,00. Voce tem 15 minutos de espera sem custo, e o minuto adicional sai R$ 0,60. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
+      "No horario comercial de segunda a sexta, das 8h as 18h, o roteiro e calculado por zona; cada parada recebe previsao como exemplo de orcamento, e a tolerancia de espera em portaria e combinada antes da saida. Sem taxa surpresa: o valor e orcado com base na rota exata e informado antes do chamado ser confirmado. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
       "Para decidir se e para voce: e indicado para lojas, confeiteiras, farmacias, pet shops e vendedores de marketplace com promessa de mesmo dia. Por outro lado, nao e o formato certo para quem precisa de entrega refrigerada dedicada ou de carga fragil sem embalagem. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar.",
     ],
 
@@ -283,7 +283,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Taboão",
       "Vila Rio de Janeiro",
@@ -294,7 +294,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Uma assistencia tecnica do Taboao precisa levar um notebook para diagnostico no Centro, aguardar o laudo e trazer o equipamento de volta. um unico piloto assume o chamado; retira com foto e checklist; cumpre a etapa externa; aguarda em fila ou balcao dentro da tolerancia; retorna com recibo, laudo ou assinaturas; voce acompanha cada fase pelo WhatsApp. A rota usa O ciclo liga Centro, Taboao, Vila Rio, Sao Joao e Jardim Bom Clima, com extensao a Cumbica e a Vila Galvao quando o fornecedor fica no polo.",
       "Quanto ao escopo, o combinado e claro: estao incluidos ida e volta com o mesmo piloto, espera com tolerancia inclusa, conferencia fotografada e retorno documentado. Ja ficam de fora esperas ilimitadas sem aviso de custo, servicos tecnicos no local e manuseio de equipamento sem autorizacao do responsavel.",
-      "De segunda a sexta, das 8h as 18h, o ciclo completo e dimensionado por rota total; a primeira fracao de espera entra no orcamento como exemplo, e qualquer excedente a R$ 0,60 por minuto e avisado antes de prosseguir. A conta e direta e sempre apresentada antes da saida: R$ 35,00 ate 8 km, mais R$ 2,50 por km excedente. Como exemplos de orcamento, um trajeto de 5 km fica R$ 35,00, um de 10 km fica R$ 40,00, um de 15 km fica R$ 52,50 e um de 20 km fica R$ 65,00. A tolerancia de espera e de 15 minutos, com adicional de R$ 0,60 por minuto apos esse marco. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, o ciclo completo e dimensionado por rota total; a primeira fracao de espera entra no orcamento como exemplo, e qualquer excedente a R$ 0,60 por minuto e avisado antes de prosseguir. A cotacao e direta e sempre apresentada antes da saida, calculada pela quilometragem da rota de moto com tolerancia combinada. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
       "Na escolha, considere o perfil ideal: e indicado para empresas, oficinas e comercios que resolvem rua sem deslocar a propria equipe. Por outro lado, nao e o formato certo para quem precisa de mao de obra especializada no destino ou de permanencia de turno inteiro. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar.",
     ],
 
@@ -339,7 +339,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "período de 4h ou diária",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Jardim Maia",
@@ -350,7 +350,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Uma administradora de condominios da Vila Augusta tem banco, cartorio e tres fornecedores para resolver na mesma manha. voce passa a pauta com documentos e limites; definimos a ordem por proximidade; o mensageiro uniformizado cumpre as paradas com pasta executiva; colhe protocolos e recibos; devolve tudo organizado por parada com fotos no mesmo dia. A rota usa O roteiro agrupa Centro, Jardim Maia, Vila Augusta, Paraventi e Vila Galvao por proximidade, reunindo banco, cartorio, correio e fornecedores num giro.",
       "Nos limites do servico, funciona assim: estao incluidos pauta multi-paradas, pagamentos e depositos com autorizacao formal e limite pre-combinado, prestacao de contas detalhada. Ja ficam de fora atos personalissimos que exigem a presenca do titular, saques sem autorizacao escrita e transporte de valores fora do limite declarado.",
-      "O mensageiro opera de segunda a sexta, das 8h as 18h, por chamada avulsa, meio periodo, diaria ou pacote mensal; pautas com prazo fatal pedem aviso com antecedencia e o cronograma chega como exemplo de orcamento. Para planejar o custo, use a regra verdadeira: R$ 35,00 cobre ate 8 km; cada quilometro a mais soma R$ 2,50. Na pratica do orcamento, isso significa R$ 35,00 aos 5 km, R$ 40,00 aos 10 km, R$ 52,50 aos 15 km e R$ 65,00 aos 20 km. A espera inclui 15 minutos de cortesia e cobra R$ 0,60 por minuto seguinte. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
+      "O mensageiro opera de segunda a sexta, das 8h as 18h, por chamada avulsa, meio periodo, diaria ou pacote mensal; pautas com prazo fatal pedem aviso com antecedencia e o cronograma chega como exemplo de orcamento. Para planejar o chamado, envie os pontos de coleta e entrega: a cotacao e montada na hora conforme a rota viaria real e o tipo de item. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para escritorios, administradoras, escolas e prestadores com rua recorrente. Por outro lado, nao e o formato certo para quem tem apenas uma entrega pontual urgente, que se resolve melhor no expresso. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Clientes mensais ainda ganham piloto preferencial, que ja conhece a rotina, os enderecos e os contatos da empresa.",
     ],
 
@@ -395,7 +395,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "rota programada diária",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Bonsucesso",
@@ -406,7 +406,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma rede varejista com lojas no Bonsucesso e no Pimentas precisa girar cheques e contratos entre matriz e filiais todos os dias. definimos a sequencia de unidades e os horarios de passagem; cada malote recebe lacre numerado registrado na coleta; o piloto fixo cumpre o giro; cada ponto confere lacre e assina; a tesouraria recebe relatorio diario consolidado. A rota usa As rotas fixas ligam Centro, Bonsucesso, Pimentas, Vila Augusta e Sao Joao, com extensao a unidades na capital em janela de transito planejada.",
       "Sobre limites, vale o recorte honesto: estao incluidos malotes lacrados com numeracao controlada, cadeia de custodia documentada, cobertura de ferias e faltas sem quebrar a operacao. Ja ficam de fora grandes valores em especie, que exigem carro-forte por exigencia regulatoria, e malotes sem declaracao de conteudo.",
-      "As rotas rodam de segunda a sexta, das 8h as 18h, com horarios cravados; tentativas em unidade fechada sao registradas com foto e retornam no giro seguinte, tudo previsto no exemplo de orcamento do contrato. Pela tabela real Moto11, o calculo e R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra acima disso. Como exemplo de orcamento: 5 km sai R$ 35,00; 10 km sai R$ 40,00; 15 km sai R$ 52,50; 20 km sai R$ 65,00. A espera tem 15 minutos de tolerancia e, apos esse periodo, R$ 0,60 por minuto. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
+      "As rotas rodam de segunda a sexta, das 8h as 18h, com horarios cravados; tentativas em unidade fechada sao registradas com foto e retornam no giro seguinte, tudo previsto no exemplo de orcamento do contrato. A cotacao e calculada pela rota viaria real de moto, considerando a distancia, o tipo de volume e a tolerancia de espera acordada. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
       "Para decidir se e para voce: e indicado para bancos, redes de lojas, administradoras e grupos com matriz e filiais. Por outro lado, nao e o formato certo para operacoes esporadicas de um unico envelope, melhor atendidas pela entrega de documentos. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. O piloto da rota e fixo sempre que possivel, criando vinculo de confianca com os responsaveis de cada unidade atendida.",
     ],
 
@@ -451,7 +451,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Cumbica",
       "Jardim Cumbica",
@@ -462,7 +462,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Um lojista do Centro comprou reposicao que chegou a uma filial de transportadora na Dutra e precisa do material antes do fim do expediente. voce envia autorizacao, documento e codigo de rastreio; confirmamos o checklist da operadora; o piloto apresenta a documentacao; aguarda a liberacao; confere volumes, etiquetas e avarias aparentes com fotos; traz tudo com romaneio assinado. A rota usa A cobertura alcanca as filiais ao longo da Dutra, os galpoes de Cumbica e do Jardim Cumbica, a Cidade Industrial Satelite e o TECA do aeroporto.",
       "Quanto ao escopo, o combinado e claro: estao incluidos retirada com espera em fila dentro da logica do servico, conferencia fotografada antes de assinar quitacao e romaneio para conciliacao. Ja ficam de fora assinatura de quitacao com divergencia nao registrada, retirada sem autorizacao e cargas acima do limite da moto.",
-      "De segunda a sexta, das 8h as 18h, programamos a ida fora dos horarios de maior fila; se a carga nao estiver liberada, registramos a posicao e a segunda tentativa segue o exemplo de orcamento combinado. O preco segue a tabela oficial: R$ 35,00 ate 8 km, mais R$ 2,50 por quilometro adicional. Para referencia de orcamento, considere 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Ha 15 minutos de espera inclusos; o excedente custa R$ 0,60 o minuto. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
+      "De segunda a sexta, das 8h as 18h, programamos a ida fora dos horarios de maior fila; se a carga nao estiver liberada, registramos a posicao e a segunda tentativa segue o exemplo de orcamento combinado. A cotacao considera a quilometragem real percorrida e a tolerancia combinada para o atendimento em balcao ou portaria. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
       "Na escolha, considere o perfil ideal: e indicado para lojistas, oficinas, e-commerces e industrias que consolidam carga em transportadoras. Por outro lado, nao e o formato certo para quem precisa de coleta com caminhao ou de armazenagem intermediada. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Se houver divergencia, avaria ou cobranca indevida no balcao, tudo e registrado com fotos antes de qualquer assinatura.",
     ],
 
@@ -518,7 +518,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Um executivo esqueceu a pasta com contrato no raio-x do Terminal 2 e o voo conecta em poucas horas. voce informa companhia, terminal, piso e horario-limite; o piloto planeja o acesso permitido; mantem contato continuo; entrega na mao do passageiro, do funcionario da companhia ou do agente de carga; registra horarios e fotos de cada etapa. A rota usa A atuacao cobre Terminais 1, 2 e 3, estacionamentos, balcoes das companhias e o TECA, com chegada pela Helio Smidt ou pela Jamil Joao Zarif conforme o transito.",
       "Nos limites do servico, funciona assim: estao incluidos documentos esquecidos, pecas para embarque com cutoff apertado, passaportes e notebooks ate o limite das areas publicas. Ja ficam de fora acesso a areas restritas de embarque, despacho de bagagem e promessa de embarque apos o fechamento do voo.",
-      "O atendimento segue o horario comercial de segunda a sexta, das 8h as 18h, com prioridade a janela do voo; por ser area de regras rigidas, cada missao recebe cotacao a parte tratada como exemplo de orcamento, e a primeira fracao de espera no ponto de encontro esta incluida. Transparencia de valores: a base e R$ 35,00 para trajetos de ate 8 km, acrescida de R$ 2,50 por km que passar desse limite. Exemplos praticos de orcamento ficam assim: 5 km equivale a R$ 35,00; 10 km a R$ 40,00; 15 km a R$ 52,50; 20 km a R$ 65,00. Incluimos 15 minutos de espera; depois disso, cada minuto sai R$ 0,60. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
+      "O atendimento segue o horario comercial de segunda a sexta, das 8h as 18h, com prioridade a janela do voo; por ser area de regras rigidas, cada missao recebe cotacao a parte tratada como exemplo de orcamento, e a primeira fracao de espera no ponto de encontro esta incluida. A cotacao prioriza transparencia: o valor e orcado pelo trajeto viario real e informado antes do deslocamento. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para executivos, despachantes, industrias e familias com urgencia ligada a voo. Por outro lado, nao e o formato certo para cargas que exigem overlaps de terminal sem contato disponivel do outro lado. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar.",
     ],
 
@@ -563,7 +563,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Pimentas",
@@ -574,7 +574,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma confeccao do Bonsucesso parou a linha porque o lote de aviamentos nao chegou e o turno da tarde depende dele. voce aciona pelo WhatsApp com prazo-limite real; um piloto dedicado assume com prioridade sobre a fila; segue em rota direta sem agrupar; mantem contato aberto; da baixa com foto, assinatura e horarios registrados. A rota usa O despacho monitora em tempo real os eixos entre Pimentas, Bonsucesso, Centro, Cumbica e Vila Galvao, escolhendo o trajeto mais rapido, nao o mais curto no mapa.",
       "Sobre limites, vale o recorte honesto: estao incluidos piloto exclusivo, rota direta, monitoramento de transito e comprovacao reforcada para prazos fatais e emergencias. Ja ficam de fora promessa de tempo inferior ao fisicamente possivel no transito e transporte de itens proibidos ou acima do limite.",
-      "O canal urgente opera dentro do expediente de segunda a sexta, das 8h as 18h, com plantao sob consulta; o preco reflete a prioridade absoluta e e informado fechado antes da saida, como exemplo de orcamento, sem surpresa posterior. Sem taxa surpresa: cobramos R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra. Um exemplo de conta ajuda a planejar: 5 km custa R$ 35,00, 10 km custa R$ 40,00, 15 km custa R$ 52,50 e 20 km custa R$ 65,00. Voce tem 15 minutos de espera sem custo, e o minuto adicional sai R$ 0,60. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
+      "O canal urgente opera dentro do expediente de segunda a sexta, das 8h as 18h, com plantao sob consulta; o preco reflete a prioridade absoluta e e informado fechado antes da saida, como exemplo de orcamento, sem surpresa posterior. Sem taxa surpresa: o valor e orcado com base na rota exata e informado antes do chamado ser confirmado. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
       "Para decidir se e para voce: e indicado para operacoes com SLA, linhas paradas, medicamentos criticos e licitacoes com hora marcada. Por outro lado, nao e o formato certo para rotinas previsiveis sem consequencia por atraso, que saem mais baratas no programado. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Empresas que vivem de SLA usam o canal urgente como extensao do plano de contingencia para os dias criticos.",
     ],
 
@@ -619,7 +619,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "janela agendada de 2h",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Vila Augusta",
       "Jardim Maia",
@@ -630,7 +630,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Uma distribuidora de Cumbica repoe duas lojas toda terca e quinta e quer transformar isso numa rotina silenciosa. definimos dias, janelas e enderecos fixos; a rota passa a rodar automaticamente; voce recebe confirmacao na vespera; cada parada gera baixa individual; extras avulsos entram com aviso previo e clientes programados tem prioridade no encaixe urgente. A rota usa As agendas fixas atendem Vila Augusta, Jardim Maia, Centro, Ponte Grande e Parque Cecap, com roteirizacao que agrupa paradas por proximidade.",
       "Quanto ao escopo, o combinado e claro: estao incluidos agenda recorrente, piloto habitual, custo por parada menor que o avulso e relatorio por ciclo. Ja ficam de fora compromisso de fidelidade abusiva; o acordo e mensal e renovavel, com reajuste so por mudanca relevante de rota ou volume.",
-      "As janelas rodam de segunda a sexta, das 8h as 18h, com margem de duas horas por ciclo; ajustes entram com 24 horas de aviso e mudancas pontuais vao ate a vespera, tudo refletido no exemplo de orcamento mensal. A conta e direta e sempre apresentada antes da saida: R$ 35,00 ate 8 km, mais R$ 2,50 por km excedente. Como exemplos de orcamento, um trajeto de 5 km fica R$ 35,00, um de 10 km fica R$ 40,00, um de 15 km fica R$ 52,50 e um de 20 km fica R$ 65,00. A tolerancia de espera e de 15 minutos, com adicional de R$ 0,60 por minuto apos esse marco. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
+      "As janelas rodam de segunda a sexta, das 8h as 18h, com margem de duas horas por ciclo; ajustes entram com 24 horas de aviso e mudancas pontuais vao ate a vespera, tudo refletido no exemplo de orcamento mensal. A cotacao e direta e sempre apresentada antes da saida, calculada pela quilometragem da rota de moto com tolerancia combinada. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
       "Na escolha, considere o perfil ideal: e indicado para comercios, distribuidoras, redes com lojas no Bonsucesso e no Pimentas e prestadores com visitas semanais. Por outro lado, nao e o formato certo para demandas totalmente aleatorias sem repeticao, que funcionam melhor no avulso. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Quando surge um imprevisto fora da agenda, clientes programados tem prioridade no encaixe urgente da operacao.",
     ],
 
@@ -675,7 +675,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "atendimento no mesmo dia",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Vila Augusta",
@@ -686,7 +686,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Um escritorio contabil da Salgado Filho perde toda segunda-feira deslocando estagiario a bancos e cartorios. mapeamos sua rotina e destinos frequentes; um piloto habitual assume a conta; voce aciona sem burocracia pelo WhatsApp; protocolos saem organizados por cliente ou processo; nos picos de fim de mes, um segundo piloto reforca sem contratacao. A rota usa A base concentra-se no Centro, na Salgado Filho, na Paulo Faccini e na Vila Augusta, com extensao a Vila Galvao, Cecap, Cumbica e Bonsucesso.",
       "Nos limites do servico, funciona assim: estao incluidos atendimento recorrente, relatorio diario, arquivo digital e reforco de pico com piloto adicional. Ja ficam de fora custos de moto propria, combustivel, manutencao e gestao trabalhista, que deixam de existir.",
-      "De segunda a sexta, das 8h as 18h, o atendimento e no mesmo dia com coleta estimada informada como exemplo de orcamento; demandas criticas recebem prioridade do piloto habitual. Para planejar o custo, use a regra verdadeira: R$ 35,00 cobre ate 8 km; cada quilometro a mais soma R$ 2,50. Na pratica do orcamento, isso significa R$ 35,00 aos 5 km, R$ 40,00 aos 10 km, R$ 52,50 aos 15 km e R$ 65,00 aos 20 km. A espera inclui 15 minutos de cortesia e cobra R$ 0,60 por minuto seguinte. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, o atendimento e no mesmo dia com coleta estimada informada como exemplo de orcamento; demandas criticas recebem prioridade do piloto habitual. Para planejar o chamado, envie os pontos de coleta e entrega: a cotacao e montada na hora conforme a rota viaria real e o tipo de item. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para contabilidades, advocacias, engenharias e administradoras com rua diaria. Por outro lado, nao e o formato certo para empresas com demanda inferior a duas saidas semanais, que se resolvem no avulso. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Quando o movimento aperta no fim do mes, a operacao reforca com um segundo piloto sem que voce contrate ninguem.",
     ],
 
@@ -731,7 +731,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Cumbica",
       "Cidade Industrial Satélite",
@@ -742,7 +742,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma fabrica da Cidade Industrial Satelite precisa buscar um sensor no distribuidor da Dutra antes que o turno da noite pare. voce abre o chamado com ordem de compra e codigo da peca; despachamos o piloto mais proximo; ele se apresenta na guarita com documentacao e EPI basico; retira com romaneio; entrega no almoxarifado com protocolo e horarios para o relatorio de ocorrencia. A rota usa O atendimento foca Cumbica, Cidade Industrial Satelite, Jardim Cumbica, Pimentas e Bonsucesso, com ponte a fornecedores da Dutra e ao Bras quando necessario.",
       "Sobre limites, vale o recorte honesto: estao incluidos pilotos credenciaveis para portaria rigida, leitura de DANFE e romaneio, janelas fixas de manha e a tarde e resposta a parada de linha. Ja ficam de fora entrada em areas classificadas sem credenciamento previo e transporte de insumos perigosos.",
-      "Em horario comercial de segunda a sexta, das 8h as 18h, as janelas fixas criam fluxo diario; emergencias recebem piloto de prontidao e cada etapa e tratada como exemplo de orcamento com horarios registrados. Pela tabela real Moto11, o calculo e R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra acima disso. Como exemplo de orcamento: 5 km sai R$ 35,00; 10 km sai R$ 40,00; 15 km sai R$ 52,50; 20 km sai R$ 65,00. A espera tem 15 minutos de tolerancia e, apos esse periodo, R$ 0,60 por minuto. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
+      "Em horario comercial de segunda a sexta, das 8h as 18h, as janelas fixas criam fluxo diario; emergencias recebem piloto de prontidao e cada etapa e tratada como exemplo de orcamento com horarios registrados. A cotacao e calculada pela rota viaria real de moto, considerando a distancia, o tipo de volume e a tolerancia de espera acordada. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
       "Para decidir se e para voce: e indicado para fabricas, almoxarifados, PCPs e manutencoes com reposicao diaria. Por outro lado, nao e o formato certo para cargas paletizadas ou que exijam munck e caminhao. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Com janelas fixas de coleta pela manha e a tarde, a fabrica ganha um pulmao logistico diario contra fretes emergenciais caros.",
     ],
 
@@ -787,7 +787,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Vila Augusta",
       "Centro de Guarulhos",
@@ -798,7 +798,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Uma rede odontologica com unidades na Vila Augusta e no Jardim Maia precisa girar moldes e guias entre as recepcoes todos os dias. definimos os pontos e horarios do circuito; o piloto discreto se apresenta na recepcao; recolhe guias lacradas e moldes em compartimento separado; entrega ao responsavel com protocolo; a recepcao acompanha tudo sem se preocupar com logistica. A rota usa Os circuitos ligam Vila Augusta, Centro, Jardim Maia e Paulo Faccini, com extensao as clinicas populares do Pimentas e do Bonsucesso.",
       "Quanto ao escopo, o combinado e claro: estao incluidos transporte sigiloso, protecao contra impacto para proteses e alinhadores, documentos de convenio lacrados e horarios alinhados a agenda. Ja ficam de fora diagnostico clinico, manipulacao de material biologico sem acondicionamento e exposicao de dados de pacientes.",
-      "De segunda a sexta, das 8h as 18h, os circuitos diarios respeitam a agenda da clinica; urgencias como falta de material no meio do dia recebem piloto imediato com previsao informada como exemplo de orcamento. O preco segue a tabela oficial: R$ 35,00 ate 8 km, mais R$ 2,50 por quilometro adicional. Para referencia de orcamento, considere 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Ha 15 minutos de espera inclusos; o excedente custa R$ 0,60 o minuto. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
+      "De segunda a sexta, das 8h as 18h, os circuitos diarios respeitam a agenda da clinica; urgencias como falta de material no meio do dia recebem piloto imediato com previsao informada como exemplo de orcamento. A cotacao considera a quilometragem real percorrida e a tolerancia combinada para o atendimento em balcao ou portaria. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
       "Na escolha, considere o perfil ideal: e indicado para clinicas odontologicas, esteticas, oftalmologicas e redes com duas ou tres unidades. Por outro lado, nao e o formato certo para transporte de amostras biologicas criticas, que pertence a operacao laboratorial dedicada. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Para redes com duas ou tres unidades, o circuito fixo diario gira materiais e documentos sem preocupar a recepcao. Moldes e proteses viajam em compartimento separado com protecao contra impacto, e documentos de convenio seguem lacrados com protocolo.",
     ],
 
@@ -843,7 +843,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Vila Augusta",
       "Jardim Maia",
@@ -854,7 +854,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Um laboratorio com postos na Vila Augusta e no Centro precisa de tres passagens diarias sem furar a janela de viabilidade das amostras. alinhamos horarios de passagem por posto; o piloto recolhe com registro de horario e lacre; acondiciona em bolsa termica com gelo reutilizavel; segue direto sem paradas; entrega ao responsavel tecnico com protocolo e rastreabilidade. A rota usa Os circuitos passam por Vila Augusta, Centro, Jardim Maia, Vila Galvao e Parque Cecap, com coletas avulsas em clinicas do Pimentas e hospitais da cidade.",
       "Nos limites do servico, funciona assim: estao incluidos cadeia do frio, separacao rigida entre amostras e papelada, treinamento em biosseguranca e coletas urgentes fora do circuito. Ja ficam de fora analise laboratorial, descarte de residuos e transporte sem identificacao da origem.",
-      "De segunda a sexta, das 8h as 18h, cada coleta registra horarios de saida e chegada; a janela de viabilidade e tratada com margem tecnica e cada circuito recebe exemplo de orcamento proprio. Transparencia de valores: a base e R$ 35,00 para trajetos de ate 8 km, acrescida de R$ 2,50 por km que passar desse limite. Exemplos praticos de orcamento ficam assim: 5 km equivale a R$ 35,00; 10 km a R$ 40,00; 15 km a R$ 52,50; 20 km a R$ 65,00. Incluimos 15 minutos de espera; depois disso, cada minuto sai R$ 0,60. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, cada coleta registra horarios de saida e chegada; a janela de viabilidade e tratada com margem tecnica e cada circuito recebe exemplo de orcamento proprio. A cotacao prioriza transparencia: o valor e orcado pelo trajeto viario real e informado antes do deslocamento. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para laboratorios, postos de coleta, clinicas e hospitais com demanda programada. Por outro lado, nao e o formato certo para remessas que exijam refrigeracao ativa controlada ou veiculo climatizado. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. A equipe segue procedimento de contencao em caso de vazamento, comunicando imediatamente o laboratorio contratante.",
     ],
 
@@ -899,7 +899,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Taboão",
       "Vila Galvão",
@@ -910,7 +910,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma oficina do Taboao tem um SUV no elevador aguardando sensor e bomba, com o cliente voltando as 17h. voce envia codigo, marca e modelo; o piloto busca no balcao; fotografa codigo e preco antes de sair; resolve divergencias pelo WhatsApp ali mesmo; entrega no box com recebimento assinado. A rota usa A busca cobre as distribuidoras da Avenida Guarulhos, da Dutra e os polos da capital como Bras e General Osorio, entregando em Taboao, Vila Galvao, Ponte Grande e Pimentas.",
       "Sobre limites, vale o recorte honesto: estao incluidos conferencia fotografada no balcao, protecao contra impacto e umidade e roteiros para distribuidoras com baixas individuais. Ja ficam de fora pecas acima de 20 kg ou das dimensoes do bau sem avaliacao previa e instalacao mecanica no local.",
-      "Em horario comercial de segunda a sexta, das 8h as 18h, os prazos de buscas locais e de coletas na capital sao informados no orcamento, conforme o transito do dia. Sem taxa surpresa: cobramos R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra. Um exemplo de conta ajuda a planejar: 5 km custa R$ 35,00, 10 km custa R$ 40,00, 15 km custa R$ 52,50 e 20 km custa R$ 65,00. Voce tem 15 minutos de espera sem custo, e o minuto adicional sai R$ 0,60. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
+      "Em horario comercial de segunda a sexta, das 8h as 18h, os prazos de buscas locais e de coletas na capital sao informados no orcamento, conforme o transito do dia. Sem taxa surpresa: o valor e orcado com base na rota exata e informado antes do chamado ser confirmado. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
       "Para decidir se e para voce: e indicado para oficinas, funilarias, centros automotivos, frotistas e distribuidoras. Por outro lado, nao e o formato certo para componentes estruturais grandes como portas e para-choques sem plano de amarracao avaliado. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Para distribuidoras, operamos o caminho inverso com roteiros de entrega a clientes em toda Guarulhos e Alto Tiete.",
     ],
 
@@ -951,11 +951,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Quanto custa o serviço de courier?",
-        a: "O preço segue a tabela real Moto11 (0–8 km por R$ 35,00 fixos, +R$ 2,50 por km extra), variando com distância, número de paradas e espera. Ações com múltiplos destinatários recebem proposta fechada por roteiro, com valor fixo e relatório incluso.",
+        a: "O valor varia conforme a distância da rota, volume de paradas e eventuais esperas. Ações com múltiplos destinatários recebem proposta fechada por roteiro, com valor fixo e relatório incluso.",
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Jardim Maia",
       "Vila Augusta",
@@ -966,7 +966,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Uma diretoria no Jardim Maia precisa enviar convites e brindes a cinco clientes estrategicos com apresentacao impecavel. alinhamos lista de destinatarios e janelas; reservamos o piloto uniformizado; cada entrega tem chegada avisada; usa pasta executiva e protocolo formal; o relatorio final consolida assinaturas e fotos por destinatario. A rota usa A operacao parte do Centro e da Vila Augusta para condominios empresariais, escritorios de alto padrao e residencias executivas no Jardim Maia, Vila Galvao e Parque Cecap, com extensao Guarulhos-Sao Paulo.",
       "Quanto ao escopo, o combinado e claro: estao incluidos padrao executivo, janela informada ao destinatario, comprovacao reforcada e tratamento de cerimonial em eventos corporativos. Ja ficam de fora entregas anonimas sem identificacao e operacoes que exijam veiculo de passeio.",
-      "De segunda a sexta, das 8h as 18h, cada roteiro recebe proposta fechada por numero de paradas; acoes com data marcada sao reservadas com antecedencia e confirmadas na vespera como exemplo de orcamento. A conta e direta e sempre apresentada antes da saida: R$ 35,00 ate 8 km, mais R$ 2,50 por km excedente. Como exemplos de orcamento, um trajeto de 5 km fica R$ 35,00, um de 10 km fica R$ 40,00, um de 15 km fica R$ 52,50 e um de 20 km fica R$ 65,00. A tolerancia de espera e de 15 minutos, com adicional de R$ 0,60 por minuto apos esse marco. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, cada roteiro recebe proposta fechada por numero de paradas; acoes com data marcada sao reservadas com antecedencia e confirmadas na vespera como exemplo de orcamento. A cotacao e direta e sempre apresentada antes da saida, calculada pela quilometragem da rota de moto com tolerancia combinada. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
       "Na escolha, considere o perfil ideal: e indicado para empresas com auditorias, certificacoes, diretorias e clientes premium. Por outro lado, nao e o formato certo para entregas simples de baixo valor sem exigencia de apresentacao. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Empresas que recebem auditorias e visitas de matriz usam o courier como extensao do cerimonial corporativo.",
     ],
 
@@ -1011,7 +1011,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "ação de meio período ou diária",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Bonsucesso",
@@ -1022,7 +1022,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Uma pizzaria nova no Bonsucesso quer lotar o salao no fim de semana de inauguracao com acao em semaforos e feiras. definimos mapa de calor com ruas, horarios e perfil de publico; a equipe uniformizada assume os pontos a pe; motos fazem reposicao rapida; voce recebe fotos dos pontos, contagem por ponto e relatorio final com horarios. A rota usa Os pontos quentes incluem o calcadao do Centro, a estacao de onibus da Avenida Guarulhos, as feiras do Bonsucesso e do Pimentas, saidas de escolas e os semaforos de maior retencao.",
       "Nos limites do servico, funciona assim: estao incluidos planejamento por ponto de fluxo, comprovacao fotografica, reposicao agil e porta a porta em condominios e ruas residenciais. Ja ficam de fora impressao propria em larga escala, feita via graficas parceiras indicadas, e abordagem insistente que prejudique a marca.",
-      "As acoes ocorrem em meio periodo ou diaria dentro do horario comercial de segunda a sexta, das 8h as 18h, ou em datas combinadas; o cronograma por fases e tratado como exemplo de orcamento a partir de 2.000 pecas. Para planejar o custo, use a regra verdadeira: R$ 35,00 cobre ate 8 km; cada quilometro a mais soma R$ 2,50. Na pratica do orcamento, isso significa R$ 35,00 aos 5 km, R$ 40,00 aos 10 km, R$ 52,50 aos 15 km e R$ 65,00 aos 20 km. A espera inclui 15 minutos de cortesia e cobra R$ 0,60 por minuto seguinte. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
+      "As acoes ocorrem em meio periodo ou diaria dentro do horario comercial de segunda a sexta, das 8h as 18h, ou em datas combinadas; o cronograma por fases e tratado como exemplo de orcamento a partir de 2.000 pecas. Para planejar o chamado, envie os pontos de coleta e entrega: a cotacao e montada na hora conforme a rota viaria real e o tipo de item. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para lojas em inauguracao, escolas, pizzarias, clinicas com agenda aberta e campanhas de bairro. Por outro lado, nao e o formato certo para campanhas que exijam midia segmentada digital em vez de rua. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. A acao em porta de condominios e ruas residenciais do Jardim Maia, da Vila Galvao e do Parque Cecap completa a cobertura.",
     ],
 
@@ -1067,7 +1067,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Parque Cecap",
       "Vila Augusta",
@@ -1078,7 +1078,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma administradora do Parque Cecap precisa distribuir trezentos comunicados de assembleia em cinco condominios numa semana. voce entrega o lote com base de enderecos; triamos por bairro e otimizamos a ordem; cada peca recebe baixa individual com data, hora e recebedor; as nao entregues retornam com motivo registrado; o relatorio com fotos sustenta cobrancas e demonstra boa-fe. A rota usa Os lotes sao triados por bairro entre Parque Cecap, Vila Augusta, Jardim Maia, Centro e Ponte Grande, com giros que evitam cruzamentos pendulares.",
       "Sobre limites, vale o recorte honesto: estao incluidos triagem, roteirizacao, ate duas tentativas em dias alternados, protocolo individual e devolucao motivada. Ja ficam de fora validade de notificacao extrajudicial formal, que exige via de cartorio ou oficial, e postagem nos Correios.",
-      "Os lotes rodam de segunda a sexta, das 8h as 18h, com o prazo de conclusao do lote informado no orcamento; o preco por peca cai por faixa de volume a partir de 50 pecas. Pela tabela real Moto11, o calculo e R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra acima disso. Como exemplo de orcamento: 5 km sai R$ 35,00; 10 km sai R$ 40,00; 15 km sai R$ 52,50; 20 km sai R$ 65,00. A espera tem 15 minutos de tolerancia e, apos esse periodo, R$ 0,60 por minuto. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
+      "Os lotes rodam de segunda a sexta, das 8h as 18h, com o prazo de conclusao do lote informado no orcamento; o preco por peca cai por faixa de volume a partir de 50 pecas. A cotacao e calculada pela rota viaria real de moto, considerando a distancia, o tipo de volume e a tolerancia de espera acordada. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
       "Para decidir se e para voce: e indicado para administradoras, escolas, condominios e empresas com disparos regulares. Por outro lado, nao e o formato certo para remessas unitarias urgentes, melhor resolvidas no expresso. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Para cobrancas e notificacoes com efeito pratico, o registro fotografico sustenta a demonstracao de boa-fe na tentativa.",
     ],
 
@@ -1123,7 +1123,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Bonsucesso",
@@ -1134,7 +1134,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Um comercio do Centro precisa levar o malote do caixa a agencia bancaria todos os dias sem expor funcionario. formaliza-se autorizacao com limite e declaracao de conteudo; cada movimentacao usa lacre numerado conferido nas duas pontas; a rota varia a cada ciclo; piloto fixo de confianca cumpre a janela restrita; qualquer divergencia trava a entrega e aciona o contratante. A rota usa Os circuitos diarios ligam lojas do Centro, do Bonsucesso e do Pimentas as agencias da Paulo Faccini e do Centro, com retorno trazendo comprovante de deposito.",
       "Quanto ao escopo, o combinado e claro: estao incluidos cadeia de custodia completa, rotas sigilosas, contrato com escopo e termo de responsabilidade. Ja ficam de fora grandes quantias em especie, que por lei exigem carro-forte, e operacoes sem declaracao formal.",
-      "De segunda a sexta, das 8h as 18h, os circuitos tem horarios combinados e janelas restritas; cada rota recebe exemplo de orcamento proprio com limites declarados. O preco segue a tabela oficial: R$ 35,00 ate 8 km, mais R$ 2,50 por quilometro adicional. Para referencia de orcamento, considere 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Ha 15 minutos de espera inclusos; o excedente custa R$ 0,60 o minuto. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
+      "De segunda a sexta, das 8h as 18h, os circuitos tem horarios combinados e janelas restritas; cada rota recebe exemplo de orcamento proprio com limites declarados. A cotacao considera a quilometragem real percorrida e a tolerancia combinada para o atendimento em balcao ou portaria. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
       "Na escolha, considere o perfil ideal: e indicado para comercios, redes com filiais e prestadores que movem documentos financeiros e numerario operacional declarado. Por outro lado, nao e o formato certo para transporte de alto numerario ou escolta armada. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Toda operacao recorrente tem contrato com escopo, limites e procedimentos de contingencia assinados. Comercios do Centro que movimentam o caixa entre loja e banco usam o circuito diario para zerar o caixa com seguranca.",
     ],
 
@@ -1179,7 +1179,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "plantão de 4h ou diária",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Vila Augusta",
       "Jardim Maia",
@@ -1190,7 +1190,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Um buffet da Vila Augusta recebe trezentos convidados no sabado e teme faltar brindes e material do cerimonial. antes do evento alinhamos checklist, enderecos de fornecedores e janelas criticas; no dia, o piloto fica posicionado proximo ao local com canal direto com o cerimonialista; cada saida e registrada; no pos-evento ha devolucao a fornecedores e relatorio de sobras e achados. A rota usa O plantao cobre buffets da Vila Augusta e do Jardim Maia, chacaras do Cabucu e do Recreio Sao Jorge, formaturas no Centro e feiras em Cumbica.",
       "Nos limites do servico, funciona assim: estao incluidos plantao dedicado, checklist previo, reposicao silenciosa e pos-evento com devolucoes. Ja ficam de fora organizacao do evento, montagem de estruturas e servico de garcom.",
-      "O plantao e contratado por periodo dentro da disponibilidade, com alinhamento previo; deslocamentos curtos entram no periodo e excedentes seguem exemplo de orcamento fechado antes do evento. Transparencia de valores: a base e R$ 35,00 para trajetos de ate 8 km, acrescida de R$ 2,50 por km que passar desse limite. Exemplos praticos de orcamento ficam assim: 5 km equivale a R$ 35,00; 10 km a R$ 40,00; 15 km a R$ 52,50; 20 km a R$ 65,00. Incluimos 15 minutos de espera; depois disso, cada minuto sai R$ 0,60. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
+      "O plantao e contratado por periodo dentro da disponibilidade, com alinhamento previo; deslocamentos curtos entram no periodo e excedentes seguem exemplo de orcamento fechado antes do evento. A cotacao prioriza transparencia: o valor e orcado pelo trajeto viario real e informado antes do deslocamento. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para buffets, cerimonialistas, formaturas, feiras corporativas e casamentos. Por outro lado, nao e o formato certo para eventos que exigem equipe fixa de producao em vez de apoio logistico sob demanda. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Depois do evento, o piloto ainda recolhe sobras, devolve materiais a fornecedores e destina achados e perdidos.",
     ],
 
@@ -1231,11 +1231,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Qual o valor do serviço de busca?",
-        a: "Seguimos a tabela real Moto11: 0–8 km por R$ 35,00 fixos, +R$ 2,50 por km extra, com 15 min de tolerância de espera (+R$ 0,60/min após). Compras com múltiplas paradas recebem orçamento fechado por roteiro antes da execução.",
+        a: "A cotação considera o trajeto real e o tempo de atendimento. Compras ou coletas com múltiplas paradas recebem orçamento fechado por roteiro antes da execução.",
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Jardim Maia",
       "Vila Galvão",
@@ -1246,7 +1246,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma senhora do Jardim Maia precisa do remedio controlado da farmacia e das copias da grafica sem sair de casa. voce manda a lista pelo WhatsApp com referencias; combinamos pagamento antecipado por Pix ou provisao; o piloto executa com foto antes de fechar gasto; cada compra volta com nota ou cupom fotografado e troco documentado. A rota usa As saidas atendem Jardim Maia, Vila Galvao, Parque Cecap, Vila Augusta e Ponte Grande, passando por farmacias, cartorios, graficas e mercados do entorno.",
       "Sobre limites, vale o recorte honesto: estao incluidos farmacia, cartorio, grafica, mercado e fornecedores, com prestacao de contas rigorosa e apoio a idosos. Ja ficam de fora compras sem autorizacao de pagamento, retirada de controlados sem receita valida e servicos que exijam presenca do titular.",
-      "De segunda a sexta, das 8h as 18h, cada saida simples recebe exemplo de orcamento proprio; multiplas paradas viram roteiro fechado e a espera em filas segue a tolerancia de 15 minutos. Sem taxa surpresa: cobramos R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra. Um exemplo de conta ajuda a planejar: 5 km custa R$ 35,00, 10 km custa R$ 40,00, 15 km custa R$ 52,50 e 20 km custa R$ 65,00. Voce tem 15 minutos de espera sem custo, e o minuto adicional sai R$ 0,60. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, cada saida simples recebe exemplo de orcamento proprio; multiplas paradas viram roteiro fechado e a espera em filas segue a tolerancia de 15 minutos. Sem taxa surpresa: o valor e orcado com base na rota exata e informado antes do chamado ser confirmado. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
       "Para decidir se e para voce: e indicado para residencias, idosos, pessoas com mobilidade reduzida e empresas com compras operacionais. Por outro lado, nao e o formato certo para listas de atacado volumosas que exigem carro. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Para itens controlados, como medicamentos tarjados, a retirada segue a exigencia de receita em ordem. Cada compra gera nota ou cupom fiscal fotografado e devolvido junto com o troco documentado, sem arredondamentos.",
     ],
 
@@ -1302,7 +1302,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Uma rede varejista com oito lojas espalhadas pelos bairros precisa de malha diaria com SLA em vez de dez chamados avulsos. mapeamos pontos, volumes e horarios criticos; desenhamos rotas fixas com janelas e penalidades de desempenho; pilotos dedicados assumem com postura de equipe propria; indicadores semanais mostram pontualidade, tentativas e tempo por parada; ajustes entram com dados. A rota usa A malha tipica conecta Cumbica, Cidade Industrial Satelite, Centro, Bonsucesso e Jardim Presidente Dutra, com ramificacoes ao Pimentas e ao Aeroporto.",
       "Quanto ao escopo, o combinado e claro: estao incluidos projeto logistico, pilotos dedicados, indicadores semanais e escalabilidade para picos como Black Friday. Ja ficam de fora frota propria dedicada com veiculo da contratante e armazenagem.",
-      "A operacao roda de segunda a sexta, das 8h as 18h, sob SLA contratado por rota; extras fora do escopo seguem tabela pre-aprovada tratada como exemplo de orcamento. A conta e direta e sempre apresentada antes da saida: R$ 35,00 ate 8 km, mais R$ 2,50 por km excedente. Como exemplos de orcamento, um trajeto de 5 km fica R$ 35,00, um de 10 km fica R$ 40,00, um de 15 km fica R$ 52,50 e um de 20 km fica R$ 65,00. A tolerancia de espera e de 15 minutos, com adicional de R$ 0,60 por minuto apos esse marco. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
+      "A operacao roda de segunda a sexta, das 8h as 18h, sob SLA contratado por rota; extras fora do escopo seguem tabela pre-aprovada tratada como exemplo de orcamento. A cotacao e direta e sempre apresentada antes da saida, calculada pela quilometragem da rota de moto com tolerancia combinada. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
       "Na escolha, considere o perfil ideal: e indicado para distribuidoras, redes varejistas, industrias com entregas tecnicas e e-commerces com promessa de mesmo dia. Por outro lado, nao e o formato certo para operacoes com menos de dez entregas diarias, melhor atendidas pela programada. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Relatorios semanais mostram onde a operacao ganha ou perde, e ajustes de rota sao propostos com dados.",
     ],
 
@@ -1343,11 +1343,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Qual o custo por pedido no same day?",
-        a: "O preço por parada em roteiros com múltiplos pedidos na mesma zona cai conforme o volume mensal. Pedidos avulsos fora de roteiro seguem a tabela real Moto11 (0–8 km por R$ 35,00 fixos, +R$ 2,50 por km extra).",
+        a: "O preço por parada em roteiros com múltiplos pedidos na mesma zona cai conforme o volume mensal. Pedidos avulsos fora de roteiro recebem cotação específica por rota antes da saída.",
       },
     ],
     tempoMedio: "entrega no mesmo dia",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Vila Augusta",
@@ -1358,7 +1358,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Uma loja de Instagram no Centro vendeu vinte pedidos ate as 13h e prometeu entrega ainda hoje. coletamos no estoque em janela fixa; separamos por zona; rodamos a ordem otimizada; o cliente final recebe previsao e confirma com foto; pedidos apos o cutoff entram na primeira rota do dia seguinte com prioridade. A rota usa Os roteiros por zona cobrem Centro, Vila Augusta, Pimentas, Bonsucesso e os residenciais densos, com cutoff padrao as 14h e coletas as 10h e as 14h.",
       "Nos limites do servico, funciona assim: estao incluidos cutoff estendido, roteirizacao por zona, comunicacao ao cliente final e escala elastica em campanhas. Ja ficam de fora garantia de janela exata minuto a minuto e operacao fora da area de cobertura sem acordo previo.",
-      "De segunda a sexta, das 8h as 18h, o padrao entrega ate as 20h com rota noturna dedicada sob acordo; cada roteiro recebe exemplo de orcamento por parada com faixas por volume. Para planejar o custo, use a regra verdadeira: R$ 35,00 cobre ate 8 km; cada quilometro a mais soma R$ 2,50. Na pratica do orcamento, isso significa R$ 35,00 aos 5 km, R$ 40,00 aos 10 km, R$ 52,50 aos 15 km e R$ 65,00 aos 20 km. A espera inclui 15 minutos de cortesia e cobra R$ 0,60 por minuto seguinte. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, o padrao entrega ate as 20h com rota noturna dedicada sob acordo; cada roteiro recebe exemplo de orcamento por parada com faixas por volume. Para planejar o chamado, envie os pontos de coleta e entrega: a cotacao e montada na hora conforme a rota viaria real e o tipo de item. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para e-commerces, lojas de Instagram e varejistas com venda ate o inicio da tarde. Por outro lado, nao e o formato certo para pedidos unitarios isolados fora de roteiro, que seguem a tabela do expresso. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Quando um pedido estoura o cutoff, ele entra na janela do dia seguinte com prioridade de primeira rota.",
     ],
 
@@ -1399,11 +1399,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Como é cobrado o serviço para escritórios?",
-        a: "Por diligência avulsa com preço pela tabela real Moto11 (0–8 km por R$ 35,00 fixos, +R$ 2,50 por km extra), ou por pacote mensal para bancas com demanda recorrente. Pacotes incluem piloto habitual e relatório consolidado para faturamento.",
+        a: "Por diligência avulsa com cotação sob consulta por rota, ou por pacote mensal para bancas com demanda recorrente. Pacotes incluem piloto habitual e relatório consolidado para faturamento.",
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Vila Augusta",
@@ -1414,7 +1414,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma banca do Centro tem contestacao com prazo fatal e audiencia simultanea, sem ninguem para ir ao Forum. voce envia a peca com checklist; conferimos paginas, assinaturas e anexos; protocolamos no cartorio competente verificando carimbo e data; enviamos foto na hora; devolvemos a via fisica no mesmo dia com relatorio por diligencia. A rota usa As diligencias concentram-se no Forum de Guarulhos, na Salgado Filho, na Vila Augusta e nos cartorios centrais, com extensao a Barra Funda, Joao Mendes e comarcas vizinhas.",
       "Sobre limites, vale o recorte honesto: estao incluidos protocolo fisico, distribuicao, copias de autos, diligencias externas e sigilo profissional absoluto. Ja ficam de fora consultoria juridica, elaboracao de pecas e atos privativos de advogado.",
-      "De segunda a sexta, das 8h as 18h, peticoes urgentes recebem saida imediata em rota direta; diligencias externas sao orcadas por roteiro como exemplo de orcamento com prazo combinado. Pela tabela real Moto11, o calculo e R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra acima disso. Como exemplo de orcamento: 5 km sai R$ 35,00; 10 km sai R$ 40,00; 15 km sai R$ 52,50; 20 km sai R$ 65,00. A espera tem 15 minutos de tolerancia e, apos esse periodo, R$ 0,60 por minuto. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
+      "De segunda a sexta, das 8h as 18h, peticoes urgentes recebem saida imediata em rota direta; diligencias externas sao orcadas por roteiro como exemplo de orcamento com prazo combinado. A cotacao e calculada pela rota viaria real de moto, considerando a distancia, o tipo de volume e a tolerancia de espera acordada. Destinos com coleta ou entrega em cartorios, shopping ou aeroporto recebem cotacao a parte, e o atendimento ocorre de segunda a sexta, das 8h as 18h. O valor fechado chega pelo WhatsApp (11) 95724-8425 antes da coleta.",
       "Para decidir se e para voce: e indicado para bancas, departamentos juridicos e correspondentes com diligencia diaria. Por outro lado, nao e o formato certo para pessoas fisicas sem peca preparada que precisem de orientacao processual. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Cada diligencia gera relatorio proprio, pronto para anexar a prestacao de contas e a cobranca de honorarios.",
     ],
 
@@ -1459,7 +1459,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Taboão",
@@ -1470,7 +1470,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Uma banca contabil do Taboao tem quarenta clientes para buscar documentos antes dos vencimentos dos dias 10 e 20. montamos roteiro por regiao com checklist por cliente e competencia; o piloto habitual confere notas e extratos na retirada; sinaliza faltas na hora; entrega guias e contratos com protocolo; o relatorio diario chega organizado para baixa no sistema. A rota usa O giro cobre Centro, Taboao, Vila Augusta, Sao Joao e Vila Rio, intensificando nos dias 5, 10, 15 e 20 com segundo piloto de reforco.",
       "Quanto ao escopo, o combinado e claro: estao incluidos busca programada, entrega de guias e DARFs, piloto habitual e reforco em pico de vencimento. Ja ficam de fora escrituracao contabil, calculo de tributos e responsabilidade tecnica pelos numeros.",
-      "De segunda a sexta, das 8h as 18h, vencimentos do dia recebem prioridade de prazo fatal em rota direta; cada ciclo recebe exemplo de orcamento com janelas e reforco dimensionado. O preco segue a tabela oficial: R$ 35,00 ate 8 km, mais R$ 2,50 por quilometro adicional. Para referencia de orcamento, considere 5 km por R$ 35,00, 10 km por R$ 40,00, 15 km por R$ 52,50 e 20 km por R$ 65,00. Ha 15 minutos de espera inclusos; o excedente custa R$ 0,60 o minuto. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
+      "De segunda a sexta, das 8h as 18h, vencimentos do dia recebem prioridade de prazo fatal em rota direta; cada ciclo recebe exemplo de orcamento com janelas e reforco dimensionado. A cotacao considera a quilometragem real percorrida e a tolerancia combinada para o atendimento em balcao ou portaria. Rotas envolvendo cartorio, shopping ou aeroporto pedem cotacao especifica. Operamos de segunda a sexta, das 8h as 18h, com confirmacao de valor no WhatsApp (11) 95724-8425 antes de qualquer deslocamento.",
       "Na escolha, considere o perfil ideal: e indicado para bancas contabeis, BPOs financeiros e empresas com fechamento mensal pesado. Por outro lado, nao e o formato certo para rotinas sem vencimento critico, que funcionam no avulso simples. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. No fechamento do mes, o reforco com segundo piloto impede que qualquer guia venca por falta de braco na rua.",
     ],
 
@@ -1515,7 +1515,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Vila Galvão",
@@ -1526,7 +1526,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Um hospital da Vila Galvao precisa enviar amostras ao laboratorio externo e buscar um medicamento da farmacia central na mesma manha. alinhamos escopo, horarios e pontos designados como farmacia, laboratorio e SAME; pilotos com EPI retiram com protocolo; transportam em compartimentos separados; entregam direto ao responsavel tecnico; cada etapa gera registro para auditoria e acreditacao. A rota usa Os circuitos atendem unidades do Centro, Vila Galvao, Pimentas, Bonsucesso e Parque Cecap, ligando hospital a laboratorios, farmacias e operadoras.",
       "Nos limites do servico, funciona assim: estao incluidos biosseguranca, bolsas termicas, circuitos programados, plantao para intercorrencias e rastreabilidade completa. Ja ficam de fora circulacao em areas restritas alem do ponto autorizado e transporte sem autorizacao da farmacia hospitalar.",
-      "Os circuitos diurnos rodam de segunda a sexta, das 8h as 18h, sob contrato com indicadores; intercorrencias noturnas seguem canal prioritario do hospital conveniado com exemplo de orcamento proprio. Transparencia de valores: a base e R$ 35,00 para trajetos de ate 8 km, acrescida de R$ 2,50 por km que passar desse limite. Exemplos praticos de orcamento ficam assim: 5 km equivale a R$ 35,00; 10 km a R$ 40,00; 15 km a R$ 52,50; 20 km a R$ 65,00. Incluimos 15 minutos de espera; depois disso, cada minuto sai R$ 0,60. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
+      "Os circuitos diurnos rodam de segunda a sexta, das 8h as 18h, sob contrato com indicadores; intercorrencias noturnas seguem canal prioritario do hospital conveniado com exemplo de orcamento proprio. A cotacao prioriza transparencia: o valor e orcado pelo trajeto viario real e informado antes do deslocamento. Casos de cartorios, shoppings e aeroporto sao cotados separadamente. Nosso horario e segunda a sexta, das 8h as 18h, e cada proposta e fechada pelo WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para hospitais, prontos-atendimentos, laboratorios hospitalares e operadoras com demanda continua. Por outro lado, nao e o formato certo para remocoes de pacientes e transporte de equipamentos de grande porte. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Cada transporte gera registro com horarios e recebedor, compondo a rastreabilidade que as auditorias hospitalares exigem. Para hospitais com demanda continua, ha circuitos programados ao longo do dia e plantao para intercorrencias pelo canal prioritario.",
     ],
 
@@ -1582,7 +1582,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Na pratica, o atendimento segue um roteiro fechado: Uma imobiliaria do Pimentas precisa da segunda via de uma certidao de onus para liberar financiamento ainda nesta semana. voce informa o ato e os dados da busca; confirmamos exigencias de procuracao e documentos; provisionamos emolumentos por Pix; apresentamos o pedido; aguardamos a lavratura; conferimos nomes, datas e averbacoes; devolvemos recibo oficial e protocolo. A rota usa A cobertura alcanca tabelionatos e registros do Centro, Vila Augusta, Pimentas, Bonsucesso e Sao Joao, alem de notas e protestos movimentados.",
       "Sobre limites, vale o recorte honesto: estao incluidos segundas vias, autenticacoes, reconhecimentos, consultas de protesto e acompanhamento de pendencias. Ja ficam de fora atos personalissimos sem presenca das partes e promessa de prazo de serventia, que varia de 1 a 5 dias uteis ou semanas.",
-      "De segunda a sexta, das 8h as 18h, cada ida recebe exemplo de orcamento com tolerancia de espera; por envolver cartorio, a missao recebe cotacao a parte e o recibo de emolumentos volta documentado. Sem taxa surpresa: cobramos R$ 35,00 fixos ate 8 km e R$ 2,50 por km extra. Um exemplo de conta ajuda a planejar: 5 km custa R$ 35,00, 10 km custa R$ 40,00, 15 km custa R$ 52,50 e 20 km custa R$ 65,00. Voce tem 15 minutos de espera sem custo, e o minuto adicional sai R$ 0,60. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, cada ida recebe exemplo de orcamento com tolerancia de espera; por envolver cartorio, a missao recebe cotacao a parte e o recibo de emolumentos volta documentado. Sem taxa surpresa: o valor e orcado com base na rota exata e informado antes do chamado ser confirmado. Entregas ou coletas em cartorios, shopping e aeroporto seguem cotacao a parte. Atendemos segunda a sexta, das 8h as 18h, e o orcamento fechado e enviado ao WhatsApp (11) 95724-8425.",
       "Para decidir se e para voce: e indicado para advocacias, imobiliarias, despachantes e pessoas fisicas sem tempo de faltar ao trabalho. Por outro lado, nao e o formato certo para quem precisa do documento na hora quando a serventia exige dias de lavratura. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Escritorios de advocacia, imobiliarias e despachantes usam o servico diariamente para vencer a fila do balcao.",
     ],
 
@@ -1627,7 +1627,7 @@ export const SERVICES: Service[] = [
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Centro de Guarulhos",
       "Paraventi",
@@ -1638,7 +1638,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "O funcionamento e simples e rastreavel: Um correspondente na capital tem recurso volumoso para distribuir na comarca de Guarulhos com protocolo ainda hoje. conferimos paginas, assinaturas e anexos contra seu checklist; organizamos vias por destinatario; protocolamos verificando carimbo, data e numeracao; fotografamos na hora; devolvemos a via no mesmo dia e arquivamos digitalmente para prova de tempestividade. A rota usa O eixo liga bancas do Centro e da Vila Augusta ao Forum, com distribuicao a Paraventi, Santa Mena, Itapegica e, quando preciso, a comarcas vizinhas e a capital.",
       "Quanto ao escopo, o combinado e claro: estao incluidos protocolo, distribuicao, copias, memoriais em gabinetes quando permitido e arquivo digital dos protocolos. Ja ficam de fora redacao da peca, calculo de custas e sustentacao oral.",
-      "De segunda a sexta, das 8h as 18h, pecas urgentes saem em rota direta; distribuicoes externas seguem exemplo de orcamento por roteiro com prazo combinado. A conta e direta e sempre apresentada antes da saida: R$ 35,00 ate 8 km, mais R$ 2,50 por km excedente. Como exemplos de orcamento, um trajeto de 5 km fica R$ 35,00, um de 10 km fica R$ 40,00, um de 15 km fica R$ 52,50 e um de 20 km fica R$ 65,00. A tolerancia de espera e de 15 minutos, com adicional de R$ 0,60 por minuto apos esse marco. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, pecas urgentes saem em rota direta; distribuicoes externas seguem exemplo de orcamento por roteiro com prazo combinado. A cotacao e direta e sempre apresentada antes da saida, calculada pela quilometragem da rota de moto com tolerancia combinada. Missoes em cartorios, shoppings ou no aeroporto recebem cotacao propria. Funcionamos de segunda a sexta, das 8h as 18h, pelo WhatsApp (11) 95724-8425.",
       "Na escolha, considere o perfil ideal: e indicado para bancas, correspondentes e departamentos juridicos com prazo fatal. Por outro lado, nao e o formato certo para diligencias sem peca pronta ou sem checklist de conferencia. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. O advogado acompanha tudo sem sair da audiencia, enquanto a rua anda com atualizacoes de cada etapa. Para recursos e pecas volumosas, a operacao organiza encadernacao e separacao de vias por destinatario antes da saida.",
     ],
 
@@ -1679,11 +1679,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Quanto custa o transporte de exames?",
-        a: "Seguimos a tabela real Moto11: 0–8 km por R$ 35,00 fixos, +R$ 2,50 por km extra, com 15 min de tolerância de espera (+R$ 0,60/min após). Circuitos recorrentes para clínicas recebem proposta por volume.",
+        a: "Avaliamos o roteiro com tolerância combinada antecipadamente. Circuitos recorrentes para clínicas recebem proposta por volume.",
       },
     ],
     tempoMedio: "prazo informado no orçamento em horário comercial",
-    precoBase: "a partir de R$ 35,00 (0–8 km) — cotação por distância",
+    precoBase: "cotação sob consulta por rota",
     areasAtendidas: [
       "Jardim Maia",
       "Vila Galvão",
@@ -1694,7 +1694,7 @@ export const SERVICES: Service[] = [
     detalhes: [
       "Cada chamado obedece a mesma sequencia testada: Uma paciente do Parque Cecap tem cirurgia marcada e o pre-operatorio precisa chegar ao laboratorio antes do meio-dia. agendamos a coleta com pedido medico e orientacoes de preparo; retiramos no horario com atendimento cordial; acondicionamos em bolsa termica quando sensivel; levamos em rota direta com horarios registrados; buscamos o resultado e entregamos antes da consulta. A rota usa As coletas atendem domicilios do Jardim Maia, Vila Galvao e Parque Cecap, clinicas da Vila Augusta e do Centro e hospitais de toda a cidade.",
       "Nos limites do servico, funciona assim: estao incluidos coleta domiciliar, cadeia do frio, busca de resultados e comunicacao clara com a familia. Ja ficam de fora coleta biologica invasiva, interpretacao de laudo e orientacao clinica.",
-      "De segunda a sexta, das 8h as 18h, exames com janela critica recebem piloto dedicado; cada transporte recebe exemplo de orcamento por distancia e urgencia, e circuitos para clinicas tem tabela por volume. Para planejar o custo, use a regra verdadeira: R$ 35,00 cobre ate 8 km; cada quilometro a mais soma R$ 2,50. Na pratica do orcamento, isso significa R$ 35,00 aos 5 km, R$ 40,00 aos 10 km, R$ 52,50 aos 15 km e R$ 65,00 aos 20 km. A espera inclui 15 minutos de cortesia e cobra R$ 0,60 por minuto seguinte. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
+      "De segunda a sexta, das 8h as 18h, exames com janela critica recebem piloto dedicado; cada transporte recebe exemplo de orcamento por distancia e urgencia, e circuitos para clinicas tem tabela por volume. Para planejar o chamado, envie os pontos de coleta e entrega: a cotacao e montada na hora conforme a rota viaria real e o tipo de item. Servicos com cartorio, shopping ou aeroporto sao orcados caso a caso. O expediente e segunda a sexta, das 8h as 18h, e o fechamento acontece no WhatsApp (11) 95724-8425.",
       "O servico vale a pena quando: e indicado para pacientes, idosos, clinicas e consultorios com ciclo exame-resultado. Por outro lado, nao e o formato certo para amostras que exijam veiculo climatizado dedicado. Para pedir, envie origem, destino, descricao do material e prazo-limite real pelo WhatsApp (11) 95724-8425, em horario comercial de segunda a sexta, das 8h as 18h, e receba o valor fechado com a previsao antes de confirmar. Idosos e pacientes com mobilidade reduzida contam com coleta domiciliar agendada e comunicacao clara com a familia.",
     ],
 

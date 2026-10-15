@@ -43,6 +43,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  overflow-x: clip;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 h1,
@@ -70,23 +72,23 @@ li {
 }
 
 :where(a, button, input, textarea, select, summary):focus-visible {
-  outline: 3px solid #fff;
+  outline: 2px solid var(--primary-600);
   outline-offset: 3px;
-  box-shadow: 0 0 0 6px var(--brand-950);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-600) 25%, transparent);
 }
 
 @keyframes quote-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 color-mix(in srgb, var(--success) 35%, transparent);
+    transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 0 7px color-mix(in srgb, var(--success) 0%, transparent);
+    transform: scale(1.02);
   }
 }
 
 .quote-cta {
-  animation: quote-pulse 2.4s ease-out infinite;
+  animation: quote-pulse 3s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

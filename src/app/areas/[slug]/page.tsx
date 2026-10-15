@@ -54,12 +54,12 @@ export default async function AreaPage({
         title={<>Motoboy em {area.nome}, Guarulhos</>}
         description={<>Solicite uma cotação informando o endereço completo em {area.nome}, a outra ponta da rota, o item e o prazo desejado. A disponibilidade e a previsão são confirmadas no atendimento, sem tempo genérico por bairro.</>}
       >
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link href="/" className="hover:text-brand-950">Início</Link>
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
+          <Link href="/" className="hover:text-white transition-colors">Início</Link>
           <span aria-hidden="true"> / </span>
-          <Link href="/areas-atendidas" className="hover:text-brand-950">Áreas atendidas</Link>
+          <Link href="/areas-atendidas" className="hover:text-white transition-colors">Áreas atendidas</Link>
           <span aria-hidden="true"> / </span>
-          <span aria-current="page">{area.nome}</span>
+          <span aria-current="page" className="text-white font-medium">{area.nome}</span>
         </nav>
       </PageHero>
 

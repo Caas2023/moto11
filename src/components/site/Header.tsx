@@ -8,10 +8,11 @@ import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { cn } from "@/lib/utils";
 import { PHONE_DISPLAY, PHONE_TEL_LINK, PHONE_WA } from "@/lib/seo";
 
-const QUOTE_MESSAGE = "Olá! Quero calcular uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar) / Horário desejado: (informar).";
+const QUOTE_MESSAGE = "Olá! Gostaria de cotar uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar). Poderia me passar o valor e a previsão?";
 
 const NAV = [
   { label: "Início", href: "/" },
+  { label: "Cotação e Preços", href: "/precos" },
   { label: "Serviços", href: "/servicos" },
   { label: "Áreas atendidas", href: "/areas-atendidas" },
   { label: "Sobre", href: "/sobre-nos" },
@@ -33,7 +34,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-               className="rounded-full px-3 py-2 text-sm font-semibold text-brand-900 transition-colors hover:bg-surface-warm hover:text-primary-700"
+              className="inline-flex min-h-11 items-center rounded-full px-3 text-sm font-semibold text-brand-900 transition-colors hover:bg-surface-warm hover:text-primary-700"
             >
               {item.label}
             </Link>
@@ -54,7 +55,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="quote-cta inline-flex h-11 items-center gap-2 rounded-full bg-success px-5 text-sm font-bold text-white transition-colors hover:bg-brand-900"
           >
-            <WhatsAppIcon className="h-4 w-4" /> Calcular orçamento
+            <WhatsAppIcon className="h-4 w-4" /> Pedir cotação
           </a>
         </div>
 
@@ -95,7 +96,7 @@ export function Header() {
               rel="noopener noreferrer"
                className="quote-cta inline-flex h-11 items-center justify-center rounded-full bg-success text-sm font-bold text-white"
             >
-              <><WhatsAppIcon className="h-5 w-5" /> Calcular orçamento no WhatsApp</>
+              <><WhatsAppIcon className="h-5 w-5" /> Pedir cotação no WhatsApp</>
             </a>
           </div>
         </nav>

@@ -81,9 +81,9 @@ export default function OrcamentoForm({ service }: Props) {
       </div>
       <button
         type="submit"
-        className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:w-auto"
+        className="quote-cta mt-5 inline-flex w-full items-center justify-center rounded-full bg-success px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-900 sm:w-auto"
       >
-        Enviar orçamento pelo WhatsApp
+        Pedir cotação pelo WhatsApp
       </button>
       <p className="mt-3 text-xs text-zinc-500">
         Tempo médio: {service.tempoMedio} · {service.precoBase}. Sem

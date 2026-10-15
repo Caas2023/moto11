@@ -24,16 +24,16 @@ export default function Page() {
           Os serviços da Moto11 operam exclusivamente de segunda a sexta-feira, das 08h00 às 18h00, em dias úteis. A Moto11 não realiza atendimento noturno, de madrugada, aos sábados, domingos ou em feriados municipais, estaduais e nacionais. Solicitações encaminhadas fora do horário comercial são registradas e respondidas a partir do primeiro dia útil subsequente.
         </p>
 
-        <h2 className="font-display text-2xl font-bold text-brand-950">3. Precificação, Cobrança e Espera</h2>
+        <h2 className="font-display text-2xl font-bold text-brand-950">3. Precificação, Cotação e Espera</h2>
         <p>
-          Os valores dos fretes são calculados estritamente com base na quilometragem real percorrida na rota, de acordo com a tabela oficial Moto11:
+          Os valores dos fretes são orçados de forma transparente com base na rota viária percorrida, tipo de volume e condições de atendimento:
         </p>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Tarifa básica:</strong> R$ 35,00 fixos para trajetos de até 8 (oito) quilômetros.</li>
-          <li><strong>Quilômetro excedente:</strong> R$ 2,50 por quilômetro adicional que ultrapassar a faixa inicial de 8 km.</li>
-          <li><strong>Franquia de espera:</strong> Concedemos uma tolerância de cortesia de até 15 (quinze) minutos no ponto de coleta ou de entrega para localização de responsáveis, liberação em portarias ou conferência simples.</li>
-          <li><strong>Tempo adicional de espera:</strong> Excedida a tolerância de 15 minutos, é cobrado o adicional de R$ 0,60 por minuto de espera, sempre mediante comunicação e autorização prévia do contratante pelo WhatsApp.</li>
-          <li><strong>Destinos com cotação especial:</strong> Rotas com paradas em cartórios, fóruns judiciais, shoppings e no Terminal de Cargas ou terminais de passageiros do Aeroporto Internacional de Guarulhos (GRU) recebem cotação específica antes da saída em razão de filas e taxas de estacionamento.</li>
+          <li><strong>Cotação prévia obrigatória:</strong> O valor final do serviço é sempre informado e acordado previamente com o contratante pelo WhatsApp antes do deslocamento do piloto.</li>
+          <li><strong>Critério de distância:</strong> A rota é calculada com base no trajeto viário real de moto entre os pontos de coleta e entrega, sem cobrança de taxas dinâmicas não combinadas.</li>
+          <li><strong>Franquia de espera:</strong> É concedida tolerância de cortesia para localização de responsáveis, liberação em portarias ou conferência simples no local.</li>
+          <li><strong>Tempo adicional de espera:</strong> Em casos de retenção prolongada além da franquia, eventuais adicionais são comunicados e aprovados previamente junto ao contratante pelo canal de atendimento.</li>
+          <li><strong>Destinos com cotação especial:</strong> Rotas com paradas em cartórios, fóruns judiciais, shoppings e no Terminal de Cargas ou terminais de passageiros do Aeroporto Internacional de Guarulhos (GRU) recebem cotação específica antes da saída em razão de filas e procedimentos de acesso.</li>
         </ul>
 
         <h2 className="font-display text-2xl font-bold text-brand-950">4. Itens Permitidos e Limitações de Carga</h2>

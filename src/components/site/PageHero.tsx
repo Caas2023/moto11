@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 
 type PageHeroProps = {
   eyebrow?: string;
@@ -10,11 +11,14 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, description, children, compact = false }: PageHeroProps) {
   return (
-    <header className="relative left-1/2 isolate w-screen -translate-x-1/2 overflow-hidden bg-brand-950 text-white">
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 -z-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/hero-moto11.png')" }}
+    <header className="relative isolate w-full overflow-hidden bg-brand-950 text-white">
+      <Image
+        src="/images/hero-moto11.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="pointer-events-none -z-20 object-cover object-center"
       />
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-brand-950/85" />
       <div className={`mx-auto max-w-6xl px-4 sm:px-6 ${compact ? "py-10 sm:py-14" : "py-16 sm:py-24"}`}>

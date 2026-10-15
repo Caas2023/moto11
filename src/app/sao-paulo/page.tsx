@@ -220,7 +220,7 @@ export default function SaoPauloHubPage() {
             className="quote-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-success px-7 py-3 font-bold text-white transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2"
           >
             <WhatsAppIcon className="h-5 w-5" />
-            Calcular orçamento no WhatsApp
+            Pedir cotação no WhatsApp
           </a>
         </div>
       </section>

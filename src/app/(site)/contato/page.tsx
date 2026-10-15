@@ -40,7 +40,7 @@ export default function Page() {
         <div className="rounded-xl border p-5">
           <p className="font-bold">WhatsApp comercial</p>
           <p className="mt-1 text-sm text-muted">Seg–sex, 8h–18h.</p>
-          <a href={`https://wa.me/${SITE.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block font-bold text-emerald-700 underline">{SITE.whatsappDisplay}</a>
+          <a href={`https://wa.me/${SITE.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block font-bold text-success underline">{SITE.whatsappDisplay}</a>
         </div>
         <div className="rounded-xl border p-5">
           <p className="font-bold">Telefone</p>

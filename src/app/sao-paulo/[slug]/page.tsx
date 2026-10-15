@@ -54,12 +54,12 @@ export default async function SaoPauloPage({
         title={<>Motoboy entre Guarulhos e {area.nome}</>}
         description="Envie os endereços completos, o item e o horário desejado. A Moto11 verifica distância, condições e disponibilidade antes de apresentar valor e previsão para a rota."
       >
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link href="/" className="hover:text-brand-950">Início</Link>
+        <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
+          <Link href="/" className="hover:text-white transition-colors">Início</Link>
           <span aria-hidden="true"> / </span>
-          <Link href="/sao-paulo" className="hover:text-brand-950">São Paulo</Link>
+          <Link href="/sao-paulo" className="hover:text-white transition-colors">São Paulo</Link>
           <span aria-hidden="true"> / </span>
-          <span aria-current="page">{area.nome}</span>
+          <span aria-current="page" className="text-white font-medium">{area.nome}</span>
         </nav>
       </PageHero>
 

@@ -1,133 +1,229 @@
 import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/site/Breadcrumb";
-import { WhatsAppCTA } from "@/components/site/whatsapp-cta";
 import { JsonLd } from "@/components/site/json-ld";
-import { SITE } from "@/lib/site";
-import { PRICING, formatBRL, quotePrice, quoteWait } from "@/data/pricing";
 import { PageHero } from "@/components/site/PageHero";
+import { CotacaoForm } from "@/components/site/CotacaoForm";
+import { SITE } from "@/lib/site";
+import { CheckCircle2, Clock3, MapPin, ShieldCheck, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Tabela de Preços de Motoboy em Guarulhos",
+  title: "Cotação e Preços de Motoboy em Guarulhos | Moto11",
   description:
-    "Tabela real de preços de motoboy em Guarulhos: 0–8 km R$ 35,00 fixos, +R$ 2,50/km extra, espera com 15 min de tolerância +R$ 0,60/min. Cartórios, shopping e aeroporto: cotação à parte.",
+    "Cotação rápida e transparente de motoboy em Guarulhos e rotas para São Paulo. Preço justo calculado pela rota real, sem taxas ocultas. Consulte pelo WhatsApp.",
   alternates: { canonical: `${SITE.baseUrl}/precos` },
   openGraph: {
-    title: "Tabela de Preços de Motoboy em Guarulhos",
-    description: "Preço por distância e espera, calculado pela tabela real. Confirme o valor fechado no WhatsApp.",
+    title: "Cotação e Preços de Motoboy em Guarulhos | Moto11",
+    description:
+      "Cotação rápida e transparente de motoboy em Guarulhos. Preço fechado antes da saída sem surpresas no balcão.",
     url: `${SITE.baseUrl}/precos`,
     type: "website",
   },
 };
 
-const ROWS = [
-  { servico: "Entrega de 0 a 8 km (preço fixo)", ref: `${formatBRL(quotePrice(5))} — ex.: 5 km`, obs: "Valor fechado por distância" },
-  { servico: "Entrega de 10 km", ref: formatBRL(quotePrice(10)), obs: `R$ 35,00 + 2 km × ${formatBRL(PRICING.extraPerKm)}` },
-  { servico: "Entrega de 15 km", ref: formatBRL(quotePrice(15)), obs: `R$ 35,00 + 7 km × ${formatBRL(PRICING.extraPerKm)}` },
-  { servico: "Entrega de 20 km", ref: formatBRL(quotePrice(20)), obs: `R$ 35,00 + 12 km × ${formatBRL(PRICING.extraPerKm)}` },
-  { servico: "Tempo de espera", ref: `${PRICING.waitToleranceMin} min de tolerância + ${formatBRL(PRICING.waitPerMin)}/min — ex.: 30 min = ${formatBRL(quoteWait(30))}`, obs: "Avisado antes de continuar aguardando" },
-  { servico: "Cartórios, shopping e aeroporto", ref: "Cotação à parte", obs: "Preço diferente — peça no WhatsApp" },
+const CRITERIOS = [
+  {
+    icon: MapPin,
+    title: "Quilometragem Real por Rota",
+    text: "O valor considera a rota viária real de moto entre os pontos de coleta e entrega, e não uma estimativa imprecisa em linha reta. Isso garante justiça para quem contrata e para o profissional.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Preço Fechado Antes da Saída",
+    text: "Você recebe o valor final acordado pelo WhatsApp antes da moto ligar o motor. Não operamos com tarifas dinâmicas surpresa ou acréscimos arbitrários ao final da corrida.",
+  },
+  {
+    icon: Clock3,
+    title: "Tolerância para Despacho e Espera",
+    text: "Sabemos que portarias, triagens de condomínios e balcões comerciais exigem alguns minutos. O atendimento combina antecipadamente a tolerância necessária para sua operação.",
+  },
+  {
+    icon: CheckCircle2,
+    title: "Missões Especiais sem Pegadinha",
+    text: "Entregas em cartórios com fila de autenticação, docas de shoppings ou Terminal de Cargas do Aeroporto de Guarulhos têm suas particularidades avaliadas na cotação para total previsibilidade.",
+  },
+];
+
+const CHECKLIST = [
+  {
+    step: "1",
+    title: "Endereços Completos",
+    desc: "Informe rua, número e bairro da coleta e da entrega. Se houver número de sala, bloco ou portaria específica, mencione na mensagem.",
+  },
+  {
+    step: "2",
+    title: "Descrição do Volume",
+    desc: "Diga se é envelope de documentos, peças, amostras ou caixas, garantindo acomodação segura no baú vedado de até 20 kg.",
+  },
+  {
+    step: "3",
+    title: "Janela de Horário",
+    desc: "Indique se a entrega é urgente para saída imediata ou se precisa ser programada para um horário específico durante o expediente comercial (8h às 18h).",
+  },
+  {
+    step: "4",
+    title: "Contatos de Origem e Destino",
+    desc: "Ter o nome e telefone de quem entrega e de quem recebe evita desencontros e acelera o protocolo de entrega.",
+  },
 ];
 
 export default function Page() {
   return (
-    <article className="space-y-8">
+    <article className="space-y-12 sm:space-y-16">
       <JsonLd
         data={[
           {
             "@context": "https://schema.org",
-            "@type": "Table",
-            about: "Tabela de preços de motoboy em Guarulhos",
+            "@type": "Service",
+            name: "Cotação de Motoboy em Guarulhos",
+            serviceType: "Serviço de Entrega e Coleta Expressa",
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Moto11",
+              telephone: "+5511957248425",
+              areaServed: ["Guarulhos", "São Paulo"],
+            },
+            description:
+              "Cotação transparente por rota real de motoboy para empresas e particulares em Guarulhos e rotas para São Paulo.",
           },
         ]}
       />
-      <Breadcrumb items={[{ label: "Início", href: "/" }, { label: "Preços" }]} />
-      <PageHero compact eyebrow="Valores e condições" title="Tabela de preços de motoboy em Guarulhos" description={<>Preço por distância e espera, calculado pela tabela real Moto11: 0–8 km por {formatBRL(PRICING.basePrice)} fixos, +{formatBRL(PRICING.extraPerKm)}/km extra, espera com {PRICING.waitToleranceMin} min de tolerância +{formatBRL(PRICING.waitPerMin)}/min. O preço final é sempre confirmado no WhatsApp antes da coleta — sem taxa escondida.</>} />
 
-      <div className="overflow-x-auto rounded-2xl border">
-        <table className="w-full min-w-[640px] text-left text-sm">
-          <caption className="p-4 text-left font-semibold">Tabela real Moto11 — Guarulhos e região (sujeita a confirmação por rota)</caption>
-          <thead className="bg-brand-950 text-white">
-            <tr>
-              <th className="p-3">Serviço</th>
-              <th className="p-3">Valor de referência</th>
-              <th className="p-3">Observação</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ROWS.map((r, i) => (
-              <tr key={r.servico} className={i % 2 ? "bg-surface-warm" : "bg-surface"}>
-                <td className="p-3 font-medium">{r.servico}</td>
-                <td className="p-3">{r.ref}</td>
-                <td className="p-3">{r.obs}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <Breadcrumb items={[{ label: "Início", href: "/" }, { label: "Cotação e Preços" }]} />
 
-      <div className="prose max-w-3xl space-y-5 text-muted">
-        <h2 className="text-2xl font-bold text-brand-950">Como ler a tabela sem errar</h2>
-        <p>
-          Os valores acima saem direto da regra: {formatBRL(PRICING.basePrice)} fixos para
-          trajetos de 0 a {PRICING.baseKm} km e {formatBRL(PRICING.extraPerKm)} por quilômetro
-          extra acima disso. A distância é calculada pela rota real de moto, não em linha reta,
-          e o atendente informa o total fechado antes de deslocar o piloto. Se o seu roteiro tem
-          espera em fila ou volume fora do padrão, o adicional é avisado antecipadamente
-          — confirme o valor final antes de solicitar a entrega.
-        </p>
-        <p>
-          Atendemos solicitações de rotas em Guarulhos e para São Paulo. O atendimento é de segunda a sexta, das 8h às 18h
-          — sem operação de madrugada, à noite, aos fins de semana ou em feriados.
-          Cartórios, shopping e aeroporto têm cotação à parte, com preço informado antes da coleta.
-        </p>
-        <h2 className="text-2xl font-bold text-brand-950">O que confirmar antes de contratar</h2>
-        <p>
-          Envie a descrição do item, os endereços e qualquer necessidade especial de manuseio.
-          Pergunte sobre comprovante, espera e eventual retorno antes de confirmar o pedido.
-          Serviços em cartórios, shopping e aeroporto exigem cotação específica.
-        </p>
-        <h2 className="text-2xl font-bold text-brand-950">Rotas para empresas</h2>
-        <p>
-          Se sua empresa precisa de entregas recorrentes ou várias paradas, envie o roteiro completo
-          para avaliação. A tabela acima serve como referência para rotas simples; valores para
-          operações específicas são informados na cotação.
-        </p>
-        <h2 className="text-2xl font-bold text-brand-950">O que entra no cálculo</h2>
-        <p>
-          A cotação começa pelos endereços completos de coleta e entrega. O atendente precisa saber a distância da rota, o sentido da viagem e se existe alguma etapa além de pegar e deixar o item. Uma entrega ponto a ponto pode seguir a regra de distância publicada; já uma missão com retorno, múltiplas paradas, fila, portaria ou protocolo precisa considerar o tempo e o trabalho adicionais. Essa distinção evita comparar uma corrida simples com uma tarefa que exige permanência no local.
-        </p>
-        <p>
-          Os exemplos da tabela são referências para ajudar no planejamento, não promessa de que toda rota terá o mesmo valor. A quilometragem efetiva, a origem, o destino e as condições especiais precisam ser conferidos. Quando houver diferença entre a expectativa do cliente e a rota real, a equipe explica o motivo antes de seguir. O preço fechado deve ser entendido como a condição confirmada para aquela missão específica, naquele horário e com aquelas informações.
-        </p>
-        <p>
-          Em caso de dúvida, compare primeiro o tipo de tarefa, não apenas o número de quilômetros. Uma corrida curta até um shopping pode exigir estacionamento e espera; uma distância maior entre dois endereços liberados pode ser mais simples de executar. Descrever o cenário completo torna a cotação mais justa e reduz a chance de o cliente escolher uma referência que não corresponde ao serviço solicitado.
-        </p>
-        <h2 className="text-2xl font-bold text-brand-950">Exemplos de pedidos bem descritos</h2>
-        <p>
-          Um pedido objetivo pode dizer: coleta de um envelope lacrado em uma empresa, entrega em outro endereço, destinatário identificado e horário-limite. Se houver necessidade de assinatura, inclua essa etapa. Outro pedido pode envolver uma caixa pequena, com peso e medida aproximados, retirada em loja e entrega em residência. Nessa situação, indique contato do comprador e se o local tem portaria. Exemplos assim ajudam o atendimento a diferenciar uma corrida direta de uma missão com instruções adicionais.
-        </p>
-        <p>
-          Em uma rota empresarial recorrente, descreva os pontos fixos, dias, janelas e quantidade de paradas. Informe se cada parada exige foto, protocolo, assinatura ou retorno. O atendimento pode avaliar o conjunto, mas o preço não deve ser deduzido apenas pelo número de entregas: distância, sequência, espera e acesso influenciam. A cotação deve refletir o roteiro que será executado, não uma média abstrata.
-        </p>
-        <p>
-          Para uma solicitação com prazo sensível, informe o horário máximo e o motivo operacional sem expor dados desnecessários. Isso permite verificar se a rota cabe no expediente e se o trânsito pode comprometer a estimativa. Nenhum preço publicado garante que um deslocamento impossível será realizado; se as condições não forem compatíveis, a equipe precisa explicar antes da confirmação.
-        </p>
-        <p>
-          A tabela também não substitui a conferência do item. Materiais frágeis, perecíveis, volumosos, perigosos ou que exigem acondicionamento específico precisam ser descritos com honestidade. Não esconda dimensões para tentar encaixar um pedido na tarifa mais baixa. A solução correta começa com segurança, compatibilidade e informação suficiente para que o transporte seja avaliado. Quando houver incerteza, pergunte antes de embalar e antes de solicitar o deslocamento. Essa conversa prévia costuma economizar tempo e evita que o piloto descubra uma incompatibilidade somente ao chegar. Também permite orientar a embalagem, o contato no destino e o procedimento adequado antes que a rota seja confirmada.
-        </p>
-        <p>
-          O item também faz parte da avaliação. Informe peso, dimensões aproximadas, embalagem, fragilidade e qualquer restrição de manuseio. O transporte em moto precisa ser seguro para o material, o piloto e as pessoas que recebem. Se a caixa não couber no baú ou exigir equipamento que não foi combinado, o pedido pode precisar de outra solução. A confirmação antes da coleta protege as duas pontas e evita custo inesperado.
-        </p>
-        <p>
-          Para empresas, vale enviar frequência, janela, quantidade de paradas, contatos e horários de doca ou recepção. O preço de uma operação recorrente não deve ser inferido pela multiplicação automática de uma corrida avulsa: o roteiro completo pode mudar quilometragem, espera e organização. A Moto11 retorna com as condições aplicáveis antes do primeiro deslocamento. Essa transparência é mais útil que uma promessa fixa que não considera a operação real.
-        </p>
-      </div>
-
-      <WhatsAppCTA
-        title="Quer o valor exato da sua rota?"
-        subtitle="Envie origem e destino para confirmar o valor e a disponibilidade da rota."
-        message="Olá! Vi a tabela de preços no site e quero o valor fechado da minha rota em Guarulhos."
+      <PageHero
+        compact
+        eyebrow="Transparência e Rapidez"
+        title="Cotação e Preços de Motoboy em Guarulhos"
+        description="Sem taxas ocultas ou tarifas dinâmicas. O valor da entrega é calculado de acordo com o trajeto real e confirmado no WhatsApp antes de deslocar o piloto."
       />
+
+      {/* Formulário de Cotação */}
+      <section aria-labelledby="form-cotacao-title" className="space-y-4">
+        <h2 id="form-cotacao-title" className="sr-only">
+          Formulário de Cotação de Rota
+        </h2>
+        <CotacaoForm />
+      </section>
+
+      {/* Como calculamos */}
+      <section aria-labelledby="como-calculamos" className="space-y-8">
+        <div className="max-w-2xl">
+          <p className="text-xs font-bold uppercase tracking-wider text-primary-700">
+            Critérios Claros
+          </p>
+          <h2 id="como-calculamos" className="mt-2 font-display text-2xl font-bold tracking-tight text-brand-950 sm:text-3xl">
+            Como é calculado o valor da sua entrega
+          </h2>
+          <p className="mt-2.5 text-sm text-muted sm:text-base leading-relaxed">
+            Entenda os fatores levados em conta para apresentar a cotação mais justa e segura para a sua demanda:
+          </p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          {CRITERIOS.map((item) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-line bg-surface p-6 transition-all hover:border-slate-300 hover:shadow-md"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-700">
+                  <Icon className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <h3 className="mt-4 font-display text-lg font-bold text-brand-950">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {item.text}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* O que enviar para cotar */}
+      <section aria-labelledby="checklist-title" className="rounded-2xl bg-surface-warm p-6 sm:p-10 border border-line">
+        <div className="max-w-2xl">
+          <p className="text-xs font-bold uppercase tracking-wider text-primary-700">
+            Agilidade no Atendimento
+          </p>
+          <h2 id="checklist-title" className="mt-2 font-display text-2xl font-bold tracking-tight text-brand-950 sm:text-3xl">
+            O que enviar para receber sua cotação em minutos
+          </h2>
+          <p className="mt-2 text-sm text-muted">
+            Ao chamar no WhatsApp, ter essas 4 informações em mãos agiliza a liberação do seu motoboy:
+          </p>
+        </div>
+
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {CHECKLIST.map((c) => (
+            <div key={c.step} className="rounded-xl bg-surface p-5 border border-line/60">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-950 text-xs font-bold text-white">
+                {c.step}
+              </span>
+              <h3 className="mt-3 font-display text-base font-bold text-brand-950">
+                {c.title}
+              </h3>
+              <p className="mt-1.5 text-xs leading-relaxed text-muted">
+                {c.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Dúvidas sobre faturamento e rotas */}
+      <section aria-labelledby="faq-precos" className="space-y-6">
+        <h2 id="faq-precos" className="font-display text-2xl font-bold text-brand-950">
+          Dúvidas frequentes sobre pagamento e cotação
+        </h2>
+        <div className="space-y-4">
+          <details className="group rounded-xl border border-line bg-surface p-5">
+            <summary className="flex cursor-pointer list-none items-center justify-between font-display text-base font-bold text-brand-950">
+              <span>Quais são as formas de pagamento aceitas?</span>
+              <span className="text-xl text-primary-700 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              Aceitamos Pix e transferência bancária imediata para chamados avulsos. Para empresas com rotas semanais ou mensais recorrentes, oferecemos condições de faturamento mediante cadastro e aprovação prévia.
+            </p>
+          </details>
+
+          <details className="group rounded-xl border border-line bg-surface p-5">
+            <summary className="flex cursor-pointer list-none items-center justify-between font-display text-base font-bold text-brand-950">
+              <span>Como recebo o comprovante da entrega?</span>
+              <span className="text-xl text-primary-700 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              Assim que a missão é concluída, a foto do protocolo assinado com nome legível e documento de quem recebeu é enviada imediatamente no mesmo chat do WhatsApp onde o chamado foi aberto.
+            </p>
+          </details>
+
+          <details className="group rounded-xl border border-line bg-surface p-5">
+            <summary className="flex cursor-pointer list-none items-center justify-between font-display text-base font-bold text-brand-950">
+              <span>Vocês atendem fora do horário comercial?</span>
+              <span className="text-xl text-primary-700 transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              Nosso atendimento opera de segunda a sexta-feira, das 8h às 18h. Não realizamos saídas noturnas, de madrugada ou aos fins de semana. Mensagens enviadas fora do horário comercial são respondidas no início do próximo dia útil.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      {/* Links de apoio */}
+      <div className="flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6 text-sm text-muted">
+        <p>
+          Precisa de rotas contínuas para seu negócio?{" "}
+          <Link href="/servicos" className="font-semibold text-primary-700 hover:underline">
+            Conheça nossos serviços empresariais
+          </Link>
+        </p>
+        <Link href="/areas-atendidas" className="font-semibold text-brand-950 hover:text-primary-700">
+          Ver bairros atendidos em Guarulhos →
+        </Link>
+      </div>
     </article>
   );
 }
