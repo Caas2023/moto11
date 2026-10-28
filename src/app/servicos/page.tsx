@@ -10,6 +10,7 @@ import {
   Store,
 } from "lucide-react";
 import { PHONE_WA, buildMetadata } from "@/lib/seo";
+import { SERVICES } from "@/data/services";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
@@ -95,6 +96,30 @@ export default function ServicesPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line bg-surface py-16 sm:py-20" aria-labelledby="modalidades-title">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 id="modalidades-title" className="font-display text-2xl font-bold text-brand-950 sm:text-3xl">
+            Modalidades e aplicações do serviço
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-8 text-muted">
+            Consulte os detalhes de cada modalidade e confirme com a central a disponibilidade, as condições de transporte e o valor para sua rota.
+          </p>
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {SERVICES.map((service) => (
+              <li key={service.slug}>
+                <Link
+                  href={`/servicos/${service.slug}`}
+                  className="flex min-h-12 items-center justify-between gap-3 rounded-xl border border-line bg-white px-5 py-4 font-semibold text-brand-950 transition-colors hover:border-primary-700 hover:text-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-700 focus-visible:ring-offset-2"
+                >
+                  {service.title}
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

@@ -1,0 +1,1345 @@
+{
+  "pages": [
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/motoboy-expresso",
+      "title": "Motoboy Expresso em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy expresso em Guarulhos com coleta r\u00e1pida, rastreio em tempo real e entrega expressa no Centro, Cumbica, Bonsucesso e toda a cidade, com pre\u00e7o fechado.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/motofrete",
+      "title": "Motofrete em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motofrete em Guarulhos para volumes, caixas e cargas leves com ba\u00fa amplo, nota fiscal, rastreio GPS e coleta programada para empresas e e-commerces locais.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/entrega-documentos",
+      "title": "Entrega de Documentos em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega de documentos em Guarulhos com protocolo assinado, foto comprobat\u00f3ria e sigilo absoluto. Contratos, licita\u00e7\u00f5es e pastas entregues no prazo garantido.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/entrega-encomendas",
+      "title": "Entrega de Encomendas em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega de encomendas em Guarulhos no mesmo dia com rastreio, foto de recebimento e cuidado redobrado. Sua loja entrega r\u00e1pido e fideliza clientes de verdade.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/coleta-entrega",
+      "title": "Coleta e Entrega em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Coleta e entrega em Guarulhos com ida e volta no mesmo chamado. Buscamos, levamos, aguardamos e devolvemos com protocolo, foto e rastreio em tempo real.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/mensageiro",
+      "title": "Mensageiro em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Mensageiro em Guarulhos para bancos, cart\u00f3rios, f\u00f3runs e reparti\u00e7\u00f5es. Profissional uniformizado que resolve sua rua com protocolo, agilidade e relat\u00f3rio.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/transporte-malotes",
+      "title": "Transporte de Malotes em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Transporte de malotes em Guarulhos com malote lacrado, rota fixa e comprova\u00e7\u00e3o. Ideal para bancos, empresas e redes com v\u00e1rias unidades na cidade e regi\u00e3o.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/coleta-transportadoras",
+      "title": "Coleta em Transportadoras em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Coleta em transportadoras em Guarulhos com retirada \u00e1gil na Via Dutra, Cumbica e TECA. Evite filas, respeite cutoffs e receba tudo com romaneio assinado.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/aeroporto-gru",
+      "title": "Motoboy Aeroporto de Guarulhos (GRU) | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy no Aeroporto de Guarulhos com atendimento nos Terminais 1, 2, 3 e TECA. Documentos esquecidos, pe\u00e7as e cargas urgentes com prioridade e rastreio.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/entrega-urgente",
+      "title": "Entrega Urgente em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega urgente em Guarulhos com piloto dedicado e rota direta. Para prazos fatais e itens cr\u00edticos em hor\u00e1rio comercial: acionamento imediato no WhatsApp, seg\u2013sex 8h\u201318h.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/entrega-programada",
+      "title": "Entrega Programada em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega programada em Guarulhos com dia e hora marcados, roteiriza\u00e7\u00e3o inteligente e confirma\u00e7\u00e3o. Rotas fixas semanais para empresas e com\u00e9rcios locais.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/motoboy-escritorios",
+      "title": "Motoboy para Escrit\u00f3rios em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para escrit\u00f3rios em Guarulhos com atendimento recorrente, protocolos organizados e piloto habitual. Sua opera\u00e7\u00e3o de rua resolvida sem contratar CLT.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/motoboy-industrias",
+      "title": "Motoboy para Ind\u00fastrias em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para ind\u00fastrias em Guarulhos com acesso a portarias, retirada de pe\u00e7as e documentos fiscais. Opera\u00e7\u00e3o alinhada ao ritmo da sua f\u00e1brica, sem parar.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/motoboy-clinicas",
+      "title": "Motoboy para Cl\u00ednicas em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para cl\u00ednicas em Guarulhos com transporte sigiloso de guias, exames e materiais entre unidades. Piloto discreto, rota direta e protocolo de entrega.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/motoboy-laboratorios",
+      "title": "Motoboy para Laborat\u00f3rios em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para laborat\u00f3rios em Guarulhos com coleta de amostras, cadeia do frio e prazo cr\u00edtico. Coletas programadas em cl\u00ednicas e hospitais, com biosseguran\u00e7a.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/pecas-automotivas",
+      "title": "Entrega de Pe\u00e7as Automotivas em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega de pe\u00e7as automotivas em Guarulhos com coleta em distribuidoras, confer\u00eancia de c\u00f3digo e chegada r\u00e1pida. Sua oficina n\u00e3o para por falta de pe\u00e7a.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/courier",
+      "title": "Courier em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Courier em Guarulhos com padr\u00e3o executivo: piloto uniformizado, protocolo formal e discri\u00e7\u00e3o total. Para empresas que exigem apresenta\u00e7\u00e3o sempre impec\u00e1vel.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/panfletos",
+      "title": "Distribui\u00e7\u00e3o de Panfletos em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Distribui\u00e7\u00e3o de panfletos em Guarulhos com roteiro planejado, equipe uniformizada e comprova\u00e7\u00e3o fotogr\u00e1fica. Sua campanha chega onde o seu cliente est\u00e1.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/correspondencias",
+      "title": "Entrega de Correspond\u00eancias em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega de correspond\u00eancias em Guarulhos com triagem, roteiriza\u00e7\u00e3o e baixa individual. Boletos, comunicados e cartas entregues com comprova\u00e7\u00e3o individual.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/transporte-valores",
+      "title": "Transporte de Malotes de Valor em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Transporte de malotes de valor em Guarulhos com lacre numerado, rota sigilosa e piloto fixo. Documentos financeiros e numer\u00e1rio operacional declarado.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/motoboy-eventos",
+      "title": "Motoboy para Eventos em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para eventos em Guarulhos com plant\u00e3o dedicado, reposi\u00e7\u00e3o de materiais e emerg\u00eancias. Cerim\u00f4nias, feiras e shows sem nenhum improviso log\u00edstico.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/busca-entrega",
+      "title": "Busca e Entrega em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Busca e entrega em Guarulhos para farm\u00e1cia, cart\u00f3rio, gr\u00e1fica e fornecedores. Pe\u00e7a pelo WhatsApp e receba sem sair de casa, com nota fiscal e troco certo.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/logistica-urbana",
+      "title": "Log\u00edstica Urbana em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Log\u00edstica urbana em Guarulhos para empresas com m\u00faltiplos pontos, janelas e SLAs. Roteiriza\u00e7\u00e3o, pilotos dedicados e indicadores semanais de desempenho.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/same-day",
+      "title": "Entrega Same Day em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega same day em Guarulhos com cutoff estendido, roteiriza\u00e7\u00e3o por bairro e rastreio para o cliente final. Vendeu hoje, seu cliente recebe ainda hoje.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/advogados",
+      "title": "Motoboy para Advogados em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para advogados em Guarulhos com dilig\u00eancias no F\u00f3rum, protocolos e c\u00f3pias. Sigilo profissional, prazo fatal cumprido e protocolo formal com foto.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/contadores",
+      "title": "Motoboy para Contadores em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para contadores em Guarulhos com busca de documentos, guias e contratos assinados. Piloto habitual que conhece sua rotina e o fechamento mensal.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/hospitais",
+      "title": "Motoboy para Hospitais em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para hospitais em Guarulhos com transporte de amostras, documentos e medicamentos. Equipe treinada, biosseguran\u00e7a e circuitos programados em hor\u00e1rio comercial.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/cartorio",
+      "title": "Motoboy para Cart\u00f3rio em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Motoboy para cart\u00f3rio em Guarulhos com retirada de certid\u00f5es, escrituras e autentica\u00e7\u00f5es. Enfrentamos a fila e devolvemos tudo protocolado com recibo.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/pecas-juridicas",
+      "title": "Entrega de Pe\u00e7as Jur\u00eddicas em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Entrega de pe\u00e7as jur\u00eddicas em Guarulhos com protocolo no F\u00f3rum, c\u00f3pias e distribui\u00e7\u00e3o a correspondentes. Prazo fatal cumprido com comprova\u00e7\u00e3o fotogr\u00e1fica.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/servicos/exames-medicos",
+      "title": "Transporte de Exames M\u00e9dicos em Guarulhos | Moto11 | Moto11 Guarulhos",
+      "description": "Transporte de exames m\u00e9dicos em Guarulhos com coleta domiciliar, cadeia do frio e entrega priorit\u00e1ria. Resultado urgente chega a tempo da sua consulta.",
+      "templated": false,
+      "severity": "medium",
+      "cta_phrase": null,
+      "flags": [
+        "description-echoes-title"
+      ],
+      "signals": [
+        {
+          "id": "description_echoes_title",
+          "severity": "medium",
+          "message": "Meta description opens with the exact text of the title, so the SERP snippet says the same thing twice.",
+          "recommendation": "Open the description with information the title does not already carry."
+        }
+      ]
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/cumbica",
+      "title": "Motoboy em Cumbica, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Cumbica, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/centro-guarulhos",
+      "title": "Motoboy em Centro de Guarulhos, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Centro de Guarulhos, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/bonsucesso",
+      "title": "Motoboy em Bonsucesso, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Bonsucesso, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-galvao",
+      "title": "Motoboy em Vila Galv\u00e3o, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila Galv\u00e3o, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/picanco",
+      "title": "Motoboy em Pican\u00e7o, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Pican\u00e7o, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/gopouva",
+      "title": "Motoboy em Gopo\u00fava, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Gopo\u00fava, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/taboao",
+      "title": "Motoboy em Tabo\u00e3o, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Tabo\u00e3o, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/via-dutra",
+      "title": "Motoboy em Via Dutra (eixo Guarulhos), Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Via Dutra (eixo Guarulhos), Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-endres",
+      "title": "Motoboy em Vila Endres, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila Endres, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/macedo",
+      "title": "Motoboy em Macedo, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Macedo, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/parque-novo-mundo",
+      "title": "Motoboy em Parque Novo Mundo, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Parque Novo Mundo, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/bosque-maia",
+      "title": "Motoboy em Bosque Maia, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Bosque Maia, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/morros",
+      "title": "Motoboy em Morros, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Morros, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-bom-clima",
+      "title": "Motoboy em Jardim Bom Clima, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Bom Clima, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-nova-cumbica",
+      "title": "Motoboy em Jardim Nova Cumbica, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Nova Cumbica, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/itapetinga",
+      "title": "Motoboy em Itapetinga, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Itapetinga, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-augusta",
+      "title": "Motoboy em Vila Augusta, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila Augusta, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-vila-galvao",
+      "title": "Motoboy em Jardim Vila Galv\u00e3o, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Vila Galv\u00e3o, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/cidade-soberana",
+      "title": "Motoboy em Cidade Soberana, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Cidade Soberana, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-adriana",
+      "title": "Motoboy em Jardim Adriana, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Adriana, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/presidente-dutra",
+      "title": "Motoboy em Jardim Presidente Dutra, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Presidente Dutra, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/cabucu",
+      "title": "Motoboy em Cabu\u00e7u, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Cabu\u00e7u, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/recreio-sao-jorge",
+      "title": "Motoboy em Recreio S\u00e3o Jorge, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Recreio S\u00e3o Jorge, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-cumbica",
+      "title": "Motoboy em Jardim Cumbica, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Cumbica, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-fatima",
+      "title": "Motoboy em Vila F\u00e1tima, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila F\u00e1tima, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-santa-mena",
+      "title": "Motoboy em Jardim Santa Mena, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Santa Mena, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-barros",
+      "title": "Motoboy em Vila Barros, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila Barros, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-tranquilidade",
+      "title": "Motoboy em Jardim Tranquilidade, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Tranquilidade, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-rio",
+      "title": "Motoboy em Vila Rio, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila Rio, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jd-paulista-guarulhos",
+      "title": "Motoboy em Jardim Paulista (Guarulhos), Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Paulista (Guarulhos), Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/santa-clara",
+      "title": "Motoboy em Santa Clara, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Santa Clara, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/sadokin",
+      "title": "Motoboy em Sadokim, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Sadokim, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/bananal",
+      "title": "Motoboy em Bananal, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Bananal, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/itaquaquecetuba-divisa",
+      "title": "Motoboy em Divisa com Itaquaquecetuba, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Divisa com Itaquaquecetuba, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/guarulhos-sul",
+      "title": "Motoboy em Guarulhos Sul (Pimentas), Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Guarulhos Sul (Pimentas), Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/aeroporto-gru-entorno",
+      "title": "Motoboy em Entorno do Aeroporto GRU, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Entorno do Aeroporto GRU, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-progresso",
+      "title": "Motoboy em Vila Progresso, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila Progresso, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/jardim-flor-da-montanha",
+      "title": "Motoboy em Jardim Flor da Montanha, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Jardim Flor da Montanha, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/ponta-grande",
+      "title": "Motoboy em Ponta Grande, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Ponta Grande, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/areas/vila-camisaria",
+      "title": "Motoboy em Vila Camisaria, Guarulhos | Moto11 Guarulhos",
+      "description": "Servi\u00e7o de motoboy em Vila Camisaria, Guarulhos. Entregas expressas, coletas de documentos, pe\u00e7as e malotes. Cota\u00e7\u00e3o por rota vi\u00e1ria pelo WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/se",
+      "title": "Motoboy entre Guarulhos e S\u00e9, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para S\u00e9, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/bras",
+      "title": "Motoboy entre Guarulhos e Br\u00e1s, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Br\u00e1s, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/mooca",
+      "title": "Motoboy entre Guarulhos e Mooca, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Mooca, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/tatuape",
+      "title": "Motoboy entre Guarulhos e Tatuap\u00e9, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Tatuap\u00e9, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/penha",
+      "title": "Motoboy entre Guarulhos e Penha, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Penha, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/itaquera",
+      "title": "Motoboy entre Guarulhos e Itaquera, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Itaquera, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/sao-miguel-paulista",
+      "title": "Motoboy entre Guarulhos e S\u00e3o Miguel Paulista, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para S\u00e3o Miguel Paulista, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/vila-prudente",
+      "title": "Motoboy entre Guarulhos e Vila Prudente, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Vila Prudente, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/ipiranga",
+      "title": "Motoboy entre Guarulhos e Ipiranga, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Ipiranga, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/sacoma",
+      "title": "Motoboy entre Guarulhos e Sacom\u00e3, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Sacom\u00e3, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/moema",
+      "title": "Motoboy entre Guarulhos e Moema, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Moema, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/vila-mariana",
+      "title": "Motoboy entre Guarulhos e Vila Mariana, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Vila Mariana, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/pinheiros",
+      "title": "Motoboy entre Guarulhos e Pinheiros, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Pinheiros, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/lapa",
+      "title": "Motoboy entre Guarulhos e Lapa, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Lapa, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/perdizes",
+      "title": "Motoboy entre Guarulhos e Perdizes, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Perdizes, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/santana",
+      "title": "Motoboy entre Guarulhos e Santana, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Santana, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/tucuruvi",
+      "title": "Motoboy entre Guarulhos e Tucuruvi, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Tucuruvi, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/vila-maria",
+      "title": "Motoboy entre Guarulhos e Vila Maria, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Vila Maria, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/jacana",
+      "title": "Motoboy entre Guarulhos e Ja\u00e7an\u00e3, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Ja\u00e7an\u00e3, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/freguesia-do-o",
+      "title": "Motoboy entre Guarulhos e Freguesia do \u00d3, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Freguesia do \u00d3, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/pirituba",
+      "title": "Motoboy entre Guarulhos e Pirituba, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Pirituba, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/butanta",
+      "title": "Motoboy entre Guarulhos e Butant\u00e3, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Butant\u00e3, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/morumbi",
+      "title": "Motoboy entre Guarulhos e Morumbi, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Morumbi, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/campo-belo",
+      "title": "Motoboy entre Guarulhos e Campo Belo, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Campo Belo, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/santo-amaro",
+      "title": "Motoboy entre Guarulhos e Santo Amaro, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Santo Amaro, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/campo-limpo",
+      "title": "Motoboy entre Guarulhos e Campo Limpo, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Campo Limpo, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/itaim-bibi",
+      "title": "Motoboy entre Guarulhos e Itaim Bibi, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Itaim Bibi, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/jardins",
+      "title": "Motoboy entre Guarulhos e Jardins, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Jardins, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/bela-vista",
+      "title": "Motoboy entre Guarulhos e Bela Vista, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Bela Vista, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/republica",
+      "title": "Motoboy entre Guarulhos e Rep\u00fablica, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Rep\u00fablica, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/santa-cecilia",
+      "title": "Motoboy entre Guarulhos e Santa Cec\u00edlia, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Santa Cec\u00edlia, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/cambuci",
+      "title": "Motoboy entre Guarulhos e Cambuci, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Cambuci, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/vila-leopoldina",
+      "title": "Motoboy entre Guarulhos e Vila Leopoldina, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Vila Leopoldina, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/barra-funda",
+      "title": "Motoboy entre Guarulhos e Barra Funda, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Barra Funda, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/aricanduva",
+      "title": "Motoboy entre Guarulhos e Aricanduva, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Aricanduva, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/sao-caetano",
+      "title": "Motoboy entre Guarulhos e S\u00e3o Caetano do Sul, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para S\u00e3o Caetano do Sul, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/santo-andre",
+      "title": "Motoboy entre Guarulhos e Santo Andr\u00e9, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Santo Andr\u00e9, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/sao-bernardo",
+      "title": "Motoboy entre Guarulhos e S\u00e3o Bernardo do Campo, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para S\u00e3o Bernardo do Campo, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/osasco",
+      "title": "Motoboy entre Guarulhos e Osasco, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Osasco, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    },
+    {
+      "url": "https://www.moto11guarulhos.com.br/sao-paulo/barueri",
+      "title": "Motoboy entre Guarulhos e Barueri, S\u00e3o Paulo | Moto11 Guarulhos",
+      "description": "Rota de motoboy de Guarulhos para Barueri, S\u00e3o Paulo. Entregas expressas, malotes e documentos. Cota\u00e7\u00e3o por quilometragem vi\u00e1ria no WhatsApp.",
+      "templated": false,
+      "severity": "none",
+      "cta_phrase": null,
+      "flags": [],
+      "signals": []
+    }
+  ],
+  "pages_checked": 110,
+  "templated_count": 0,
+  "templated_ratio": 0.0,
+  "shared_cta_phrases": {},
+  "site_flags": [],
+  "site_risk": "low",
+  "method": "heuristic"
+}

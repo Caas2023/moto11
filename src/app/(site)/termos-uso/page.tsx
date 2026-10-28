@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
-import { PHONE_WA } from "@/lib/seo";
+import { PHONE_WA, canonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Condições de Atendimento e Termos de Uso | Moto11",
   description: "Informações sobre condições de atendimento, contratação e regras de transporte da Moto11 em Guarulhos e SP.",
+  alternates: { canonical: canonical("/termos-uso") },
   robots: { index: false, follow: true },
 };
 

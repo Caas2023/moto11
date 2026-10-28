@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-27",
+  "scope": "working tree e build local; produção indisponível por falha DNS neste ambiente",
+  "summary": {
+    "health_score": null,
+    "business_type": "Serviço local de motofrete, SAB",
+    "score_status": "Não atribuído: faltam medições de produção, CWV e indexação; nota histórica 96 não reproduzida",
+    "top_findings": ["12 relações locais inválidas apontam a 10 destinos HTTP 404", "23 serviços sem entrada HTML nas 122 páginas rastreadas", "80 páginas locais exigem revisão antes de expansão", "3 noindex no sitemap", "Promessas operacionais sensíveis precisam de evidência"],
+    "quick_wins": ["Corrigir relações sem criar páginas artificiais", "Ligar modalidades ao hub", "Alinhar sitemap e canonical", "Expor categoria selecionada acessível"]
+  },
+  "categories": [
+    {"name": "Technical SEO", "score": null, "what_works": ["122 URLs do sitemap HTTP 200 local", "Redirects 308 testados", "Build, tipos e lint da aplicação passaram"], "findings": [{"title": "Links regionais quebrados", "severity": "High", "description": "10 destinos 404 usados em 12 relações", "recommendation": "Corrigir destinos por coleção e validar integridade"}, {"title": "Serviços sem entrada", "severity": "High", "description": "23 sem entrada HTML no crawl local", "recommendation": "Criar links contextuais no hub"}]},
+    {"name": "Content Quality", "score": null, "what_works": ["Descrições e FAQs diferenciadas em dados locais"], "findings": [{"title": "Alegações sem lastro associado", "severity": "High", "description": "Operação não validada externamente", "recommendation": "Revisar geografia e comprovar capacidades sensíveis"}]},
+    {"name": "On-Page SEO", "score": null, "what_works": ["Sem duplicatas exatas de title/description", "Detector de metadados: risco heurístico baixo em 110 páginas"], "findings": [{"title": "Imagem Open Graph ausente", "severity": "Low", "description": "Ausente em 122 páginas capturadas", "recommendation": "Definir asset aprovado e testar previews"}]},
+    {"name": "Schema / Structured Data", "score": null, "what_works": ["Entidade central e schemas ativos identificados"], "findings": []},
+    {"name": "Performance (CWV)", "score": null, "what_works": [], "findings": [{"title": "CWV não medidos", "severity": "Info", "description": "Sem laboratório ou CrUX", "recommendation": "Estabelecer baseline público antes de concluir"}]},
+    {"name": "AI Search Readiness", "score": null, "what_works": ["Conteúdo no HTML local"], "findings": [{"title": "Estado de seleção não anunciado", "severity": "High", "description": "Categorias com seleção apenas visual", "recommendation": "Radio ou aria-pressed e validação acessível"}]},
+    {"name": "Images", "score": null, "what_works": ["next/image em heroes e logos"], "findings": []}
+  ],
+  "measurements": {"sitemap_urls": 122, "local_http_200": 122, "regional_records": 80, "services": 30, "noindex_in_sitemap": 3, "legal_canonical_to_home": 2, "services_without_inbound_in_crawl": 23, "related_link_missing_records": 12, "distinct_broken_targets": 10, "og_image_missing": 122, "lcp": null, "inp": null, "cls": null, "indexed_pages": null, "organic_traffic": null},
+  "action_plan": {"phases": [{"name": "Fundamentos", "timeframe": "Semanas 1–4 propostas", "items": ["Links", "Hub", "Sitemap", "Acessibilidade", "Evidência operacional", "Baseline"]}, {"name": "Melhoria existente", "timeframe": "Semanas 5–12 propostas", "items": ["Revisão editorial", "Funil", "Pesquisa competitiva", "CWV"]}, {"name": "Escala condicionada", "timeframe": "Semanas 13–24 propostas", "items": ["Expansão apenas após gate e aprovação"]}, {"name": "Autoridade", "timeframe": "Meses 7–12 propostas", "items": ["Cases e citações legítimas", "Monitoramento"]}]},
+  "artifacts": {"findings_dir": "findings/", "screenshots": ["home-mobile.png", "home-desktop.png"], "crawl": "crawl.json", "links": "links-outside-sitemap.json", "metadata": "metadata-analysis.json"}
+}

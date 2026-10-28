@@ -10,7 +10,6 @@ const nextConfig: NextConfig = {
       { source: "/motoboy-barato-guarulhos", destination: "/precos", permanent: true },
       { source: "/quanto-custa-motoboy-guarulhos", destination: "/precos", permanent: true },
       { source: "/orcamento", destination: "/contato", permanent: true },
-      { source: "/servicos/:slug", destination: "/servicos", permanent: true },
       { source: "/combos/:slug", destination: "/servicos", permanent: true },
       { source: "/blog", destination: "/", permanent: true },
       { source: "/blog/:slug", destination: "/", permanent: true },

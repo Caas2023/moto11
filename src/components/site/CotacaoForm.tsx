@@ -90,13 +90,14 @@ Poderia me informar a disponibilidade e o valor para essa rota?`;
             <span className="block text-xs font-bold text-brand-950 mb-1.5">
               O que você precisa transportar?
             </span>
-            <div className="grid grid-cols-2 gap-1.5">
+            <div role="group" aria-label="Categoria da entrega" className="grid grid-cols-2 gap-1.5">
               {CATEGORIAS.map((cat) => {
                 const isSelected = categoria === cat.id;
                 return (
                   <button
                     key={cat.id}
                     type="button"
+                    aria-pressed={isSelected}
                     onClick={() => setCategoria(cat.id)}
                     className={`flex items-center gap-1.5 rounded-lg border px-2.5 py-2 text-left text-xs font-medium transition-all ${
                       isSelected
@@ -185,13 +186,14 @@ Poderia me informar a disponibilidade e o valor para essa rota?`;
         <label className="block text-sm font-bold text-brand-950 mb-2.5">
           Tipo de Item / Serviço Necessário
         </label>
-        <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+        <div role="group" aria-label="Categoria da entrega" className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
           {CATEGORIAS.map((cat) => {
             const isSelected = categoria === cat.id;
             return (
               <button
                 key={cat.id}
                 type="button"
+                aria-pressed={isSelected}
                 onClick={() => setCategoria(cat.id)}
                 className={`flex items-center gap-2.5 rounded-xl border p-3 text-left transition-all ${
                   isSelected

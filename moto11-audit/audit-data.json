@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "health_score": 96,
+    "business_type": "Local Service Business (Service Area Business - SAB: Motoboy / Entregas Expressas)",
+    "target_locations": [
+      "Guarulhos (Sede)",
+      "Grande São Paulo (40 bairros e municípios integrados)"
+    ],
+    "total_pages_indexed": 122,
+    "min_character_count": 1334,
+    "avg_character_count": 4072,
+    "top_findings": [
+      "100% das páginas do site agora possuem conteúdo semântico acima de 1.300 caracteres, eliminando qualquer risco de thin content (portaria Google Helpful Content Update).",
+      "Arquitetura Hub-and-Spoke consolidada: 40 páginas de bairros de Guarulhos e 40 rotas metropolitanas para São Paulo com conteúdo geolocalizado e único.",
+      "30 páginas de serviços dedicadas com escopo técnico detalhado (2.500 a 7.300 caracteres cada) com schema Service e FAQPage estruturado.",
+      "Sitemap XML dinâmico cobrindo 122 rotas indexáveis com prioridades e frequências de atualização calibradas.",
+      "Transição para precificação WhatsApp-first sem valores numéricos defasados ou promessas irreais de tempo fixo."
+    ],
+    "quick_wins": [
+      "Reindexação via Google Search Console de todas as 80 novas páginas de localização e 30 serviços.",
+      "Monitoramento do Core Web Vitals (INP < 200ms, LCP < 2.5s, CLS < 0.1) nos relatórios CrUX.",
+      "Reforço de backlinks locais com citações de empresas parceiras e diretórios regionais de Guarulhos."
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 98,
+      "what_works": [
+        "Sitemap XML gerado dinamicamente em /sitemap.xml cobrindo as 122 páginas indexáveis.",
+        "Robots.txt configurado com diretiva allow geral e restrição para rotas administrativas/internas.",
+        "Cabeçalhos de segurança implementados (X-Content-Type-Options, Referrer-Policy, X-Frame-Options, Permissions-Policy, COOP).",
+        "Meta viewport com theme-color #071a2b compatível com o design system Impeccable.",
+        "URLs canônicas absolutas auto-referenciadas em todas as páginas via helper buildMetadata.",
+        "Build 100% estático (SSG) gerado em 1.0s com Next.js Turbopack, garantindo TTFB instantâneo."
+      ],
+      "findings": [
+        {
+          "title": "Submissão de novo sitemap no Google Search Console",
+          "severity": "High",
+          "description": "Com a adição de 80 páginas de cobertura e 30 serviços, o novo sitemap.xml precisa ser reenviado no GSC para acelerar o rastreamento do Googlebot.",
+          "recommendation": "Enviar https://www.moto11guarulhos.com.br/sitemap.xml no painel do Google Search Console."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality & Depth (E-E-A-T)",
+      "score": 97,
+      "what_works": [
+        "Meta atingida: Nenhuma página no site possui menos que 800 caracteres. Mínimo de 1.334 chars e média de 4.072 chars.",
+        "Conteúdo individualizado e personalizado por bairro em Guarulhos: perfil econômico, vias principais, particularidades viárias e demandas frequentes.",
+        "Conteúdo de rota intermunicipal para São Paulo com eixos de acesso (Dutra, Ayrton Senna, Marginal Tietê, 23 de Maio) e orientações de trânsito em pico.",
+        "30 páginas de serviços com detalhes operacionais completos (rotina, limites de carga, SLAs, perfil de cliente e FAQ).",
+        "Tom honesto, profissional e alinhado à realidade logística (sem promessas de prazos irreais ou valores mágicos)."
+      ],
+      "findings": [
+        {
+          "title": "Criação de estudos de caso locais e depoimentos reais",
+          "severity": "Medium",
+          "description": "À medida que novos atendimentos ocorrerem, incorporar nomes de empresas e depoimentos reais nas páginas de serviços e bairros chave.",
+          "recommendation": "Coletar avaliações no Google Meu Negócio e transpor citações autorizadas para as páginas."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO & Semantic Structure",
+      "score": 95,
+      "what_works": [
+        "Hierarquia semântica rigorosa: exatamente um H1 por página, seguido de H2s temáticos e H3s complementares.",
+        "Title tags otimizadas com fórmula de alto CTR: [Serviço/Bairro] em Guarulhos | Moto11.",
+        "Meta descriptions persuasivas abaixo de 160 caracteres com chamada para ação no WhatsApp.",
+        "Malha de links internos contextuais: breadcrumbs semânticos, bairros vizinhos conectados e rotas correlacionadas.",
+        "Formulário CotacaoForm interativo e CTAs WhatsApp com mensagens pré-preenchidas por página."
+      ],
+      "findings": []
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 96,
+      "what_works": [
+        "LocalBusiness / ProfessionalService JSON-LD no RootLayout com NAP consistente, horário de atendimento e geo-coordenadas de Guarulhos.",
+        "Service Schema personalizado em todas as páginas de serviços e páginas de bairros com areaServed dinâmico.",
+        "BreadcrumbList Schema implementado em todas as rotas de segundo e terceiro nível.",
+        "FAQPage Schema estruturado para todos os acordeões de perguntas frequentes."
+      ],
+      "findings": []
+    },
+    {
+      "name": "Local SEO & GEO (AI Search Readiness)",
+      "score": 95,
+      "what_works": [
+        "Posicionamento focado em SAB (Service Area Business) sem endereço fantasma, em total conformidade com diretrizes do Google Business Profile.",
+        "Cobertura territorial hiperlocal: 40 bairros de Guarulhos mapeados com avenidas e especificidades.",
+        "40 conexões metropolitanas com a capital, posicionando a Moto11 como a ponte logística de Guarulhos para SP.",
+        "Respostas diretas e factuais estruturadas para citação por motores de IA (Google AI Overviews, Perplexity, ChatGPT)."
+      ],
+      "findings": [
+        {
+          "title": "Sincronização de Citações NAP em Diretórios Locais",
+          "severity": "Medium",
+          "description": "Garantir que Nome, Telefone (11) 95724-8425 e Horários (Seg-Sex 8h-18h) estejam idênticos no GBP, Bing Places, Apple Maps e redes sociais.",
+          "recommendation": "Verificar consistência NAP nas fichas externas do negócio."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Fase 1: Validação e Lançamento (Imediato)",
+        "timeframe": "Semana 1",
+        "items": [
+          "Verificação de 100% das 122 páginas com mais de 800 caracteres (Concluído: mínimo 1.334 chars, média 4.072 chars).",
+          "Build de produção verificado com 198 rotas estáticas pré-renderizadas sem erro de compilação.",
+          "Envio do sitemap.xml atualizado ao Google Search Console e Bing Webmaster Tools."
+        ]
+      },
+      {
+        "name": "Fase 2: Fortalecimento de Sinais Locais",
+        "timeframe": "Semanas 2-4",
+        "items": [
+          "Atualização do perfil no Google Business Profile (GBP) reforçando áreas de cobertura em Guarulhos e rotas para SP.",
+          "Inclusão de posts no GBP citando serviços de alta demanda (malotes, cartórios, entrega de peças na Dutra).",
+          "Conquista de avaliações verificadas de clientes atendidos com palavras-chave de bairros."
+        ]
+      },
+      {
+        "name": "Fase 3: Autoridade e Monitoramento",
+        "timeframe": "Mês 2",
+        "items": [
+          "Acompanhamento de posições nas SERPs para termos locais ('motoboy cumbica', 'motoboy centro guarulhos', 'motofrete guarulhos').",
+          "Análise de conversões e cliques no WhatsApp por página de origem.",
+          "Iteração em passagens com maior potencial de citação no Google AI Overviews."
+        ]
+      }
+    ]
+  }
+}

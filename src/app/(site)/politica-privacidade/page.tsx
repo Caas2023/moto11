@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
-import { PHONE_WA } from "@/lib/seo";
+import { PHONE_WA, canonical } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade | Moto11",
   description: "Canal de contato e diretrizes da Moto11 em conformidade com a LGPD.",
+  alternates: { canonical: canonical("/politica-privacidade") },
   robots: { index: false, follow: true },
 };
 

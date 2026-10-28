@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/areas/jacana",
+    "status": 404
+  },
+  {
+    "path": "/areas/penha",
+    "status": 404
+  },
+  {
+    "path": "/areas/vila-maria",
+    "status": 404
+  },
+  {
+    "path": "/sao-paulo/guarulhos-sul",
+    "status": 404
+  },
+  {
+    "path": "/sao-paulo/itaquaquecetuba-divisa",
+    "status": 404
+  },
+  {
+    "path": "/sao-paulo/jardim-vila-galvao",
+    "status": 404
+  },
+  {
+    "path": "/sao-paulo/parque-novo-mundo",
+    "status": 404
+  },
+  {
+    "path": "/sao-paulo/ponta-grande",
+    "status": 404
+  },
+  {
+    "path": "/sao-paulo/sao-mateus",
+    "status": 404
+  },
+  {
+    "path": "/sao-paulo/vila-galvao",
+    "status": 404
+  }
+]

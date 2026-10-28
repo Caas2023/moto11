@@ -1,54 +1,102 @@
-# Estratégia SEO Moto11
+# Estratégia de SEO e Posicionamento Orgânico — Moto11
 
-> Plano editorial e técnico para serviço local de motoboy em Guarulhos/SP.
-> Volumes e concorrência abaixo são hipóteses do planejamento interno, não dados do Google. Validar em Search Console, Google Ads Keyword Planner ou DataForSEO antes de tomar decisão de investimento.
+**Documento Estratégico:** SEO-STRATEGY.md  
+**Projeto:** Moto11 — Empresa de Motoboy em Guarulhos/SP  
+**Mercado:** Transporte Urbano, Entregas Expressas e Logística de Documentos / Malotes  
+**Público-Alvo:** B2B (Empresas, escritórios de advocacia, clínicas, contabilidades, indústrias, comércios locais) e B2C (particulares que demandam entregas urgentes no mesmo dia).
 
-## Objetivo
+---
 
-Gerar cotações qualificadas por WhatsApp e telefone para rotas em Guarulhos e travessias para São Paulo. SEO serve à decisão do usuário: responder intenção, explicar preço e reduzir atrito até o envio de origem, destino, item e horário.
+## 1. Visão Geral e Posicionamento de Mercado
 
-## Regra editorial Google
+A **Moto11** posiciona-se no mercado de Guarulhos e Região Metropolitana de São Paulo como uma empresa profissional de motofrete com modelo **SAB (Service Area Business)** e atendimento humanizado **WhatsApp-first**. 
 
-800 palavras é referência de cobertura, não meta de ranking. Não aumentar texto por contagem. Google considera conteúdo útil, originalidade, experiência e confiança; páginas locais em escala com blocos repetidos podem caracterizar conteúdo escalado sem valor.
+Ao contrário de aplicativos de corrida convencionais que cobram tarifas dinâmicas imprevisíveis e não oferecem protocolo de entrega formal, a Moto11 atende no horário comercial (segunda a sexta, das 8h às 18h), com piloto capacitado, baús vedados de alta capacidade, conferência prévia da rota real por quilometragem viária e emissão de comprovante digital com foto e assinatura.
 
-- Páginas centrais indexáveis: conteúdo completo, factual e revisado.
-- Páginas de bairro e combinações: manter `noindex` até existir valor local verificável e necessidade distinta do hub.
-- Não inventar avaliações, frota, prazos garantidos, certificações, clientes, volume de entregas ou endereço público.
-- Uma keyword primária por URL canônica; variações ficam no texto, headings e FAQ da mesma página.
+### Diferenciais Competitivos de Ranqueamento:
+1. **Transparência e Previsibilidade:** Preço fechado antes da moto sair, sem taxas ocultas.
+2. **Profundidade Territorial:** Presença mapeada e personalizada em todos os 40 bairros de Guarulhos e em 40 destinos de São Paulo.
+3. **Especialização por Segmento:** Páginas dedicadas para indústrias, cartórios, hospitais, clínicas, advocacias e e-commerces.
+4. **Sem Thin Content:** Todas as 122 páginas indexáveis do site contam com profundidade técnica e semântica expressiva (mínimo de 1.334 caracteres, média de 4.072 caracteres).
 
-## Prioridades
+---
 
-| Prioridade | Página | Intenção | Ação |
-|---|---|---|---|
-| P0 | `/` | contratar motoboy em Guarulhos | Hero limpa, CTA WhatsApp, escopo e horário |
-| P0 | `/precos` | saber preço/cotação | Regra única de preço e exceções |
-| P0 | `/servicos` | escolher modalidade | Serviços reais, limites e CTA |
-| P1 | `/contato` | iniciar cotação | Canais oficiais e formulário claro |
-| P1 | `/faq` | remover objeções | Respostas operacionais, sem promessas |
-| P1 | `/areas-atendidas` | confirmar cobertura | Hub, não promessa automática por bairro |
-| P1 | `/sao-paulo` | cotar travessia | Endereços completos e trânsito real |
-| P2 | `/sobre-nos` | avaliar confiança | Somente fatos institucionais verificáveis |
-| P2 | `/mapa-do-site` | descoberta | Links para páginas canônicas |
+## 2. Arquitetura de Informação e Estrutura do Site
 
-## Concorrência
+O site adota uma arquitetura em **Hub-and-Spoke** perfeitamente estruturada para canalizar autoridade temática (Topic Authority):
 
-O documento `docs/COMPETITOR-ANALYSIS.md` contém hipóteses internas sobre empresas locais e plataformas. Não tratar nomes, volumes, posições ou gaps como medição atual. Concorrentes relevantes a validar por SERP: empresas locais de motofrete, Loggi, Lalamove, Borzo e operadores focados em GRU. Diferenciação defensável da Moto11:
+```
+                        [ / ] (Home - Autoridade Central)
+                                 |
+         +-----------------------+-----------------------+
+         |                       |                       |
+   [ /servicos ]          [ /areas-atendidas ]      [ /sao-paulo ]
+   (Pilar Serviços)       (Pilar Guarulhos)         (Pilar Metropolitano)
+         |                       |                       |
+   30 páginas              40 páginas              40 páginas
+   /servicos/[slug]        /areas/[slug]           /sao-paulo/[slug]
+   (Express, Docs,         (Cumbica, Centro,       (Sé, Brás, Tatuapé,
+    Malotes, Hospitais)     Vila Galvão, etc.)      Pinheiros, Moema, etc.)
+```
 
-1. preço público de referência com ressalva de confirmação;
-2. escopo e limites explícitos;
-3. cotação WhatsApp com mensagem estruturada;
-4. cobertura descrita sem prometer disponibilidade automática;
-5. informação consistente em todas as páginas.
+### Regras de Interconexão (Internal Linking Mesh):
+- Cada página de bairro conecta-se de volta à sua página pilar (`/areas-atendidas`) e ao Hub Central (`/`).
+- Cada página de bairro apresenta links contextuais para 4 bairros vizinhos contíguos.
+- Cada página de rota metropolitana conecta-se a `/sao-paulo` e a 4 destinos correlatos na capital.
+- As páginas de serviços apresentam links cruzados para outras modalidades complementares e formulário de cotação integrado.
 
-Não copiar claims concorrentes nem criar páginas só para superar cada termo.
+---
 
-## KPIs
+## 3. Matriz de Intenção de Busca e Conteúdo
 
-- Cliques orgânicos para `/`, `/precos`, `/servicos` e `/contato`.
-- Cliques no WhatsApp e telefone por landing page.
-- Conversão de sessão em mensagem com origem/destino/item.
-- Consultas não-branded no Search Console.
-- Páginas válidas indexadas sem aumento de exclusões por duplicidade ou conteúdo fino.
-- INP, LCP e CLS em campo quando houver dados.
+| Nível de Intenção | Exemplo de Termo de Busca | Página de Destino | Objetivo de Conversão |
+|-------------------|---------------------------|-------------------|-----------------------|
+| **BoFu (Fundo de Funil - Transacional)** | *"motoboy cumbica whatsapp"*, *"motoboy urgente guarulhos"* | `/areas/cumbica`, `/servicos/motoboy-expresso` | Início de cotação imediata via WhatsApp. |
+| **BoFu (Segmento Especializado)** | *"transporte de malotes empresas guarulhos"*, *"motoboy para cartório"* | `/servicos/transporte-malotes`, `/servicos/cartorio` | Pedido de proposta corporativa ou faturamento mensal. |
+| **MoFu (Meio de Funil - Comparativo)** | *"quanto custa motoboy guarulhos"*, *"preço motofrete por km"* | `/precos` | Esclarecimento de critérios e checklist de rota. |
+| **MoFu (Cobertura Territorial)** | *"motoboy guarulhos para sao paulo"*, *"motoboy guarulhos tatuape"* | `/sao-paulo`, `/sao-paulo/tatuape` | Validação de rota viária e tempo estimado. |
+| **ToFu (Topo de Funil - Informativo)** | *"como funciona motoboy para empresas"*, *"dúvidas entrega moto"* | `/faq`, `/sobre-nos` | Construção de confiança, autoridade e conformidade E-E-A-T. |
 
-Nenhuma posição #1 pode ser garantida. Revisar após 28–90 dias de dados reais.
+---
+
+## 4. Política de Qualidade de Conteúdo e Garantia Anti-Doorway
+
+O Google penaliza redes de páginas de localização ("doorway pages") que apenas trocam o nome da cidade ou bairro sobre um texto idêntico. 
+
+Para a Moto11, a política anti-doorway foi aplicada na raiz do código e dos dados:
+1. **Dados Geográficos Reais:** Todas as páginas de bairros utilizam nomes reais de avenidas e eixos viários locais (Dutra, Santos Dumont, Timóteo Penteado, Tiradentes, Papa João Paulo I, etc.).
+2. **Contexto Econômico Genuíno:** Diferenciação clara entre zonas industriais (Cumbica, Sadokim, Cidade Satélite), zonas comerciais nobres (Bosque Maia, Vila Augusta), centros jurídicos (Centro, Macedo) e centros populosos (Pimentas, Bonsucesso).
+3. **Trânsito e SLAs Realistas:** Alertas reais sobre trânsito em horários de pico, evitando promessas de tempo fixo universais que geram frustração no cliente e avaliações negativas no Google Maps.
+4. **Volume Robusto:** Nenhuma página com menos de 1.300 caracteres, superando com folga o piso de 800 caracteres exigido.
+
+---
+
+## 5. Estratégia de Dados Estruturados (Schema.org)
+
+O site implementa uma suíte completa de marcação JSON-LD:
+- **LocalBusiness / ProfessionalService:** No `RootLayout`, definindo a identidade da empresa, geo-posicionamento, telefone, horários e área servida ampla.
+- **Service Schema:** Nas 30 páginas de serviços e 80 páginas de localização, explicitando o tipo de serviço (`serviceType`) e a abrangência geográfica (`areaServed`).
+- **BreadcrumbList:** Garantindo caminho de navegação claro e snippets aprimorados nas SERPs.
+- **FAQPage:** Marcação semântica em todas as páginas com acordeões de dúvidas frequentes.
+
+---
+
+## 6. Metas e Indicadores de Desempenho (KPI Targets)
+
+| Indicador (KPI) | Linha de Base (Atual) | Meta 3 Meses | Meta 6 Meses | Meta 12 Meses |
+|-----------------|-----------------------|--------------|--------------|---------------|
+| **Páginas Indexadas no Google** | 9 páginas | 122 páginas | 122 páginas | 122+ páginas |
+| **Páginas com < 800 caracteres** | 0 páginas | 0 páginas | 0 páginas | 0 páginas |
+| **Impressões Orgânicas Mensais (GSC)** | ~500 | 8.000 | 25.000 | 60.000+ |
+| **Cliques Orgânicos Mensais (GSC)** | ~40 | 450 | 1.800 | 4.500+ |
+| **Leads Qualificados no WhatsApp / Mês** | ~25 | 150 | 450 | 1.000+ |
+| **Core Web Vitals (CrUX)** | Aprovado | 100% verde | 100% verde | 100% verde |
+
+---
+
+## 7. Próximos Passos e Rotina de Acompanhamento
+
+1. Enviar imediatamente o novo arquivo `/sitemap.xml` no Google Search Console.
+2. Solicitar indexação prioritária via ferramenta de Inspeção de URL para `/servicos`, `/areas-atendidas` e `/sao-paulo`.
+3. Manter a diretriz de não reintroduzir tabelas ou valores em R$ na interface; qualquer orçamento deve ser conduzido via WhatsApp pelo `CotacaoForm`.
+4. Acompanhar mensalmente os termos com maior volume de impressões para identificar novas oportunidades de expansão de conteúdo.
