@@ -126,13 +126,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ(faq)) }}
       />
 
-      <section className="relative isolate overflow-hidden bg-brand-950 text-white lg:min-h-[calc(100svh-4.5rem)] flex items-center">
+      <section className="relative isolate overflow-hidden bg-brand-950 text-white min-h-[calc(100svh-4.5rem)] flex items-center">
         <Image
           src="/images/hero-moto11.png"
-          alt=""
+          alt="Serviço de motoboy e entregas rápidas da Moto11 em Guarulhos"
           fill
           priority
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1920px"
           className="pointer-events-none -z-20 object-cover object-center"
         />
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-brand-950/90" />
@@ -153,6 +153,7 @@ export default function Home() {
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Pedir cotação de motoboy no WhatsApp"
                   className="quote-cta inline-flex min-h-[46px] items-center justify-center gap-2 rounded-full bg-success px-6 py-2.5 text-sm sm:text-base font-bold text-white shadow-lg shadow-black/20 transition-colors hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success focus-visible:ring-offset-2 focus-visible:ring-offset-brand-950"
                 >
                   <WhatsAppIcon className="h-5 w-5" />
