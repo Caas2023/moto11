@@ -20,7 +20,7 @@ export const BUSINESS = {
   openingHours: "Mo-Fr 08:00-18:00" as const,
   sameAs: [],
   // Canônico alinhado a SITE_URL em src/lib/seo.ts (usado por sitemap/robots).
-  url: "https://www.moto11guarulhos.com.br",
+  url: "https://moto11-pearl.vercel.app",
 } as const;
 
 export type AreaServedCity = {

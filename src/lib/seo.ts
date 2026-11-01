@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://www.moto11guarulhos.com.br";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://moto11-pearl.vercel.app";
 export const SITE_NAME = "Moto11";
 export const SITE_TAGLINE =
   "Empresa de motoboy em Guarulhos — entregas rápidas e coletas agendadas";

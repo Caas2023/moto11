@@ -106,8 +106,9 @@ test('Todas as páginas do site são indexáveis e entram integralmente no sitem
 
 for (const slug of ['termos-uso', 'politica-privacidade', 'motoboy-24-horas']) {
   test(`Canonical de ${slug} é próprio e mantém index/follow`, () => {
+    const { SITE_URL } = load('src/lib/seo.ts');
     const metadata = load(`src/app/(site)/${slug}/page.tsx`).metadata;
-    assert.equal(metadata.alternates?.canonical, `https://www.moto11guarulhos.com.br/${slug}`);
+    assert.equal(metadata.alternates?.canonical, `${SITE_URL}/${slug}`);
     assert.equal(metadata.robots.index, true, `Deveria ser indexável: ${slug}`);
     assert.equal(metadata.robots.follow, true);
   });
