@@ -14,6 +14,9 @@ const staticRoutes = [
   ["/faq", "monthly", 0.7],
   ["/sobre-nos", "monthly", 0.6],
   ["/mapa-do-site", "monthly", 0.5],
+  ["/motoboy-24-horas", "monthly", 0.6],
+  ["/termos-uso", "monthly", 0.4],
+  ["/politica-privacidade", "monthly", 0.4],
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

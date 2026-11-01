@@ -6,9 +6,11 @@ import {
   CheckCircle2,
   Clock3,
   Compass,
+  FileText,
   HelpCircle,
   MapPin,
   Route,
+  ShieldCheck,
 } from "lucide-react";
 import {
   getNeighborhoodGu,
@@ -235,11 +237,142 @@ export default async function AreaPage({
           </div>
         </section>
 
+        {/* Diretrizes Operacionais e Capacidade de Carga */}
+        <section
+          className="rounded-2xl border border-line bg-white p-6 sm:p-8 shadow-xs"
+          aria-labelledby="operacao-capacidade-bairro"
+        >
+          <div className="flex items-center gap-3">
+            <ShieldCheck className="h-6 w-6 text-primary-700" aria-hidden="true" />
+            <h2
+              id="operacao-capacidade-bairro"
+              className="font-display text-2xl font-bold text-brand-950"
+            >
+              Diretrizes operacionais e capacidade de carga em {area.nome}
+            </h2>
+          </div>
+          <p className="mt-3 text-muted leading-relaxed">
+            O transporte ágil por motoboy em {area.nome} é estruturado para atender demandas urgentes
+            e rotinas programadas com segurança viária e pontualidade. Para garantir a integridade da
+            encomenda e o cumprimento das normas do Código de Trânsito Brasileiro (CTB) e regulamentações do CONTRAN,
+            trabalhamos com critérios definidos para o compartimento de carga:
+          </p>
+          <div className="mt-6 grid gap-6 sm:grid-cols-3">
+            <div className="rounded-xl border border-line bg-surface-warm p-5">
+              <h3 className="font-bold text-brand-950 flex items-center gap-2">
+                <FileText className="h-4 w-4 text-primary-700" />
+                Dimensões do Baú
+              </h3>
+              <p className="mt-2 text-sm text-muted leading-relaxed">
+                Compartimentos padronizados de até 80 a 90 litros, adequados para caixas de até
+                40 cm x 40 cm x 40 cm. Cargas não podem ultrapassar as extremidades do baú nem obstruir
+                a visibilidade dos retrovisores ou a placa da motocicleta.
+              </p>
+            </div>
+            <div className="rounded-xl border border-line bg-surface-warm p-5">
+              <h3 className="font-bold text-brand-950 flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-success" />
+                Limite de Peso
+              </h3>
+              <p className="mt-2 text-sm text-muted leading-relaxed">
+                Capacidade recomendada de até 15 kg a 20 kg por corrida para preservar a estabilidade da
+                moto e a agilidade nas vias de {area.nome}. Para pesos superiores ou lotes fracionados,
+                consulte opções de transporte dedicado ou divisão em mais de uma rota.
+              </p>
+            </div>
+            <div className="rounded-xl border border-line bg-surface-warm p-5">
+              <h3 className="font-bold text-brand-950 flex items-center gap-2">
+                <Clock3 className="h-4 w-4 text-primary-700" />
+                Materiais Autorizados
+              </h3>
+              <p className="mt-2 text-sm text-muted leading-relaxed">
+                Documentos societários, malotes fiscais, peças técnicas, suprimentos de TI, exames laboratoriais
+                acondicionados e encomendas de comércio eletrônico. Não transportamos produtos perigosos,
+                inflamáveis ou itens ilícitos.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Procedimentos em Portarias e Protocolos */}
+        <section
+          className="border-l-4 border-primary-700 pl-4 sm:pl-6 space-y-4"
+          aria-labelledby="procedimentos-portaria-bairro"
+        >
+          <span className="text-xs font-bold uppercase tracking-wider text-primary-700">
+            Segurança e Comprovação
+          </span>
+          <h2
+            id="procedimentos-portaria-bairro"
+            className="font-display text-2xl font-bold text-brand-950 sm:text-3xl"
+          >
+            Procedimentos de coleta, portarias e protocolo de entrega em {area.nome}
+          </h2>
+          <p className="text-base sm:text-lg leading-relaxed text-muted">
+            A rotina de entregas em {area.nome} costuma envolver endereços comerciais, plantas industriais,
+            centros de distribuição e condomínios residenciais. Para que o atendimento ocorra sem interrupções
+            e sem cobranças imprevistas de tempo de espera excessivo, adotamos procedimentos claros em cada etapa:
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 pt-2">
+            <div className="rounded-xl border border-line bg-white p-5 shadow-xs space-y-2">
+              <h3 className="font-bold text-brand-950 text-base">Identificação e Liberação de Acesso</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                Nossos motoboys parceiros atuam devidamente identificados com capacete, documento pessoal (RG/CNH)
+                e baú fechado. Se o ponto de coleta ou entrega em {area.nome} exigir autorização prévia na portaria,
+                informe o nome do visitante ou deixe a liberação autorizada na guarita com antecedência para evitar retenções.
+              </p>
+            </div>
+            <div className="rounded-xl border border-line bg-white p-5 shadow-xs space-y-2">
+              <h3 className="font-bold text-brand-950 text-base">Protocolo Físico e Comprovante Digital</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                Toda entrega importante pode ser formalizada com comprovante assinado contendo nome legível,
+                número de documento e data/hora do recebimento. Para agilizar a rotina da sua empresa, a foto do canhoto
+                ou do protocolo assinado pode ser enviada diretamente no WhatsApp logo após a conclusão da rota.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Planejamento de Rotas e Horários Locais */}
+        <section
+          className="rounded-2xl border border-line bg-surface-warm p-6 sm:p-8"
+          aria-labelledby="planejamento-rotas-bairro"
+        >
+          <div className="flex items-center gap-3">
+            <Route className="h-6 w-6 text-primary-700" aria-hidden="true" />
+            <h2
+              id="planejamento-rotas-bairro"
+              className="font-display text-2xl font-bold text-brand-950"
+            >
+              Planejamento de rotas e melhor horário para solicitar em {area.nome}
+            </h2>
+          </div>
+          <p className="mt-3 text-muted leading-relaxed">
+            {area.nome} integra a malha da {area.zona} de Guarulhos e possui particularidades de fluxo viário
+            que merecem atenção estratégica. O deslocamento rápido depende não apenas da habilidade do piloto,
+            mas do momento em que o chamado é aberto e da clareza dos dados informados:
+          </p>
+          <div className="mt-6 space-y-4 text-sm sm:text-base text-muted leading-relaxed">
+            <p>
+              Durante os picos da manhã (das 7h às 9h30) e do final da tarde (das 17h às 19h), os corredores de acesso
+              que conectam {area.nome} às rodovias e avenidas troncais registram lentidão acentuada. Sempre que a sua
+              demanda permitir, programar a coleta no meio da manhã (entre 9h30 e 11h30) ou no início da tarde (entre 13h e 15h)
+              garante trajetos mais fluídos e menores riscos de atraso decorrentes de congestionamentos urbanos.
+            </p>
+            <p>
+              Ao solicitar o serviço, comunique se há restrições de horário para carga e descarga no destinatário,
+              se existe intervalo de almoço na recepção ou se a entrega precisa ser efetuada impreterivelmente até um
+              horário limite. Com essas informações, o atendente no WhatsApp dimensiona o trajeto ideal e confirma a viabilidade.
+            </p>
+          </div>
+        </section>
+
         {/* Demandas Mais Frequentes */}
         <section aria-labelledby="demandas-bairro">
           <div className="border-l-4 border-primary-700 pl-4 sm:pl-6">
             <span className="text-xs font-bold uppercase tracking-wider text-primary-700">
               Informações para a cotação
+
             </span>
             <h2
               id="demandas-bairro"

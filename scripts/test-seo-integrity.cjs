@@ -80,11 +80,13 @@ test('Hubs oferecem cotação contextual e o hub São Paulo aponta para serviço
   assert.ok(renderedLinks('src/app/sao-paulo/page.tsx').includes('/servicos'));
 });
 
-test('Páginas dinâmicas são indexáveis e entram integralmente no sitemap', async () => {
+test('Todas as páginas do site são indexáveis e entram integralmente no sitemap', async () => {
   const sitemap = load('src/app/sitemap.ts').default();
   const urls = sitemap.map((entry) => new URL(entry.url).pathname);
-  for (const excluded of ['/termos-uso', '/politica-privacidade', '/motoboy-24-horas']) assert.ok(!urls.includes(excluded), excluded);
-  assert.equal(new Set(urls).size, urls.length);
+  for (const required of ['/termos-uso', '/politica-privacidade', '/motoboy-24-horas']) {
+    assert.ok(urls.includes(required), `URL esperada no sitemap: ${required}`);
+  }
+  assert.equal(new Set(urls).size, urls.length, 'Sitemap sem URLs duplicadas');
 
   for (const [prefix, records, page] of [
     ['/servicos/', services, 'src/app/servicos/[slug]/page.tsx'],
@@ -102,14 +104,47 @@ test('Páginas dinâmicas são indexáveis e entram integralmente no sitemap', a
   }
 });
 
-for (const slug of ['termos-uso', 'politica-privacidade']) {
-  test(`Canonical de ${slug} é próprio e mantém noindex/follow`, () => {
+for (const slug of ['termos-uso', 'politica-privacidade', 'motoboy-24-horas']) {
+  test(`Canonical de ${slug} é próprio e mantém index/follow`, () => {
     const metadata = load(`src/app/(site)/${slug}/page.tsx`).metadata;
     assert.equal(metadata.alternates?.canonical, `https://www.moto11guarulhos.com.br/${slug}`);
-    assert.equal(metadata.robots.index, false);
+    assert.equal(metadata.robots.index, true, `Deveria ser indexável: ${slug}`);
     assert.equal(metadata.robots.follow, true);
   });
 }
+
+function countWordsInHtml(html) {
+  const text = html.replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/g, ' ').replace(/\s+/g, ' ').trim();
+  return text.split(/\s+/).filter(Boolean).length;
+}
+
+test('100% das páginas de bairros de Guarulhos têm no mínimo 800 palavras', async () => {
+  const AreaGuPage = load('src/app/areas/[slug]/page.tsx').default;
+  for (const record of gu) {
+    const element = await AreaGuPage({ params: Promise.resolve({ slug: record.slug }) });
+    const words = countWordsInHtml(renderToStaticMarkup(element));
+    assert.ok(words >= 800, `Área ${record.slug} tem apenas ${words} palavras (mínimo 800)`);
+  }
+});
+
+test('100% das páginas de rotas de São Paulo têm no mínimo 800 palavras', async () => {
+  const AreaSpPage = load('src/app/sao-paulo/[slug]/page.tsx').default;
+  for (const record of sp) {
+    const element = await AreaSpPage({ params: Promise.resolve({ slug: record.slug }) });
+    const words = countWordsInHtml(renderToStaticMarkup(element));
+    assert.ok(words >= 800, `Rota SP ${record.slug} tem apenas ${words} palavras (mínimo 800)`);
+  }
+});
+
+test('100% das páginas de serviços têm no mínimo 800 palavras', async () => {
+  const ServicePage = load('src/app/servicos/[slug]/page.tsx').default;
+  for (const record of services) {
+    const element = await ServicePage({ params: Promise.resolve({ slug: record.slug }) });
+    const words = countWordsInHtml(renderToStaticMarkup(element));
+    assert.ok(words >= 800, `Serviço ${record.slug} tem apenas ${words} palavras (mínimo 800)`);
+  }
+});
+
 
 for (const compact of [true, false]) {
   test(`Cotação ${compact ? 'compacta' : 'completa'} anuncia uma categoria selecionada`, () => {

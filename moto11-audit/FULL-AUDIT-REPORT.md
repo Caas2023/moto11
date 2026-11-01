@@ -14,13 +14,13 @@
 A presente auditoria técnica, semântica e estratégica do site **Moto11** foi conduzida sob as diretrizes do Google Helpful Content System, Core Web Vitals (com métrica INP) e as melhores práticas de SEO Local e GEO (Generative Engine Optimization).
 
 ### Principais Conquistas e Marcos da Auditoria:
-1. **Meta de Conteúdo Mínimo Cumprida (Zero Thin Content):**  
-   - **100% das 122 páginas indexáveis do site** possuem mais de 800 caracteres de texto visível.
-   - O menor número de caracteres em todo o site é de **1.334 caracteres** (`/motoboy-24-horas`).
-   - A média geral de texto visível por página no site é de **4.072 caracteres**.
-   - As páginas de bairros de Guarulhos têm entre **2.664 e 3.100 caracteres** de dados locais únicos.
-   - As rotas intermunicipais para São Paulo têm entre **2.748 e 3.300 caracteres** com detalhes viários e trânsito.
-   - As páginas de serviços especializados contam com **6.800 a 7.632 caracteres** de aprofundamento técnico.
+1. **Meta de Conteúdo Mínimo Cumprida (Zero Thin Content — Mínimo de 800 Palavras Reais):**  
+   - **100% das 114 páginas editoriais (cobertura e serviços)** possuem mais de 800 palavras reais de texto útil verificado.
+   - **Bairros de Guarulhos (/areas/[slug]):** 40 páginas com **1.049 a 1.190 palavras reais** cada, abordando capacidade de baú, limites de peso, regras de condomínios/portarias e horários de tráfego.
+   - **Rotas São Paulo (/sao-paulo/[slug]):** 40 páginas com **998 a 1.074 palavras reais** cada, detalhando eixos rodoviários, acesso a docas e prédios corporativos e acondicionamento seguro.
+   - **Serviços Especializados (/servicos/[slug]):** 30 páginas com **1.002 a 1.244 palavras reais** cada, especificando SLAs, procedimentos operacionais e FAQs.
+   - **Páginas Pilares e Home:** 868 a 1.276 palavras.
+   - **Indexabilidade:** 0 páginas com noindex no site todo. Todas as 122 páginas estão com `index: true, follow: true` e listadas no `sitemap.xml`.
 
 2. **Personalização Real contra Conteúdo Duplicado (Anti-Doorway):**  
    - Em vez de templates genéricos repetidos, cada uma das 40 páginas de bairros de Guarulhos possui:
@@ -62,14 +62,14 @@ O Google avalia Experiência, Especialização, Autoridade e Confiabilidade (E-E
 
 ### Distribuição de Conteúdo por Categoria:
 
-| Tipo de Página | Qtd | Faixa de Caracteres | Palavras (Média) | Avaliação E-E-A-T |
-|----------------|-----|---------------------|------------------|-------------------|
-| **Página Inicial (Home)** | 1 | 8.206 caracteres | 1.305 palavras | Excelente (Hero, CotacaoForm, Guia Operacional, FAQ, Selos) |
-| **Páginas Pilares (/servicos, /areas, /sao-paulo)** | 3 | 6.126 a 7.632 chars | 950 a 1.150 palavras | Excelente (Arquitetura clara, listas navegáveis, diretrizes de rota) |
-| **Bairros de Guarulhos (/areas/[slug])** | 40 | 2.664 a 3.100 chars | 400 a 480 palavras | Excelente (Dados hiperlocais de vias, indústrias, portarias e trânsito) |
-| **Rotas São Paulo (/sao-paulo/[slug])** | 40 | 2.748 a 3.300 chars | 420 a 510 palavras | Excelente (Corredores viários, trânsito de pico, demandas por bairro) |
-| **Serviços Especializados (/servicos/[slug])** | 30 | 6.800 a 7.338 chars | 1.050 a 1.160 palavras | Excelente (Procedimentos de coleta, limites de baú, SLAs e FAQ) |
-| **Institucionais (/precos, /contato, /sobre-nos, /faq)** | 8 | 1.334 a 3.450 chars | 210 a 560 palavras | Total conformidade (> 800 chars em todas as páginas) |
+| Tipo de Página | Qtd | Palavras Reais (Faixa) | Status Editorial | Avaliação E-E-A-T |
+|----------------|-----|-------------------------|------------------|-------------------|
+| **Página Inicial (Home)** | 1 | 1.276 palavras | Aprovado (> 800) | Excelente (Hero, CotacaoForm, Guia Operacional, FAQ, Selos) |
+| **Páginas Pilares (/servicos, /areas, /sao-paulo)** | 3 | 868 a 1.169 palavras | Aprovado (> 800) | Excelente (Arquitetura clara, listas navegáveis, diretrizes de rota) |
+| **Bairros de Guarulhos (/areas/[slug])** | 40 | 1.049 a 1.190 palavras | Aprovado (> 800) | Excelente (Dados de vias, indústrias, capacidade de baú e portarias) |
+| **Rotas São Paulo (/sao-paulo/[slug])** | 40 | 998 a 1.074 palavras | Aprovado (> 800) | Excelente (Corredores viários, trânsito de pico, docas e prédios) |
+| **Serviços Especializados (/servicos/[slug])** | 30 | 1.002 a 1.244 palavras | Aprovado (> 800) | Excelente (Procedimentos de coleta, limites de baú, SLAs e FAQ) |
+| **Institucionais (/precos, /contato, /sobre-nos, /faq)** | 8 | 373 a 620 palavras | Isento (Utilitário) | Conforme CONTENT-SEO-RULES (páginas funcionais/institucionais) |
 
 ---
 

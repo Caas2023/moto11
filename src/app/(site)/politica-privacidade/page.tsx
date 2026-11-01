@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Política de Privacidade",
   description: "Canal de contato e diretrizes da Moto11 em conformidade com a LGPD.",
   alternates: { canonical: canonical("/politica-privacidade") },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(

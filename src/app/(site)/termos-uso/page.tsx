@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Condições de Atendimento e Termos de Uso",
   description: "Informações sobre condições de atendimento, contratação e regras de transporte da Moto11 em Guarulhos e SP.",
   alternates: { canonical: canonical("/termos-uso") },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(

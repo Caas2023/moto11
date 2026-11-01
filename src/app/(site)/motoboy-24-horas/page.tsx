@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Horário de Atendimento da Moto11 em Guarulhos",
   description: "A Moto11 atende de segunda a sexta, das 8h às 18h. Não há atendimento noturno, aos fins de semana ou feriados.",
   alternates: { canonical: `${SITE.baseUrl}/motoboy-24-horas` },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(

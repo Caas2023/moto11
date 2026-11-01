@@ -5,12 +5,12 @@
 - Se a página estiver no escopo da tarefa, faça melhorias concretas antes de concluir a revisão; não entregue apenas uma lista de problemas quando puder corrigi-los com segurança.
 - Mantenha a intenção da página, a voz da Moto11 e as condições operacionais confirmadas. Não invente dados, experiência, avaliações, garantias, disponibilidade ou detalhes de atendimento.
 - Escreva para ajudar quem precisa contratar ou entender o serviço. Use linguagem natural, informação específica e útil, títulos claros e links internos que realmente ajudem.
-- Use **800–1.200 palavras como referência editorial para páginas indexáveis de serviço, cobertura local e guias**, quando o assunto tiver conteúdo útil suficiente. Não complete a contagem com repetição, paráfrases, listas artificiais ou texto genérico.
-- Páginas funcionais ou institucionais — por exemplo contato, formulário, FAQ curto, política, termos, sitemap e páginas utilitárias — não precisam atingir essa faixa. Não as alongue só para cumprir uma meta.
-- O Google não define uma contagem mínima de palavras como fator de ranqueamento. A faixa acima é uma diretriz interna de profundidade para páginas editoriais elegíveis, não uma meta mecânica. Conteúdo criado principalmente para atingir um número pode prejudicar a utilidade e se aproximar de abuso de conteúdo em escala.
-- Em páginas locais, confirme que o conteúdo é específico e verificável para aquele local. Trocar apenas o nome do bairro não basta; se não houver informação local útil, recomende consolidar ou não indexar em vez de fabricar texto.
-- Use palavras-chave com naturalidade. Não repita termos para densidade, não crie páginas quase duplicadas e não prometa cobertura, prazo ou disponibilidade sem confirmação do atendente.
-- Respeite sempre instruções mais específicas do usuário e as regras vigentes do projeto. Antes de publicar ou alterar integrações externas, confirme a autorização necessária.
+- Use **no mínimo 800 palavras reais (faixa recomendada de 800–1.200 palavras)** para cada página indexável de serviço e cobertura local (bairros de Guarulhos e rotas de São Paulo). O conteúdo deve ser genuíno, aprofundado, com vias reais, desafios logísticos, rotas, tipos de cargas e orientações operacionais. Nunca substitua palavras por caracteres e nunca falsifique relatórios.
+- **PROIBIDO APLICAR NOINDEX EM PÁGINAS DE COBERTURA OU SERVIÇOS**: O objetivo é sempre **melhorar e enriquecer a página** com dados locais úteis, jamais escondê-la com `noindex`. Todas as páginas de bairros e serviços devem ser indexáveis e estar presentes no sitemap XML.
+- Páginas puramente utilitárias ou institucionais (contato, política, termos) não necessitam dessa extensão.
+- Em páginas locais, forneça dados específicos e operacionais daquela região (vias de tráfego, polos industriais ou comerciais, gargalos de horário de pico, procedimentos de coleta).
+- Respeite rigorosamente a verdade: nunca declare que uma página tem 800 palavras quando tiver menos, e nunca use preenchimento vazio sem utilidade real.
+
 
 ## Verificação final
 

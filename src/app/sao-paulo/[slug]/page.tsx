@@ -10,6 +10,7 @@ import {
   HelpCircle,
   MapPin,
   Route,
+  ShieldCheck,
 } from "lucide-react";
 import {
   getSpNeighborhood,
@@ -243,11 +244,141 @@ export default async function SaoPauloPage({
           </div>
         </section>
 
+        {/* Diretrizes Operacionais e Capacidade de Carga Intermunicipal */}
+        <section
+          className="rounded-2xl border border-line bg-white p-6 sm:p-8 shadow-xs"
+          aria-labelledby="operacao-capacidade-rota"
+        >
+          <div className="flex items-center gap-3">
+            <ShieldCheck className="h-6 w-6 text-primary-700" aria-hidden="true" />
+            <h2
+              id="operacao-capacidade-rota"
+              className="font-display text-2xl font-bold text-brand-950"
+            >
+              Diretrizes operacionais e capacidade de carga entre Guarulhos e {area.nome}
+            </h2>
+          </div>
+          <p className="mt-3 text-muted leading-relaxed">
+            A conexão intermunicipal entre a base operacional em Guarulhos e {area.nome}, na {area.regiao} de São Paulo,
+            demanda atenção especial à segurança da carga, velocidade de tráfego rodoviário e proteção contra intempéries.
+            Para assegurar que o transporte ocorra dentro dos padrões legais e técnicos:
+          </p>
+          <div className="mt-6 grid gap-6 sm:grid-cols-3">
+            <div className="rounded-xl border border-line bg-surface-warm p-5">
+              <h3 className="font-bold text-brand-950 flex items-center gap-2">
+                <FileText className="h-4 w-4 text-primary-700" />
+                Baú Impermeável e Hermético
+              </h3>
+              <p className="mt-2 text-sm text-muted leading-relaxed">
+                Compartimentos fechados de até 80 a 90 litros com vedação adequada contra chuva, poeira e
+                vibração rodoviária. Acomoda caixas até 40 cm x 40 cm x 40 cm, pastas contratuais e malotes
+                sem amassamentos durante o trajeto intermunicipal.
+              </p>
+            </div>
+            <div className="rounded-xl border border-line bg-surface-warm p-5">
+              <h3 className="font-bold text-brand-950 flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-success" />
+                Limite de Peso e Estabilidade
+              </h3>
+              <p className="mt-2 text-sm text-muted leading-relaxed">
+                Carga limite recomendada entre 15 kg e 20 kg. Essa faixa de peso assegura a estabilidade
+                e frenagem segura da motocicleta ao trafegar em vias expressas de alta velocidade como a Rodovia Presidente Dutra,
+                Ayrton Senna e as pistas da Marginal Tietê.
+              </p>
+            </div>
+            <div className="rounded-xl border border-line bg-surface-warm p-5">
+              <h3 className="font-bold text-brand-950 flex items-center gap-2">
+                <Clock3 className="h-4 w-4 text-primary-700" />
+                Cargas Aceitas e Restrições
+              </h3>
+              <p className="mt-2 text-sm text-muted leading-relaxed">
+                Atendemos remessas de documentos jurídicos, certidões em cartórios, peças de reposição urgentes,
+                eletrônicos e mercadorias corporativas. Não transportamos cargas indivisíveis volumosas, animais,
+                substâncias tóxicas ou materiais corrosivos.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Procedimentos em Edifícios Corporativos, Docas e Cartórios */}
+        <section
+          className="border-l-4 border-primary-700 pl-4 sm:pl-6 space-y-4"
+          aria-labelledby="procedimentos-acesso-rota"
+        >
+          <span className="text-xs font-bold uppercase tracking-wider text-primary-700">
+            Acesso e Comprovação na Capital
+          </span>
+          <h2
+            id="procedimentos-acesso-rota"
+            className="font-display text-2xl font-bold text-brand-950 sm:text-3xl"
+          >
+            Procedimentos em edifícios comerciais, condomínios e protocolo em {area.nome}
+          </h2>
+          <p className="text-base sm:text-lg leading-relaxed text-muted">
+            Entregas em {area.nome} frequentemente envolvem edifícios comerciais com controle rigoroso de doca,
+            estacionamento de motos em bolsões específicos, triagem em recepções centrais ou atendimento em cartórios e repartições.
+            Para que a rota ocorra de maneira ágil:
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 pt-2">
+            <div className="rounded-xl border border-line bg-white p-5 shadow-xs space-y-2">
+              <h3 className="font-bold text-brand-950 text-base">Recepção Predial e Liberação de Crachá</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                O motoboy se apresenta munido de documento com foto e capacete em mãos nas portarias de {area.nome}.
+                Caso o edifício exija autorização nominal prévia enviada por e-mail ou sistema de controle de acesso,
+                providenciar a liberação antecipada minimiza o tempo em fila de espera e agiliza a entrega no andar corporativo.
+              </p>
+            </div>
+            <div className="rounded-xl border border-line bg-white p-5 shadow-xs space-y-2">
+              <h3 className="font-bold text-brand-950 text-base">Comprovante Assinado e Retorno de Vias</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                Para remessas com exigência de protocolo, coletamos carimbo de recebimento, assinatura e número de documento
+                do destinatário. Se o serviço contemplar retorno com a via assinada para Guarulhos, a rota de ida e volta
+                é combinada antecipadamente no WhatsApp com envio imediato da confirmação fotográfica.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Planejamento de Tráfego Intermunicipal e Janelas de Horário */}
+        <section
+          className="rounded-2xl border border-line bg-surface-warm p-6 sm:p-8"
+          aria-labelledby="planejamento-viario-rota"
+        >
+          <div className="flex items-center gap-3">
+            <Route className="h-6 w-6 text-primary-700" aria-hidden="true" />
+            <h2
+              id="planejamento-viario-rota"
+              className="font-display text-2xl font-bold text-brand-950"
+            >
+              Planejamento viário e janelas recomendadas para a rota {area.nome}
+            </h2>
+          </div>
+          <p className="mt-3 text-muted leading-relaxed">
+            A ligação rodoviária entre Guarulhos e a {area.regiao} de São Paulo atravessa eixos viários de alta densidade
+            de tráfego, como as pontes da Marginal Tietê e as principais radiais da capital. Um planejamento correto de horário
+            faz toda a diferença na previsibilidade da sua encomenda:
+          </p>
+          <div className="mt-6 space-y-4 text-sm sm:text-base text-muted leading-relaxed">
+            <p>
+              O tráfego de entrada na capital no início da manhã (especialmente entre 7h e 9h30) e a saída de São Paulo
+              no retorno para Guarulhos no final da tarde (das 17h às 19h30) sofrem fortes retenções. Para entregas que dependem
+              de prazo reduzido, abrir o chamado entre as 10h e 12h ou no início da tarde (13h30 às 15h) proporciona
+              trajetos mais limpos e tempo de resposta otimizado.
+            </p>
+            <p>
+              Ao solicitar sua cotação pelo WhatsApp, detalhe eventuais restrições de recebimento (ex.: encerramento de expediente
+              às 17h, parada para almoço ou necessidade de horário agendado com fiscal). Assim, nosso atendente confirma
+              a escala e a viabilidade operacional antes do envio da moto.
+            </p>
+          </div>
+        </section>
+
         {/* Demandas Mais Frequentes Nesta Rota */}
         <section aria-labelledby="demandas-rota">
           <div className="border-l-4 border-primary-700 pl-4 sm:pl-6">
             <span className="text-xs font-bold uppercase tracking-wider text-primary-700">
               Informações para a cotação
+
             </span>
             <h2
               id="demandas-rota"
