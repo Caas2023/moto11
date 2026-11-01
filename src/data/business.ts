@@ -12,22 +12,13 @@ export const BUSINESS = {
   phoneHref: "tel:+5511957248425",
   phoneE164: "+55 11 95724-8425",
   whatsapp: "https://wa.me/5511957248425",
-  priceRange: "$$",
-  // Guarulhos centro (aprox.) — 5 casas decimais
-  geo: {
-    latitude: -23.4546,
-    longitude: -46.5333,
-  },
   addressLocality: "Guarulhos",
   addressRegion: "SP",
   addressCountry: "BR",
   // SAB: sem endereço público completo — atendimento em domicílio/coleta.
   hoursDisplay: "Seg–Sex 08:00–18:00",
   openingHours: "Mo-Fr 08:00-18:00" as const,
-  sameAs: [
-    "https://www.instagram.com/moto11guarulhos",
-    "https://www.facebook.com/moto11guarulhos",
-  ],
+  sameAs: [],
   // Canônico alinhado a SITE_URL em src/lib/seo.ts (usado por sitemap/robots).
   url: "https://www.moto11guarulhos.com.br",
 } as const;

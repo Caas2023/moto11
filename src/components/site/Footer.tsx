@@ -4,7 +4,7 @@ import { Clock, MapPin, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { PHONE_DISPLAY, PHONE_TEL_LINK, PHONE_WA } from "@/lib/seo";
 
-const QUOTE_MESSAGE = "Olá! Gostaria de cotar uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar). Poderia me passar o valor e a previsão?";
+const QUOTE_MESSAGE = "Olá! Gostaria de solicitar uma cotação. Origem: (informar) / Destino: (informar) / Item: (informar). Por favor, encaminhe ao atendente.";
 
 const SERVICOS = [
   { label: "Entrega expressa", href: "/servicos" },
@@ -14,7 +14,7 @@ const SERVICOS = [
 ];
 
 const NAVEGACAO = [
-  { label: "Cotação e Preços", href: "/precos" },
+  { label: "Solicitar cotação", href: "/precos" },
   { label: "Serviços", href: "/servicos" },
   { label: "Áreas atendidas", href: "/areas-atendidas" },
   { label: "Sobre nós", href: "/sobre-nos" },

@@ -17,19 +17,12 @@ export default function LocalBusinessSchema() {
     description: BUSINESS.legalDescription,
     url: BUSINESS.url,
     telephone: BUSINESS.phoneE164,
-    priceRange: BUSINESS.priceRange,
     image: `${BUSINESS.url}/og-cover.jpg`,
-    sameAs: [...BUSINESS.sameAs],
     address: {
       "@type": "PostalAddress",
       addressLocality: BUSINESS.addressLocality,
       addressRegion: BUSINESS.addressRegion,
       addressCountry: BUSINESS.addressCountry,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: BUSINESS.geo.latitude,
-      longitude: BUSINESS.geo.longitude,
     },
     areaServed: AREA_SERVED.map((a) => ({
       "@type": "City",

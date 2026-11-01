@@ -3,19 +3,20 @@ import Link from "next/link";
 import { ArrowRight, MapPin } from "lucide-react";
 import { neighborhoodsGu } from "@/data/neighborhoods-gu";
 import { neighborhoodsSp } from "@/data/neighborhoods-sp";
+import { SERVICES } from "@/data/services";
 import { buildMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/site/PageHero";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Mapa do site | Moto11",
-  description: "Encontre as páginas de serviços, preços, áreas de Guarulhos e rotas para São Paulo da Moto11.",
+  title: "Mapa do site",
+  description: "Encontre as páginas de serviços, cotação, áreas de Guarulhos e rotas para São Paulo da Moto11.",
   path: "/mapa-do-site",
 });
 
 const pages = [
   ["Início", "/"],
   ["Serviços", "/servicos"],
-  ["Cotação e Preços", "/precos"],
+  ["Solicitar cotação", "/precos"],
   ["Áreas atendidas em Guarulhos", "/areas-atendidas"],
   ["Rotas para São Paulo", "/sao-paulo"],
   ["Perguntas frequentes", "/faq"],
@@ -27,8 +28,9 @@ const pages = [
   ["Mapa do site", "/mapa-do-site"],
 ] as const;
 
-function Directory({ title, intro, links }: { title: string; intro: string; links: readonly { nome: string; slug: string }[] }) {
-  const prefix = title.includes("Guarulhos") ? "/areas/" : "/sao-paulo/";
+const serviceLinks = SERVICES.map(({ slug, title }) => ({ slug, nome: title }));
+
+function Directory({ title, intro, prefix, links }: { title: string; intro: string; prefix: string; links: readonly { nome: string; slug: string }[] }) {
   return (
     <section aria-labelledby={title.replaceAll(" ", "-").toLowerCase()}>
       <h2 id={title.replaceAll(" ", "-").toLowerCase()} className="font-display text-3xl font-bold text-brand-950">{title}</h2>
@@ -60,11 +62,8 @@ export default function SitemapPage() {
         <section aria-labelledby="como-usar-mapa">
           <h2 id="como-usar-mapa" className="font-display text-3xl font-bold text-brand-950">Como usar este mapa</h2>
           <div className="mt-4 max-w-3xl space-y-4 leading-7 text-muted">
-            <p>Use esta página para escolher o próximo passo sem depender de uma busca por palavra-chave. Se você já sabe que precisa contratar, comece por <Link className="font-semibold text-primary-700 underline" href="/contato">Contato</Link> e envie origem, destino, item e horário. Se ainda está comparando condições, consulte <Link className="font-semibold text-primary-700 underline" href="/precos">Preços</Link> e <Link className="font-semibold text-primary-700 underline" href="/faq">Perguntas frequentes</Link>.</p>
-            <p>A lista de bairros organiza consultas de cobertura, mas não transforma o nome da região em garantia de disponibilidade ou prazo. As rotas locais detalhadas permanecem sob revisão editorial e não são usadas para criar volume artificial de páginas indexáveis. Para uma travessia entre municípios, abra o hub de São Paulo e informe os dois endereços completos.</p>
-            <p>As páginas deste mapa seguem uma hierarquia simples: serviço explica o que pode ser feito, preço explica a regra, contato recebe a missão e o atendimento confirma a rota real. Páginas legais ficam disponíveis para transparência e podem não participar da indexação. Links que apontam para páginas antigas são encaminhados para o destino canônico correspondente.</p>
-            <p>Para empresas e escritórios que realizam coletas frequentes, o mapa do site permite verificar rapidamente todas as modalidades de atendimento disponíveis (expresso, agendado, faturamento mensal e transporte de malotes) e selecionar o canal de contato mais adequado para estruturar o fluxo de transporte.</p>
-            <p>Em caso de dúvidas sobre rotas não listadas explicitamente no diretório geográfico, recomendamos o contato direto via WhatsApp. Nossa equipe operacional analisa as vias de acesso, calcula a distância precisa pela quilometragem da rota e apresenta o orçamento fechado com estimativa realista de horário antes de qualquer deslocamento de piloto.</p>
+            <p>Use esta página para encontrar serviços e regiões. Envie origem, destino, item e horário pelo <Link className="font-semibold text-primary-700 underline" href="/precos">formulário de cotação</Link> ou fale com a equipe pelo <Link className="font-semibold text-primary-700 underline" href="/contato">Contato</Link>.</p>
+            <p>Se a região ou a necessidade não estiver listada, envie os dados da rota pelo WhatsApp para avaliação do atendente. A lista não garante disponibilidade, prazo ou atendimento automático.</p>
           </div>
         </section>
         <section aria-labelledby="paginas-principais">
@@ -75,8 +74,9 @@ export default function SitemapPage() {
             ))}
           </ul>
         </section>
-        <Directory title="Bairros de Guarulhos" intro="Links para consultas por região. A disponibilidade da entrega depende dos endereços completos, do horário e das condições da rota." links={neighborhoodsGu} />
-        <Directory title="Regiões de São Paulo" intro="Links para rotas entre Guarulhos e São Paulo. Informe os dois endereços para confirmar valor e disponibilidade." links={neighborhoodsSp} />
+        <Directory title="Serviços" intro="Páginas de modalidades com informações para preparar a solicitação." prefix="/servicos/" links={serviceLinks} />
+        <Directory title="Bairros de Guarulhos" intro="Links para consultas por região. A disponibilidade depende dos endereços, do horário e das condições da rota." prefix="/areas/" links={neighborhoodsGu} />
+        <Directory title="Regiões de São Paulo" intro="Links para rotas entre Guarulhos e São Paulo. Informe os endereços para avaliação do atendente." prefix="/sao-paulo/" links={neighborhoodsSp} />
       </div>
     </main>
   );

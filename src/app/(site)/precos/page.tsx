@@ -9,43 +9,42 @@ import { PHONE_WA } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Cotação e Preços de Motoboy em Guarulhos | Moto11",
+  title: "Solicitar cotação de motoboy em Guarulhos",
   description:
-    "Cotação rápida e transparente de motoboy em Guarulhos e rotas para São Paulo. Preço justo calculado pela rota real, sem taxas ocultas. Consulte pelo WhatsApp.",
+    "Solicite sua cotação de motoboy em Guarulhos ou São Paulo. Toda solicitação é avaliada pelo atendente no WhatsApp, sem confirmação automática.",
   alternates: { canonical: `${SITE.baseUrl}/precos` },
   openGraph: {
-    title: "Cotação e Preços de Motoboy em Guarulhos | Moto11",
-    description:
-      "Cotação rápida e transparente de motoboy em Guarulhos. Preço fechado antes da saída sem surpresas no balcão.",
+    title: "Solicitar cotação de motoboy em Guarulhos",
+    description: "Fale com o atendente da Moto11 pelo WhatsApp para solicitar uma cotação.",
     url: `${SITE.baseUrl}/precos`,
     type: "website",
   },
 };
 
 const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
-  "Olá! Gostaria de cotar uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar). Poderia me passar o valor e a previsão?",
+  "Olá! Gostaria de solicitar uma cotação. Origem: (informar) / Destino: (informar) / Item: (informar). Por favor, encaminhe ao atendente.",
 )}`;
 
 const CRITERIOS = [
   {
     icon: MapPin,
-    title: "Quilometragem Real por Rota",
-    text: "O valor considera a rota viária real de moto entre os pontos de coleta e entrega, e não uma estimativa imprecisa em linha reta. Isso garante justiça para quem contrata e para o profissional.",
+    title: "Análise da rota",
+    text: "O atendente avalia os endereços e as informações da entrega para orientar sua solicitação.",
   },
   {
     icon: ShieldCheck,
-    title: "Preço Fechado Antes da Saída",
-    text: "Você recebe o valor final acordado pelo WhatsApp antes da moto ligar o motor. Não operamos com tarifas dinâmicas surpresa ou acréscimos arbitrários ao final da corrida.",
+    title: "Confirmação pelo atendente",
+    text: "A disponibilidade e as condições são confirmadas pelo atendente antes de qualquer coleta.",
   },
   {
     icon: Clock3,
-    title: "Tolerância para Despacho e Espera",
-    text: "Sabemos que portarias, triagens de condomínios e balcões comerciais exigem alguns minutos. O atendimento combina antecipadamente a tolerância necessária para sua operação.",
+    title: "Despacho e espera",
+    text: "Informe regras de acesso, janelas de horário e possíveis esperas para que o atendente avalie a solicitação.",
   },
   {
     icon: CheckCircle2,
-    title: "Missões Especiais sem Pegadinha",
-    text: "Entregas em cartórios com fila de autenticação, docas de shoppings ou Terminal de Cargas do Aeroporto de Guarulhos têm suas particularidades avaliadas na cotação para total previsibilidade.",
+    title: "Locais com regras específicas",
+    text: "Entregas em cartórios, shoppings ou no aeroporto podem ter regras de acesso específicas, avaliadas pelo atendente.",
   },
 ];
 
@@ -58,17 +57,17 @@ const CHECKLIST = [
   {
     step: "2",
     title: "Descrição do Volume",
-    desc: "Diga se é envelope de documentos, peças, amostras ou caixas, garantindo acomodação segura no baú vedado de até 20 kg.",
+    desc: "Diga se é envelope de documentos, peças, amostras ou caixas para que o atendente avalie as condições de transporte.",
   },
   {
     step: "3",
     title: "Janela de Horário",
-    desc: "Indique se a entrega é urgente para saída imediata ou se precisa ser programada para um horário específico durante o expediente comercial (8h às 18h).",
+    desc: "Indique o horário desejado. O atendimento funciona de segunda a sexta-feira, das 8h às 18h, e a disponibilidade é avaliada pelo atendente.",
   },
   {
     step: "4",
     title: "Contatos de Origem e Destino",
-    desc: "Ter o nome e telefone de quem entrega e de quem recebe evita desencontros e acelera o protocolo de entrega.",
+    desc: "Informe os contatos disponíveis na origem e no destino para que o atendente avalie as informações necessárias à solicitação.",
   },
 ];
 
@@ -80,7 +79,7 @@ export default function Page() {
           {
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Cotação de Motoboy em Guarulhos",
+            name: "Solicitação de cotação de motoboy em Guarulhos",
             serviceType: "Serviço de Entrega e Coleta Expressa",
             provider: {
               "@type": "LocalBusiness",
@@ -89,20 +88,20 @@ export default function Page() {
               areaServed: ["Guarulhos", "São Paulo"],
             },
             description:
-              "Cotação transparente por rota real de motoboy para empresas e particulares em Guarulhos e rotas para São Paulo.",
+              "Solicite uma cotação ao atendente da Moto11 pelo WhatsApp.",
           },
         ]}
       />
 
       <PageHero
-        eyebrow="Transparência e Rapidez"
-        title="Cotação e Preços de Motoboy em Guarulhos"
-        description="Sem taxas ocultas ou tarifas dinâmicas. O valor da entrega é calculado de acordo com o trajeto real e confirmado no WhatsApp antes de deslocar o piloto."
+        eyebrow="Atendimento pelo WhatsApp"
+        title="Solicite uma cotação de motoboy"
+        description="Envie os detalhes da entrega. Toda cotação é encaminhada ao atendente pelo WhatsApp, que confirma disponibilidade e condições."
       >
         <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
           <Link href="/" className="hover:text-white">Início</Link>
           <span aria-hidden="true"> / </span>
-          <span aria-current="page">Cotação e Preços</span>
+          <span aria-current="page">Solicitar cotação</span>
         </nav>
       </PageHero>
 
@@ -110,28 +109,28 @@ export default function Page() {
       <section className="bg-surface py-16 sm:py-24" aria-labelledby="form-cotacao-title">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl mb-8">
-            <p className="text-sm font-semibold text-primary-700">Simule Agora</p>
+            <p className="text-sm font-semibold text-primary-700">Fale com um atendente</p>
             <h2 id="form-cotacao-title" className="mt-2 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              Cotação rápida para o seu endereço
+              Informe os dados da entrega
             </h2>
             <p className="mt-3 text-lg leading-8 text-muted">
-              Preencha os pontos de saída e chegada para enviar a rota completa direto ao nosso WhatsApp oficial.
+              Informe origem, destino e item. O botão abre uma conversa no WhatsApp para o atendente receber sua solicitação.
             </p>
           </div>
           <CotacaoForm />
         </div>
       </section>
 
-      {/* Seção 2: Critérios de Precificação */}
+      {/* Seção 2: Como funciona o atendimento */}
       <section className="bg-surface-warm py-16 sm:py-24" aria-labelledby="como-calculamos">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold text-primary-700">Critérios Claros</p>
             <h2 id="como-calculamos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              Como é calculado o valor da sua entrega.
+              Como funciona a cotação
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted">
-              Avaliamos fatores técnicos reais para oferecer a proposta mais justa e previsível para você e para o piloto:
+              O atendente analisa os detalhes enviados e informa pelo WhatsApp as condições que puder confirmar. O envio do formulário não confirma disponibilidade ou contratação.
             </p>
           </div>
 
@@ -163,12 +162,12 @@ export default function Page() {
       <section className="bg-surface py-16 sm:py-24" aria-labelledby="checklist-title">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold text-primary-700">Agilidade no Atendimento</p>
+            <p className="text-sm font-semibold text-primary-700">Informações para atendimento</p>
             <h2 id="checklist-title" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              O que enviar para receber sua cotação em minutos.
+              O que enviar para o atendente
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted">
-              Ao chamar no WhatsApp, ter essas 4 informações em mãos agiliza a liberação imediata do seu motoboy:
+              Essas informações ajudam o atendente a avaliar sua solicitação:
             </p>
           </div>
 
@@ -196,7 +195,7 @@ export default function Page() {
           <div>
             <p className="text-sm font-semibold text-primary-700">Dúvidas frequentes</p>
             <h2 id="faq-precos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              Informação clara sobre pagamento e cotação.
+              Dúvidas sobre atendimento e cotação.
             </h2>
             <Link href="/faq" className="mt-6 inline-flex items-center gap-2 font-bold text-primary-700 hover:underline">
               Ver todas as dúvidas <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -205,11 +204,11 @@ export default function Page() {
           <div className="divide-y divide-line border-y border-line">
             <details className="group py-5">
               <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-5 font-display text-lg font-bold text-brand-950">
-                <span>Quais são as formas de pagamento aceitas?</span>
+              <span>Como solicito uma cotação?</span>
                 <span className="text-2xl font-normal text-primary-700 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
               </summary>
               <p className="max-w-3xl pt-3 leading-7 text-muted">
-                Aceitamos Pix e transferência bancária imediata para chamados avulsos. Para empresas com rotas semanais ou mensais recorrentes, oferecemos condições de faturamento mediante cadastro e aprovação prévia.
+                Envie origem, destino e descrição do item pelo WhatsApp. O atendente avalia a solicitação e informa as condições aplicáveis.
               </p>
             </details>
 
@@ -219,7 +218,7 @@ export default function Page() {
                 <span className="text-2xl font-normal text-primary-700 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
               </summary>
               <p className="max-w-3xl pt-3 leading-7 text-muted">
-                Assim que a missão é concluída, a foto do protocolo assinado com nome legível e documento de quem recebeu é enviada imediatamente no mesmo chat do WhatsApp onde o chamado foi aberto.
+                Se precisar de comprovante ou de algum procedimento específico, informe isso ao atendente. Ele avalia o que pode ser combinado antes da coleta.
               </p>
             </details>
 
@@ -229,7 +228,7 @@ export default function Page() {
                 <span className="text-2xl font-normal text-primary-700 transition-transform group-open:rotate-45" aria-hidden="true">+</span>
               </summary>
               <p className="max-w-3xl pt-3 leading-7 text-muted">
-                Nosso atendimento opera de segunda a sexta-feira, das 8h às 18h. Não realizamos saídas noturnas, de madrugada ou aos fins de semana. Mensagens enviadas fora do horário comercial são respondidas no início do próximo dia útil.
+                Nosso atendimento funciona de segunda a sexta-feira, das 8h às 18h. Solicitações enviadas fora desse período são avaliadas pelo atendente durante o horário comercial.
               </p>
             </details>
           </div>
@@ -244,7 +243,7 @@ export default function Page() {
               Tem origem, destino e item para entregar?
             </h2>
             <p className="mt-2 text-orange-50">
-              Envie os dados no WhatsApp e receba a confirmação do valor antes de fechar a corrida.
+              Envie os dados pelo WhatsApp para avaliação do atendente. A disponibilidade depende de confirmação.
             </p>
           </div>
           <a
@@ -254,7 +253,7 @@ export default function Page() {
             className="quote-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-7 py-3 font-bold text-primary-700 hover:bg-brand-950 hover:text-white"
           >
             <WhatsAppIcon className="h-5 w-5" />
-            Pedir cotação no WhatsApp
+            Falar com atendente no WhatsApp
           </a>
         </div>
       </section>

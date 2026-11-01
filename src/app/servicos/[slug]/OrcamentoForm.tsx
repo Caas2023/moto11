@@ -18,7 +18,7 @@ export default function OrcamentoForm({ service }: Props) {
   const [destino, setDestino] = useState("");
   const [detalhes, setDetalhes] = useState("");
 
-  const mensagem = `Olá! Quero um orçamento de ${service.title}. Nome: ${nome || "-"} | Coleta: ${origem || "-"} | Entrega: ${destino || "-"} | Detalhes: ${detalhes || "-"}`;
+  const mensagem = `Olá! Quero falar com um atendente para solicitar uma cotação de ${service.title}. Nome: ${nome || "-"} | Coleta: ${origem || "-"} | Entrega: ${destino || "-"} | Detalhes: ${detalhes || "-"}`;
   const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
 
   const inputClass =
@@ -37,8 +37,8 @@ export default function OrcamentoForm({ service }: Props) {
         Solicitar orçamento de {service.title.toLowerCase()}
       </h2>
       <p className="mt-1 text-sm text-zinc-600">
-        Preencha os campos e envie direto para o nosso WhatsApp. Respondemos em
-        minutos no horário comercial.
+        Preencha os campos e envie para o WhatsApp. O atendente avalia a
+        solicitação durante o horário comercial.
       </p>
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <label className="block text-sm font-medium text-zinc-700">
@@ -86,7 +86,7 @@ export default function OrcamentoForm({ service }: Props) {
         Pedir cotação pelo WhatsApp
       </button>
       <p className="mt-3 text-xs text-zinc-500">
-        Tempo médio: {service.tempoMedio} · {service.precoBase}. Sem
+        Tempo médio: {service.tempoMedio}. Sem
         compromisso.
       </p>
     </form>

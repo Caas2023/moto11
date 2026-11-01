@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, ShieldCheck, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { PHONE_WA } from "@/lib/seo";
@@ -42,7 +42,7 @@ export default function Motoboy24HorasPage() {
               </h2>
             </div>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              Envie origem, destino e item pelo WhatsApp. Durante o expediente (8h às 18h), você recebe o valor fechado e a disponibilidade imediata. Mensagens enviadas fora do horário são registradas e respondidas a partir das primeiras horas do próximo dia útil.
+              Envie origem, destino e item pelo WhatsApp. O atendente avalia a solicitação durante o expediente (8h às 18h) e confirma disponibilidade e condições. Mensagens enviadas fora do horário podem ser respondidas no próximo dia útil.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <Link
@@ -65,7 +65,7 @@ export default function Motoboy24HorasPage() {
               A Moto11 adota transparência absoluta: nosso expediente é de segunda a sexta-feira, das 08h00 às 18h00. Focamos nossa frota nos períodos de maior demanda produtiva da cidade: o expediente bancário, cartórios, fóruns judiciais e a expedição de indústrias e comércios da Via Dutra e de Cumbica.
             </p>
             <p className="leading-relaxed">
-              Dessa forma, garantimos que cada piloto esteja descansado, com moto revisada, baú higienizado e focado em entregar seus documentos ou produtos com rapidez e protocolo assinado.
+              O atendimento ocorre em horário comercial. Para que a solicitação seja avaliada, envie origem, destino, item e o prazo desejado pelo WhatsApp.
             </p>
           </div>
         </div>

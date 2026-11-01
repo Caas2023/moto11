@@ -6,7 +6,7 @@ import { PHONE_WA, canonical } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade | Moto11",
+  title: "Política de Privacidade",
   description: "Canal de contato e diretrizes da Moto11 em conformidade com a LGPD.",
   alternates: { canonical: canonical("/politica-privacidade") },
   robots: { index: false, follow: true },
@@ -55,7 +55,7 @@ export default function PoliticaPrivacidadePage() {
               Os dados coletados são utilizados estritamente para as seguintes finalidades operacionais:
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Cálculo da rota viária e confirmação do valor acordado para a entrega no WhatsApp.</li>
+              <li>Avaliação da rota e confirmação das condições de atendimento pelo WhatsApp.</li>
               <li>Comunicação direta com remetente e destinatário durante o percurso via WhatsApp ou ligação para resolução de dúvidas de acesso em portarias e interfones.</li>
               <li>Emissão de protocolo digital de entrega, recibos ou relatórios mensais de faturamento para empresas conveniadas.</li>
               <li>Cumprimento de obrigações fiscais e tributárias legais perante os órgãos municipais e fazendários.</li>

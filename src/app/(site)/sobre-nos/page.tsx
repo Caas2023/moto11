@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  ArrowRight,
-  CheckCircle2,
   Clock,
   FileCheck,
-  MapPin,
   ShieldCheck,
   Truck,
 } from "lucide-react";
@@ -22,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sobre a Moto11 | Motoboy em Guarulhos e SP",
     description:
-      "Entregas expressas em Guarulhos e rotas metropolitanas com preço fechado antes da saída e atendimento comercial de seg. a sex., 8h às 18h.",
+      "Entregas em Guarulhos e rotas metropolitanas, com atendimento comercial de seg. a sex., 8h às 18h.",
     url: `${SITE.baseUrl}/sobre-nos`,
     type: "website",
   },
@@ -35,23 +32,23 @@ const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
 const PILARES = [
   {
     icon: ShieldCheck,
-    title: "Preço Fechado Sem Surpresas",
-    desc: "Apresentamos o valor final no WhatsApp antes de deslocar o piloto. Não trabalhamos com tarifas dinâmicas ocultas ou acréscimos arbitrários no balcão.",
+    title: "Cotação pelo atendente",
+    desc: "Toda solicitação é avaliada pelo atendente no WhatsApp. Disponibilidade e condições são confirmadas antes da coleta.",
   },
   {
     icon: Clock,
-    title: "Pontualidade e Janelas Reais",
-    desc: "Atendimento focado no horário comercial, de segunda a sexta, das 8h às 18h, priorizando a segurança viária dos pilotos e a integridade da sua carga.",
+    title: "Informações completas",
+    desc: "Endereços, item, horário e instruções de acesso ajudam o atendente a avaliar a solicitação com segurança.",
   },
   {
     icon: FileCheck,
-    title: "Comprovação Digital Imediata",
-    desc: "Toda entrega concluída gera foto do protocolo assinado com nome legível e documento do recebedor, enviada imediatamente no chat para sua tranquilidade.",
+    title: "Instruções de entrega",
+    desc: "Informe se há necessidade de protocolo, assinatura, retorno ou contato específico no destino.",
   },
   {
     icon: Truck,
-    title: "Cuidado e Proteção da Carga",
-    desc: "Operamos com baús vedados resistentes à água e adequados para até 20 kg, ideais para documentos, contratos, exames, peças e encomendas de e-commerce.",
+    title: "Item e embalagem",
+    desc: "Descreva peso, dimensões, fragilidade e embalagem para que o atendente confirme se o transporte é viável.",
   },
 ];
 
@@ -64,17 +61,17 @@ const PASSOS = [
   {
     numero: "02",
     titulo: "Cotação e Confirmação",
-    texto: "Calculamos a rota viária real, alinhamos a tolerância e confirmamos o valor exato antes da partida.",
+    texto: "O atendente avalia os detalhes da rota e confirma disponibilidade e condições pelo WhatsApp.",
   },
   {
     numero: "03",
-    titulo: "Deslocamento e Coleta",
-    texto: "O piloto mais bem posicionado é acionado e retira o item no local combinado com agilidade.",
+    titulo: "Confirmação da coleta",
+    texto: "Depois da confirmação, mantenha uma pessoa disponível na coleta e siga as instruções combinadas no atendimento.",
   },
   {
     numero: "04",
-    titulo: "Entrega e Protocolo",
-    texto: "O item é entregue em mãos com assinatura do recebedor e comprovante enviado em tempo real.",
+    titulo: "Entrega combinada",
+    texto: "Confirme com o atendente o contato do destino e qualquer exigência de recebimento antes da coleta.",
   },
 ];
 
@@ -83,8 +80,8 @@ export default function SobreNosPage() {
     <>
       <PageHero
         eyebrow="Institucional Moto11"
-        title="Agilidade urbana com compromisso real em cada rota."
-        description="A Moto11 nasceu para resolver a logística rápida em Guarulhos e rotas para São Paulo com seriedade, clareza e previsibilidade para empresas e pessoas."
+        title="Atendimento de motoboy com informação clara desde o início."
+        description="A Moto11 recebe solicitações para Guarulhos e rotas para São Paulo. Cada rota é avaliada pelo atendente antes da confirmação."
       >
         <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
           <Link href="/" className="hover:text-white">Início</Link>
@@ -102,7 +99,7 @@ export default function SobreNosPage() {
               Uma boa entrega começa pelo respeito à sua operação.
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted">
-              Não fazemos promessas impossíveis. Trabalhamos com processos claros que garantem a segurança do remetente, do destinatário e do profissional na rua:
+              A solicitação começa com informações claras. Assim, o atendente pode avaliar a rota antes de confirmar a coleta:
             </p>
           </div>
 
@@ -136,18 +133,18 @@ export default function SobreNosPage() {
           <div>
             <p className="text-sm font-semibold text-primary-700">Conhecimento Local</p>
             <h2 id="operacao-title" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              Especialistas na malha viária de Guarulhos e Grande SP.
+              O que informar para uma rota em Guarulhos e São Paulo.
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
             <p>
-              Guarulhos é uma das cidades economicamente mais ativas e complexas do país. Ligar polos industriais em Cumbica e Bonsucesso ao Centro comercial, à Vila Augusta ou aos bairros residenciais exige mais do que seguir um aplicativo: exige conhecimento dos horários de pico da Rodovia Presidente Dutra, da Rodovia Ayrton Senna e das vias arteriais como Monteiro Lobato e Tiradentes.
+              Guarulhos tem polos industriais, comerciais e residenciais conectados por vias como a Rodovia Presidente Dutra, a Rodovia Ayrton Senna, a Avenida Monteiro Lobato e a Avenida Tiradentes. A condição da rota varia conforme origem, destino, horário e acesso ao local.
             </p>
             <p>
-              Nossa operação posiciona pilotos estrategicamente para atender prontamente chamados em escritórios, indústrias, comércios e consultórios. Entendemos as particularidades de docas de carga, recepções corporativas, cartórios e o Terminal de Cargas do Aeroporto Internacional de Guarulhos (GRU), orientando o cliente desde o primeiro contato sobre as etapas necessárias para que a entrega ocorra sem surpresas.
+              Para escritórios, indústrias, comércios e consultórios, informe se a retirada acontece em doca, recepção, portaria, cartório ou outro ponto com regras de acesso. Inclua nome e telefone de quem estará no local.
             </p>
             <p>
-              Para rotas entre Guarulhos e a capital paulista, operamos com comunicação constante. Cada entrega interestadual ou metropolitana tem suas variáveis de trânsito monitoradas para oferecer previsibilidade real, permitindo que a sua empresa cumpra prazos fiscais, bancários e comerciais com tranquilidade.
+              Nas rotas entre Guarulhos e São Paulo, envie os dois endereços completos, a janela desejada e o prazo-limite real. O atendente avalia a disponibilidade no momento do pedido; uma página de região não confirma uma rota automaticamente.
             </p>
           </div>
         </div>
@@ -162,7 +159,7 @@ export default function SobreNosPage() {
               Como funciona o chamado na prática.
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted">
-              Do primeiro contato no WhatsApp até a confirmação de entrega com comprovante:
+              Abaixo está o fluxo da solicitação pelo WhatsApp:
             </p>
           </div>
 
@@ -192,7 +189,7 @@ export default function SobreNosPage() {
               Precisa de motoboy para sua empresa ou coleta rápida?
             </h2>
             <p className="mt-2 text-orange-50">
-              Chame nossa equipe no WhatsApp e receba a cotação imediata da sua rota.
+              Envie os dados da rota pelo WhatsApp e aguarde a avaliação do atendente.
             </p>
           </div>
           <a

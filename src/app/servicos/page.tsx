@@ -28,14 +28,14 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
-  "Olá! Quero saber qual serviço atende minha rota. Origem: (informar) / Destino: (informar) / Item: (informar).",
+    "Olá! Quero falar com um atendente sobre o serviço para minha rota. Origem: (informar) / Destino: (informar) / Item: (informar).",
 )}`;
 
 const categories = [
   {
     icon: FileText,
     title: "Documentos",
-    text: "Transporte ponto a ponto de envelopes e documentos. Informe se haverá assinatura, protocolo, devolução ou espera para que a cotação considere a missão completa.",
+    text: "Transporte ponto a ponto de envelopes e documentos. Informe se haverá assinatura, protocolo, devolução ou espera para avaliação do atendente.",
   },
   {
     icon: Package,
@@ -60,7 +60,7 @@ const categories = [
   {
     icon: Building2,
     title: "Locais com acesso especial",
-    text: "Cartórios, shopping e aeroporto recebem cotação própria. Filas, estacionamento, regras de entrada e espera podem alterar o custo e a previsão.",
+    text: "Cartórios, shopping e aeroporto têm regras específicas de acesso. Informe a tarefa e aguarde a avaliação do atendente.",
   },
 ];
 
@@ -104,11 +104,16 @@ export default function ServicesPage() {
           <h2 id="modalidades-title" className="font-display text-2xl font-bold text-brand-950 sm:text-3xl">
             Modalidades e aplicações do serviço
           </h2>
-          <p className="mt-4 max-w-3xl text-base leading-8 text-muted">
-            Consulte os detalhes de cada modalidade e confirme com a central a disponibilidade, as condições de transporte e o valor para sua rota.
-          </p>
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((service) => (
+           <p className="mt-4 max-w-3xl text-base leading-8 text-muted">
+             Consulte as modalidades abaixo. Para outras necessidades, envie
+             origem, destino e item pelo WhatsApp para avaliação do atendente;
+             antes, veja quais dados informar na{" "}
+             <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">
+               cotação da rota
+             </Link>.
+           </p>
+           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+             {SERVICES.map((service) => (
               <li key={service.slug}>
                 <Link
                   href={`/servicos/${service.slug}`}
@@ -128,25 +133,22 @@ export default function ServicesPage() {
           <div>
             <Route className="h-9 w-9 text-primary-700" aria-hidden="true" />
             <h2 id="cotacao-servico" className="mt-5 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              O orçamento é calculado com dados concretos.
+              Toda cotação passa pelo atendente.
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
             <p>
-              A distância e as condições de cada rota são verificadas antes da confirmação.
-              Consulte os valores na tabela de preços ou envie os endereços para uma cotação.
+              Envie os endereços e detalhes da entrega pelo WhatsApp para avaliação do atendente.
             </p>
             <p>
-              A espera pode alterar o valor. Quando o serviço envolve balcão, portaria,
-              retirada com senha ou pessoa específica, vale avisar já no primeiro
-              contato. Assim, o orçamento não omite uma etapa importante.
+              Quando o serviço envolve balcão, portaria, retirada com senha ou pessoa
+              específica, avise já no primeiro contato para que o atendente avalie
+              a solicitação completa.
             </p>
             <p>
-              Cartórios, shopping e aeroporto não usam automaticamente a mesma
-              fórmula da corrida simples. Esses destinos recebem cotação à parte,
-              pois acesso, estacionamento, credenciamento e tempo de espera podem
-              variar. Publicar um preço único para essas situações seria pouco
-              transparente.
+              Cartórios, shopping e aeroporto podem exigir procedimentos de acesso,
+              estacionamento, credenciamento ou espera. O atendente avalia cada
+              solicitação antes de confirmar as condições.
             </p>
           </div>
         </div>
@@ -222,7 +224,7 @@ export default function ServicesPage() {
               Coletas agendadas funcionam melhor quando o item já está liberado e o responsável pelo local sabe que haverá retirada. Informe a janela desejada, o horário de funcionamento e um telefone alternativo. Em empresas, vale concentrar as informações recorrentes em uma mensagem clara: origem, destinos, frequência, contatos e restrições de acesso. Isso permite avaliar cada pedido pela operação real, em vez de publicar um pacote ou prazo genérico que pode não servir à sua rotina.
             </p>
             <p>
-              Cartórios, shopping e aeroporto merecem atenção extra. Esses locais podem ter fila, estacionamento, balcão, credenciamento ou restrição de entrada. O caminho correto é informar o local exato, a tarefa esperada e o horário em que o atendimento está disponível. Consulte a <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link> para a regra de rotas simples e solicite cotação específica quando o serviço tiver etapas adicionais.
+              Cartórios, shopping e aeroporto merecem atenção extra. Esses locais podem ter fila, estacionamento, balcão, credenciamento ou restrição de entrada. Informe o local exato, a tarefa esperada e o horário em que o atendimento está disponível. O atendente avaliará a solicitação pelo WhatsApp.
             </p>
           </div>
         </div>
@@ -231,23 +233,23 @@ export default function ServicesPage() {
       <section className="bg-surface-warm py-16 sm:py-24" aria-labelledby="protocolos-servicos">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-semibold text-primary-700">Rastreabilidade e segurança</p>
+            <p className="text-sm font-semibold text-primary-700">Instruções da entrega</p>
             <h2 id="protocolos-servicos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              Cadeia de custódia e comprovação em cada etapa.
+              Detalhes que precisam entrar no pedido.
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
             <p>
-              O transporte de documentos jurídicos, licitações, procurações e balanços contábeis exige procedimentos formais de custódia. Na Moto11, os envelopes são retirados lacrados, com conferência presencial da quantidade de vias e identificação imediata do destinatário. A baixa é realizada exclusivamente mediante protocolo carimbado ou assinatura com nome legível e horário exato, garantindo arquivo probatório digital imediato para sua empresa via WhatsApp.
+              O transporte de documentos jurídicos, licitações, procurações e balanços contábeis exige instruções claras. Informe se o material estará lacrado, quantas vias existem, quem pode receber e se há protocolo ou assinatura. O atendente confirma quais procedimentos podem ser atendidos antes da coleta.
             </p>
             <p>
-              Para mercadorias de e-commerce e peças de reposição industrial, aplicamos checklists de conferência de volume e integridade externa da embalagem na coleta. Nosso baú profissional conta com isolamento contra intempéries e forração protetora para evitar impactos. Itens com valor agregado relevante ou prazos de entrega no mesmo dia útil recebem prioridade de roteirização para evitar baldeações desnecessárias ou paradas intermediárias não autorizadas.
+              Para mercadorias de e-commerce e peças de reposição industrial, descreva volume, dimensões, fragilidade e a embalagem disponível. Itens sensíveis ou com prazo no mesmo dia útil precisam ser avaliados pelo atendente antes da confirmação.
             </p>
             <p>
-              Empresas que demandam rotas programadas semanais ou mensais contam com atendimento dedicado e faturamento facilitado. Alinhamos antecipadamente os dias de coleta, as janelas de passagem e os contatos responsáveis em cada unidade, criando um fluxo operacional silencioso que libera sua equipe interna de tarefas externas de trânsito.
+              Para uma necessidade recorrente, informe dias, janelas, contatos e restrições de acesso. O atendente avalia a viabilidade de cada rota antes de propor uma rotina.
             </p>
             <p>
-              Caso ocorra qualquer imprevisto no destino — como destinatário ausente, portaria fechada ou necessidade de conferência prolongada além da tolerância de 15 minutos —, o piloto entra em contato imediato pelo WhatsApp antes de tomar qualquer decisão. O contratante sempre mantém o controle da missão, podendo autorizar a continuidade da espera a R$ 0,60 por minuto, reagendar a entrega ou determinar o retorno com segurança.
+              Se houver risco de destinatário ausente, portaria fechada ou conferência prolongada, informe isso no pedido. Combine com o atendente como proceder antes da coleta.
             </p>
           </div>
         </div>
@@ -256,17 +258,17 @@ export default function ServicesPage() {
       <section className="bg-surface py-16 sm:py-24" aria-labelledby="faturamento-servicos">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-semibold text-primary-700">Gestão corporativa</p>
+            <p className="text-sm font-semibold text-primary-700">Solicitações recorrentes</p>
             <h2 id="faturamento-servicos" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              Faturamento mensal e relatórios para empresas conveniadas.
+              Empresas podem explicar a rotina antes de pedir.
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
             <p>
-              Para escritórios e empresas que realizam coletas com frequência semanal ou diária em Guarulhos e na Grande São Paulo, a Moto11 disponibiliza modalidade de faturamento periódico com relatório consolidado. Cada chamado executado é discriminado por data, horário exato de retirada e de entrega, endereço de origem, ponto de destino, nome legível do recebedor e valor contratado segundo a tabela de distância oficial.
+              Se a demanda se repete, envie a frequência, os endereços, as janelas desejadas, os contatos e as regras de acesso. Essas informações permitem ao atendente avaliar a operação completa, em vez de tratar cada trecho como uma corrida isolada.
             </p>
             <p>
-              Essa estrutura elimina a necessidade de adiantamento em dinheiro ou reembolsos manuais contínuos para a equipe administrativa. A emissão de documento fiscal e o envio do fechamento para a controladoria facilitam a conciliação financeira e garantem total conformidade contábil. Para solicitar a abertura de cadastro corporativo, envie a estimativa de saídas semanais e as rotas habituais para nossa equipe pelo canal oficial do WhatsApp.
+              Não publicamos pacotes, condições comerciais ou níveis de serviço sem uma avaliação da rota. O atendimento pelo WhatsApp é o caminho para esclarecer o que pode ser combinado para uma necessidade recorrente.
             </p>
           </div>
         </div>

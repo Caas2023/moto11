@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Mail, MapPin, Phone, Clock, ArrowRight } from "lucide-react";
-import { Breadcrumb } from "@/components/site/Breadcrumb";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import { JsonLd } from "@/components/site/json-ld";
 import { ContactForm } from "@/components/site/contact-form";
 import { PageHero } from "@/components/site/PageHero";
@@ -10,7 +9,7 @@ import { SITE, localBusinessJsonLd } from "@/lib/site";
 import { PHONE_DISPLAY, PHONE_TEL_LINK, PHONE_WA } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Contato Moto11 | WhatsApp e Telefone em Guarulhos",
+  title: "Contato | WhatsApp e Telefone em Guarulhos",
   description:
     "Fale com a Moto11 em Guarulhos por WhatsApp, telefone ou e-mail. Atendimento comercial de segunda a sexta, das 8h às 18h.",
   alternates: { canonical: `${SITE.baseUrl}/contato` },
@@ -44,7 +43,7 @@ export default function ContatoPage() {
       <PageHero
         eyebrow="Canais de Atendimento"
         title="Fale com a Moto11 em Guarulhos."
-        description="Atendimento comercial ágil de segunda a sexta, das 8h às 18h. Chame no WhatsApp para cotações imediatas ou ligue para esclarecer dúvidas da sua entrega."
+        description="Atendimento comercial de segunda a sexta, das 8h às 18h. Fale pelo WhatsApp ou telefone para enviar sua solicitação e esclarecer dúvidas."
       >
         <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
           <Link href="/" className="hover:text-white">Início</Link>
@@ -62,7 +61,7 @@ export default function ContatoPage() {
               Escolha como prefere falar conosco.
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted">
-              Para orçamentos urgentes de entrega, recomendamos o WhatsApp para resposta em minutos.
+              Para solicitar uma cotação, envie pelo WhatsApp os detalhes da entrega. O atendente avalia disponibilidade e condições.
             </p>
           </div>
 
@@ -77,7 +76,7 @@ export default function ContatoPage() {
                   WhatsApp Oficial
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
-                  Canal mais rápido para cotação de rotas, envio de endereços e acompanhamento de coletas.
+                  Canal para enviar endereços e solicitar uma cotação de rota ou coleta.
                 </p>
               </div>
               <a
@@ -145,7 +144,7 @@ export default function ContatoPage() {
                 Envie uma mensagem
               </h2>
               <p className="mt-2 text-sm text-muted">
-                Preencha os campos abaixo e entraremos em contato o mais rápido possível:
+                Preencha os campos abaixo. Sua mensagem será avaliada pelo atendente.
               </p>
               <div className="mt-6">
                 <ContactForm />
@@ -165,7 +164,7 @@ export default function ContatoPage() {
                   Segunda a sexta-feira, das 08h às 18h.
                 </p>
                 <p className="mt-2 text-xs text-muted">
-                  Não operamos aos finais de semana, de madrugada ou em feriados. Mensagens enviadas fora do expediente são respondidas no primeiro dia útil subsequente.
+                  Solicitações enviadas fora desse período são avaliadas pelo atendente durante o horário comercial.
                 </p>
               </div>
 
@@ -177,14 +176,17 @@ export default function ContatoPage() {
                   </h3>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
-                  Guarulhos e rotas para São Paulo e Região Metropolitana.
+                  Informe origem e destino para que o atendente avalie a possibilidade de atendimento.
                 </p>
                 <p className="mt-2 text-xs text-muted">
-                  Operação logística sem balcão aberto ao público para retirada de encomendas; todos os chamados são atendidos ponto a ponto nos endereços acordados.
+                  A disponibilidade e as condições da solicitação são confirmadas pelo atendente antes de qualquer coleta.
                 </p>
               </div>
             </div>
           </div>
+          <p className="mt-8 text-sm leading-7 text-muted">
+            Consulte <Link href="/precos" className="font-semibold text-primary-700 hover:underline">como solicitar uma cotação</Link>, conheça os <Link href="/servicos" className="font-semibold text-primary-700 hover:underline">serviços</Link> e veja as <Link href="/areas-atendidas" className="font-semibold text-primary-700 hover:underline">áreas atendidas</Link>.
+          </p>
         </div>
       </section>
 
@@ -193,10 +195,10 @@ export default function ContatoPage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h2 id="cta-final-contato" className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Precisa de um motoboy agora?
+              Precisa solicitar uma entrega?
             </h2>
             <p className="mt-2 text-orange-50">
-              Chame nossa equipe pelo WhatsApp e receba a cotação imediata da sua rota.
+              Envie os dados pelo WhatsApp para avaliação do atendente. A disponibilidade depende de confirmação.
             </p>
           </div>
           <a

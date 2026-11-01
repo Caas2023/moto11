@@ -46,7 +46,6 @@ export function localBusinessJsonLd() {
     url: SITE.baseUrl,
     telephone: PHONE_TEL_LINK,
     email: SITE.email,
-    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       addressLocality: SITE.address.city,

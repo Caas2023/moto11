@@ -14,7 +14,6 @@ import {
 import { SERVICES, getServiceBySlug } from "@/data/services";
 import {
   PHONE_WA,
-  SITE_NAME,
   SITE_URL,
   buildMetadata,
   jsonLdFAQ,
@@ -40,10 +39,10 @@ export async function generateMetadata({
   if (!service) return {};
 
   return buildMetadata({
-    title: `${service.title} | ${SITE_NAME}`,
+    title: service.title,
     description: service.description,
     path: `/servicos/${service.slug}`,
-    keywords: service.keywords,
+    keywords: service.keywords.filter((keyword) => !/preç|valor|R\$/i.test(keyword)),
     noIndex: false,
   });
 }
@@ -58,7 +57,7 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
-    `Olá! Quero cotar o serviço de ${service.title} em Guarulhos. Origem: (informar) / Destino: (informar) / Detalhes: (informar).`,
+            `Olá! Quero solicitar uma cotação com o atendente para ${service.title} em Guarulhos. Origem: (informar) / Destino: (informar) / Detalhes: (informar).`,
   )}`;
 
   const serviceSchema = jsonLdService({
@@ -125,8 +124,9 @@ export default async function ServicePage({
         title={<>{service.h1}</>}
         description={
           <>
-            {service.description} Atendimento de segunda a sexta, das 8h às 18h,
-            com orçamento fechado pelo WhatsApp antes de qualquer coleta.
+            {service.description} Atendimento de segunda a sexta, das 8h às 18h.
+            Toda cotação é avaliada pelo atendente no WhatsApp; disponibilidade e
+            condições dependem de confirmação.
           </>
         }
       >
@@ -173,7 +173,7 @@ export default async function ServicePage({
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface-warm px-3.5 py-1.5">
               <Route className="h-4 w-4 text-primary-700" aria-hidden="true" />
-              {service.precoBase}
+              Cotação com atendente pelo WhatsApp
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface-warm px-3.5 py-1.5">
               <ShieldCheck className="h-4 w-4 text-success" aria-hidden="true" />
@@ -182,8 +182,8 @@ export default async function ServicePage({
           </div>
         </section>
 
-        {/* Benefícios e Diferenciais */}
-        <section
+        {/* Informações publicáveis do serviço */}
+        {service.beneficios.length > 0 && <section
           className="rounded-2xl border border-line bg-surface-warm p-6 sm:p-8"
           aria-labelledby="beneficios-servico"
         >
@@ -193,7 +193,7 @@ export default async function ServicePage({
               id="beneficios-servico"
               className="font-display text-2xl font-bold text-brand-950"
             >
-              Diferenciais deste atendimento
+              Informações deste atendimento
             </h2>
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -212,7 +212,7 @@ export default async function ServicePage({
               </div>
             ))}
           </div>
-        </section>
+        </section>}
 
         {/* Detalhes Operacionais */}
         {service.detalhes && service.detalhes.length > 0 && (
@@ -246,11 +246,11 @@ export default async function ServicePage({
               id="cobertura-servico"
               className="font-display text-xl font-bold text-brand-950"
             >
-              Regiões de alta demanda para este serviço
+              Regiões relacionadas a este serviço
             </h2>
             <p className="mt-2 text-sm text-muted">
-              Pilotos com trânsito contínuo e tempo de coleta reduzido nas
-              seguintes regiões de Guarulhos:
+              Use estas referências para descrever sua rota ao atendente. A
+              disponibilidade depende dos endereços completos e do horário:
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {service.areasAtendidas.map((areaNome) => (
@@ -270,20 +270,20 @@ export default async function ServicePage({
         <section aria-labelledby="cotacao-servico">
           <div className="border-l-4 border-primary-700 pl-4 sm:pl-6 mb-6">
             <span className="text-xs font-bold uppercase tracking-wider text-primary-700">
-              Orçamento rápido
+              Solicitação pelo WhatsApp
             </span>
             <h2
               id="cotacao-servico"
               className="mt-1 font-display text-2xl font-bold text-brand-950 sm:text-3xl"
             >
-              Envie sua rota para cotação imediata
+              Envie sua rota para o atendente
             </h2>
           </div>
           <CotacaoForm />
         </section>
 
         {/* FAQ do Serviço */}
-        <section aria-labelledby="faq-servico">
+        {service.faq.length > 0 && <section aria-labelledby="faq-servico">
           <div className="flex items-center gap-3">
             <HelpCircle className="h-6 w-6 text-primary-700" aria-hidden="true" />
             <h2
@@ -311,7 +311,7 @@ export default async function ServicePage({
               </details>
             ))}
           </div>
-        </section>
+        </section>}
 
         {/* Outros Serviços */}
         <section
@@ -367,9 +367,9 @@ export default async function ServicePage({
               Pronto para solicitar {service.title.toLowerCase()}?
             </h2>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed">
-              Fale diretamente com nossa equipe no WhatsApp. Envie os endereços
-              de coleta e entrega e receba a confirmação do preço fechado antes
-              da saída.
+              Fale diretamente com o atendente no WhatsApp. Envie os endereços
+              de coleta e entrega para avaliação. A disponibilidade e as condições
+              serão confirmadas antes de qualquer coleta.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
@@ -8,11 +8,11 @@ import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { cn } from "@/lib/utils";
 import { PHONE_DISPLAY, PHONE_TEL_LINK, PHONE_WA } from "@/lib/seo";
 
-const QUOTE_MESSAGE = "Olá! Gostaria de cotar uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar). Poderia me passar o valor e a previsão?";
+const QUOTE_MESSAGE = "Olá! Gostaria de solicitar uma cotação. Origem: (informar) / Destino: (informar) / Item: (informar). Por favor, encaminhe ao atendente.";
 
 const NAV = [
   { label: "Início", href: "/" },
-  { label: "Cotação e Preços", href: "/precos" },
+  { label: "Solicitar cotação", href: "/precos" },
   { label: "Serviços", href: "/servicos" },
   { label: "Áreas atendidas", href: "/areas-atendidas" },
   { label: "Sobre", href: "/sobre-nos" },
@@ -21,6 +21,21 @@ const NAV = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const closeWithEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+
+    document.addEventListener("keydown", closeWithEscape);
+    return () => document.removeEventListener("keydown", closeWithEscape);
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-line bg-surface/95 backdrop-blur-md">
@@ -60,9 +75,11 @@ export function Header() {
         </div>
 
         <button
+          ref={menuButtonRef}
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
+          aria-controls="mobile-navigation"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-line text-brand-950 lg:hidden"
         >
@@ -70,7 +87,7 @@ export function Header() {
         </button>
       </div>
 
-      <div className={cn("border-t border-line bg-surface lg:hidden", open ? "block" : "hidden")}>
+      <div id="mobile-navigation" className={cn("border-t border-line bg-surface lg:hidden", open ? "block" : "hidden")}>
         <nav aria-label="Navegação móvel" className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4 sm:px-6">
           {NAV.map((item) => (
             <Link

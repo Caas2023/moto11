@@ -6,11 +6,9 @@ import {
   CheckCircle2,
   Clock3,
   Compass,
-  FileText,
   HelpCircle,
   MapPin,
   Route,
-  ShieldCheck,
 } from "lucide-react";
 import {
   getNeighborhoodGu,
@@ -23,6 +21,7 @@ import {
   buildMetadata,
   jsonLdFAQ,
 } from "@/lib/seo";
+import { publicCopy } from "@/lib/public-copy";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
@@ -43,7 +42,7 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: `Motoboy em ${area.nome}, Guarulhos`,
-    description: `Serviço de motoboy em ${area.nome}, Guarulhos. Entregas expressas, coletas de documentos, peças e malotes. Cotação por rota viária pelo WhatsApp.`,
+    description: `Serviço de motoboy em ${area.nome}, Guarulhos. Entregas expressas, coletas de documentos, peças e malotes. Solicite uma cotação ao atendente pelo WhatsApp.`,
     path: `/areas/${area.slug}`,
     keywords: [
       `motoboy ${area.nome}`,
@@ -64,9 +63,14 @@ export default async function AreaPage({
   const { slug } = await params;
   const area = getNeighborhoodGu(slug);
   if (!area) notFound();
+  const subtitle = publicCopy(area.subtitulo) || `Consulte informações de acesso e solicite uma cotação para ${area.nome}.`;
+  const summary = publicCopy(area.resumoLocal) || `Esta página reúne referências locais para ajudar você a informar a rota em ${area.nome}.`;
+  const faqItems = area.faq
+    .map((item) => ({ pergunta: publicCopy(item.pergunta), resposta: publicCopy(item.resposta) }))
+    .filter((item) => item.pergunta && item.resposta);
 
   const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
-    `Olá! Quero cotar uma entrega em ${area.nome}, Guarulhos. Origem: (informar) / Destino: (informar) / Item: (informar).`,
+    `Olá! Quero solicitar uma cotação com o atendente para uma entrega em ${area.nome}, Guarulhos. Origem: (informar) / Destino: (informar) / Item: (informar).`,
   )}`;
 
   const serviceSchema = {
@@ -74,7 +78,7 @@ export default async function AreaPage({
     "@type": "Service",
     name: `Serviço de Motoboy em ${area.nome}, Guarulhos`,
     serviceType: "Serviço de Motoboy e Entregas Expressas",
-    description: area.subtitulo,
+    description: subtitle,
     url: `${SITE_URL}/areas/${area.slug}`,
     provider: {
       "@type": "LocalBusiness",
@@ -131,7 +135,7 @@ export default async function AreaPage({
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ(area.faq)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ(faqItems)) }}
       />
 
       <PageHero
@@ -140,9 +144,9 @@ export default async function AreaPage({
         title={<>Motoboy em {area.nome}, Guarulhos</>}
         description={
           <>
-            {area.subtitulo}. Atendimento profissional para empresas, comércios
-            e particulares com preço fechado antes da moto sair, de segunda a
-            sexta, das 8h às 18h.
+            {subtitle} Atendimento de segunda a sexta, das 8h às 18h.
+            Toda cotação é avaliada pelo atendente no WhatsApp; a disponibilidade
+            e as condições dependem de confirmação.
           </>
         }
       >
@@ -179,15 +183,12 @@ export default async function AreaPage({
             </h2>
           </div>
           <div className="mt-6 text-base sm:text-lg leading-relaxed text-muted space-y-4">
-            <p>{area.resumoLocal}</p>
+            <p>{summary}</p>
             <p>
-              A operação da Moto11 em {area.nome} prioriza a previsibilidade:
-              ao solicitar uma cotação, você informa o ponto de coleta, o
-              endereço de entrega e as particularidades da carga (como volume,
-              peso ou necessidade de protocolo assinado). Nossa equipe calcula a
-              rota real por quilometragem viária e confirma a disponibilidade
-              imediata, garantindo que o valor informado seja o valor final, sem
-              adicionais surpresa.
+              Ao solicitar uma cotação, informe o ponto de coleta, o endereço de
+              entrega e as particularidades do item, como volume, peso, embalagem
+              ou necessidade de retorno. O atendente avalia a solicitação pelo
+              WhatsApp antes de confirmar disponibilidade e condições.
             </p>
           </div>
         </section>
@@ -207,9 +208,8 @@ export default async function AreaPage({
             </h2>
           </div>
           <p className="mt-3 text-muted leading-relaxed">
-            Nossos pilotos conhecem profundamente os acessos viários e os
-            horários de maior movimento no bairro, otimizando o deslocamento
-            pelas seguintes vias de referência:
+              As vias abaixo são referências úteis para descrever a rota. O
+              percurso e a disponibilidade são avaliados no atendimento:
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {area.viasPrincipais.map((via) => (
@@ -230,7 +230,7 @@ export default async function AreaPage({
               Condição de trânsito local
             </p>
             <p className="mt-1 text-sm text-muted leading-relaxed">
-              {area.particularidadesLogistica}
+              {publicCopy(area.particularidadesLogistica)}
             </p>
           </div>
         </section>
@@ -239,18 +239,18 @@ export default async function AreaPage({
         <section aria-labelledby="demandas-bairro">
           <div className="border-l-4 border-primary-700 pl-4 sm:pl-6">
             <span className="text-xs font-bold uppercase tracking-wider text-primary-700">
-              Especialidades
+              Informações para a cotação
             </span>
             <h2
               id="demandas-bairro"
               className="mt-1 font-display text-2xl font-bold text-brand-950 sm:text-3xl"
             >
-              O que mais transportamos em {area.nome}
+              Situações comuns ao solicitar motoboy em {area.nome}
             </h2>
           </div>
           <p className="mt-3 text-muted leading-relaxed">
-            Cada região possui necessidades distintas. Em {area.nome}, os
-            chamados mais frequentes abrangem:
+              A lista abaixo ajuda a explicar o pedido. Confirme com o atendente
+              se a tarefa e o item podem ser atendidos:
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {area.demandasComuns.map((demanda) => (
@@ -263,7 +263,7 @@ export default async function AreaPage({
                   aria-hidden="true"
                 />
                 <span className="text-sm font-medium text-brand-950 leading-relaxed">
-                  {demanda}
+                  {publicCopy(demanda)}
                 </span>
               </div>
             ))}
@@ -297,17 +297,17 @@ export default async function AreaPage({
             </article>
             <article className="border-t-2 border-brand-950 pt-5">
               <Clock3 className="h-6 w-6 text-primary-700" aria-hidden="true" />
-              <h3 className="mt-4 font-bold text-brand-950">Preço e confirmação</h3>
+              <h3 className="mt-4 font-bold text-brand-950">Confirmação com atendente</h3>
               <p className="mt-2 text-sm leading-6 text-muted">
-                Calculamos a quilometragem viária e informamos o valor fechado
-                antes da moto ser despachada.
+                O atendente confirma disponibilidade e condições pelo WhatsApp
+                antes de qualquer coleta.
               </p>
             </article>
           </div>
         </section>
 
         {/* FAQ Local */}
-        <section aria-labelledby="faq-bairro">
+        {faqItems.length > 0 && <section aria-labelledby="faq-bairro">
           <div className="flex items-center gap-3">
             <HelpCircle className="h-6 w-6 text-primary-700" aria-hidden="true" />
             <h2
@@ -318,7 +318,7 @@ export default async function AreaPage({
             </h2>
           </div>
           <div className="mt-6 divide-y divide-line rounded-xl border border-line bg-white px-6">
-            {area.faq.map((item) => (
+            {faqItems.map((item) => (
               <details key={item.pergunta} className="group py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-brand-950">
                   <span className="text-base sm:text-lg">{item.pergunta}</span>
@@ -335,7 +335,7 @@ export default async function AreaPage({
               </details>
             ))}
           </div>
-        </section>
+        </section>}
 
         {/* Bairros Vizinhos (Links Internos Semânticos) */}
         {area.bairrosVizinhos && area.bairrosVizinhos.length > 0 && (
@@ -387,8 +387,8 @@ export default async function AreaPage({
               Precisa de motoboy em {area.nome}?
             </h2>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed">
-              Envie a origem e o destino da rota no WhatsApp. Passamos a cotação
-              fechada e posicionamos o piloto mais próximo para a coleta.
+              Envie os dados da rota no WhatsApp. O atendente avaliará a
+              solicitação e confirmará disponibilidade e condições.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a
@@ -404,7 +404,13 @@ export default async function AreaPage({
                 href="/precos"
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:border-white hover:bg-white/10 transition-colors"
               >
-                Como funciona o cálculo de preço
+                Solicitar cotação
+              </Link>
+              <Link
+                href="/servicos"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:border-white hover:bg-white/10 transition-colors"
+              >
+                Ver serviços de motoboy
               </Link>
             </div>
           </div>

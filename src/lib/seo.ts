@@ -53,11 +53,13 @@ export function buildMetadata({
       title,
       description,
       url,
+      images: [{ url: `${SITE_URL}/images/hero-moto11.png`, width: 1916, height: 821 }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [`${SITE_URL}/images/hero-moto11.png`],
     },
     robots: noIndex
       ? { index: false, follow: false }
@@ -131,12 +133,45 @@ export function jsonLdFAQ(items: FaqItem[]) {
 export function jsonLdOrganization() {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "@id": `${SITE_URL}/#empresa`,
     name: "Moto11 – Empresa de Motoboy",
     url: SITE_URL,
     telephone: PHONE_TEL_LINK,
     description: DEFAULT_DESCRIPTION,
+    image: `${SITE_URL}/images/hero-moto11.png`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Guarulhos",
+      addressRegion: "SP",
+      addressCountry: "BR",
+    },
+    areaServed: [
+      "Guarulhos",
+      "São Paulo",
+      "Arujá",
+      "Santa Isabel",
+      "Itaquaquecetuba",
+      "Poá",
+      "Ferraz de Vasconcelos",
+      "Suzano",
+      "Mogi das Cruzes",
+      "Osasco",
+      "Barueri",
+      "Santo André",
+      "São Bernardo do Campo",
+      "São Caetano do Sul",
+      "Mauá",
+      "Diadema",
+    ].map((name) => ({ "@type": "City", name })),
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "18:00",
+      },
+    ],
     makesOffer: [
       "Documentos",
       "Pequenos volumes",
@@ -154,21 +189,6 @@ export function jsonLdOrganization() {
         provider: { "@id": `${SITE_URL}/#empresa` },
       },
     })),
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Guarulhos",
-      addressRegion: "SP",
-      addressCountry: "BR",
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "18:00",
-      },
-    ],
-    sameAs: [],
   };
 }
 

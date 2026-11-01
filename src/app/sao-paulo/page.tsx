@@ -9,7 +9,7 @@ import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 export const metadata: Metadata = buildMetadata({
   title: "Motoboy de Guarulhos para São Paulo",
   description:
-    "Solicite cotação de motoboy entre Guarulhos e São Paulo. Valor e previsão dependem dos endereços e do trânsito. Atendimento seg–sex, 8h–18h.",
+    "Solicite uma cotação de motoboy entre Guarulhos e São Paulo pelo WhatsApp. O atendente avalia os endereços e as condições da rota. Atendimento seg–sex, 8h–18h.",
   path: "/sao-paulo",
   keywords: [
     "motoboy Guarulhos São Paulo",
@@ -20,7 +20,7 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
-  "Olá! Quero cotar uma rota entre Guarulhos e São Paulo. Coleta: (informar) / Entrega: (informar) / Item: (informar).",
+  "Olá! Quero falar com um atendente para solicitar uma cotação entre Guarulhos e São Paulo. Coleta: (informar) / Entrega: (informar) / Item: (informar).",
 )}`;
 
 export default function SaoPauloHubPage() {
@@ -47,13 +47,13 @@ export default function SaoPauloHubPage() {
                 Regiões para consulta de rota
               </h2>
               <p className="mt-4 leading-7 text-muted">
-                A lista organiza destinos frequentes de pesquisa. Ela não
-                substitui a confirmação do endereço, da disponibilidade e do
-                prazo no momento do chamado.
-              </p>
-            </div>
-            <ul className="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">
-              {neighborhoodsSp.map((area) => (
+                 A lista organiza destinos frequentes de pesquisa. Outros destinos
+                 ou necessidades devem ser avaliados pelo atendente no WhatsApp,
+                 com os endereços completos e o item da rota.
+               </p>
+             </div>
+             <ul className="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">
+               {neighborhoodsSp.map((area) => (
                 <li key={area.slug} className="bg-white">
                   <Link href={`/sao-paulo/${area.slug}`} className="group flex min-h-20 items-center justify-between gap-3 p-4 font-semibold text-brand-950 hover:bg-surface-warm">
                     {area.nome}
@@ -71,7 +71,7 @@ export default function SaoPauloHubPage() {
           <div>
             <Route className="h-9 w-9 text-primary-700" aria-hidden="true" />
             <h2 id="calculo-sp" className="mt-5 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-              Por que não existe um preço único Guarulhos–São Paulo?
+              Como funciona a cotação entre Guarulhos e São Paulo?
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
@@ -91,8 +91,14 @@ export default function SaoPauloHubPage() {
             <p>
               Paradas intermediárias, retorno ao ponto de origem, espera em
               recepção e acesso a edifícios comerciais também precisam entrar
-              no pedido. Quando todos os passos são descritos no início, o valor
-              apresentado representa melhor a missão real.
+              no pedido. Confira as{" "}
+              <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/servicos">
+                modalidades de serviço
+              </Link>{" "}
+              e os dados para a{" "}
+              <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">
+                cotação da rota
+              </Link>. O atendente avalia esses detalhes antes de confirmar as condições.
             </p>
           </div>
         </div>
@@ -124,7 +130,8 @@ export default function SaoPauloHubPage() {
                 Para coleta na capital, envie o endereço, o responsável pela
                 liberação e o horário em que o item estará pronto. Uma moto não
                 deve ser acionada antes de a retirada estar confirmada, pois a
-                espera pode alterar custo e sequência da rota.
+                 espera podem alterar a sequência da rota e precisam ser
+                 avaliadas pelo atendente.
               </p>
             </article>
           </div>
@@ -173,13 +180,13 @@ export default function SaoPauloHubPage() {
               Edifícios comerciais, condomínios, hospitais, órgãos públicos e centros de compras podem exigir cadastro, identificação, retirada em doca ou entrega em balcão. Um pedido claro informa essas etapas antes do deslocamento. Isso ajuda a avaliar espera, retorno, autorização e acesso sem transformar um detalhe do destino em surpresa depois que a rota foi confirmada.
             </p>
             <p>
-              As páginas de região abaixo organizam destinos pesquisados com frequência. Elas não prometem tempo de percurso nem substituem a avaliação de disponibilidade. Atendimento ocorre de segunda a sexta, das 8h às 18h; não há operação noturna, em fins de semana ou feriados. Para conhecer as condições de valor de uma rota simples, consulte a <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">tabela de preços</Link>; para uma travessia, envie o roteiro completo pelo WhatsApp.
+              As páginas de região abaixo organizam destinos pesquisados com frequência. Elas não prometem tempo de percurso nem substituem a avaliação de disponibilidade. Atendimento ocorre de segunda a sexta, das 8h às 18h; não há operação noturna, em fins de semana ou feriados. Para uma travessia, envie o roteiro completo pelo WhatsApp e aguarde a avaliação do atendente.
             </p>
             <p>
-              O planejamento das travessias intermunicipais considera as restrições viárias da capital paulista, como o rodízio municipal de veículos e as áreas de circulação restrita. Além disso, o fluxo de retorno para Guarulhos no período da tarde exige atenção aos congestionamentos crônicos na saída da Marginal Tietê rumo à Rodovia Presidente Dutra e à Ayrton Senna. Nossa central orienta o remetente sobre as melhores janelas de despacho para evitar retenções severas.
+              A capital tem restrições viárias e áreas de circulação controlada. Informe se o destino tem regra de acesso, estacionamento, doca ou horário de recebimento. O atendente considera esses dados ao avaliar a rota.
             </p>
             <p>
-              Para empresas que mantêm trocas de malotes diárias entre a sede em Guarulhos e escritórios ou filiais em São Paulo, formatamos cronogramas dedicados com piloto fixo na rota. Essa regularidade reduz tentativas frustradas de entrega, garante que o profissional já conheça os procedimentos de segurança da portaria e simplifica a conferência de comprovantes e notas de entrega.
+              Para empresas que mantêm trocas frequentes entre Guarulhos e São Paulo, informe frequência, janelas, contatos e regras de acesso. O atendente pode avaliar a solicitação recorrente conforme a disponibilidade da operação.
             </p>
           </div>
         </div>
@@ -195,13 +202,13 @@ export default function SaoPauloHubPage() {
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
             <p>
-              A conexão entre Guarulhos e as diferentes zonas de São Paulo depende diretamente da escolha dos eixos viários certos e dos horários de corte de trânsito. Rotas em direção à Zona Leste (Brás, Mooca, Tatuapé e Penha) utilizam principalmente a Rodovia Ayrton Senna conectada à Radial Leste, permitindo tempos porta a porta reduzidos fora dos picos de início da manhã e fim de tarde.
+              A conexão entre Guarulhos e as diferentes zonas de São Paulo depende do sentido da rota, dos endereços exatos e do horário. Destinos na Zona Leste, como Brás, Mooca, Tatuapé e Penha, têm acessos diferentes dos destinos do centro ou das zonas Sul e Oeste.
             </p>
             <p>
-              Já os destinos na região central (Sé, República, Paulista) e Zona Sul/Oeste (Pinheiros, Itaim Bibi, Moema e Vila Mariana) exigem planejamento pelas Marginais Tietê e Pinheiros ou pela Avenida do Estado. A Moto11 avalia previamente o mapa de trânsito em tempo real antes da saída do piloto, informando ao remetente uma estimativa precisa e viável para cumprimento do prazo acordado.
+              Destinos na região central, como Sé, República e Paulista, e nas zonas Sul e Oeste, como Pinheiros, Itaim Bibi, Moema e Vila Mariana, também exigem atenção a acessos, regras do edifício e horário de recebimento. Não use uma página de região como confirmação automática de prazo.
             </p>
             <p>
-              Em qualquer chamado metropolitano, as duas pontas contam com rastreabilidade pelo canal direto do WhatsApp: aviso de coleta realizada, atualizações do percurso em caso de congestionamentos inesperados e comprovante digital com nome e horário de recebimento enviado assim que a missão é finalizada.
+              Em qualquer chamado metropolitano, combine pelo WhatsApp quem entrega, quem recebe e qual confirmação é necessária. Essas informações evitam dúvidas no percurso e devem ser avaliadas antes da coleta.
             </p>
           </div>
         </div>

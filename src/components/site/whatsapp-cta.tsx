@@ -3,7 +3,7 @@ import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export function WhatsAppCTA({
   title = "Precisa de motoboy agora em Guarulhos?",
-  subtitle = "Atendimento seg. a sex., 8h–18h. Resposta no WhatsApp em horário comercial com valor e previsão de coleta.",
+  subtitle = "Atendimento seg. a sex., 8h–18h. O atendente avalia a solicitação e confirma disponibilidade pelo WhatsApp.",
   message = DEFAULT_WA_MESSAGE,
   compact = false,
 }: {

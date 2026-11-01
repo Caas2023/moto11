@@ -19,8 +19,11 @@ export function ContactForm() {
     <form
       onSubmit={(e) => {
         e.preventDefault();
+        const opened = window.open(href, "_blank", "noopener,noreferrer");
         setEnviado(true);
-        window.open(href, "_blank", "noopener,noreferrer");
+        if (!opened) {
+          // fallback: user can click the link below
+        }
       }}
       className="grid gap-4 rounded-2xl border border-line bg-surface p-6 shadow-sm sm:p-8"
       aria-label="Formulário de contato e orçamento"
@@ -95,12 +98,12 @@ export function ContactForm() {
 
       {enviado && (
         <p className="rounded-lg bg-surface-warm p-3 text-center text-xs font-medium text-success" role="status">
-          ✓ Janela do WhatsApp aberta. Se não abriu automaticamente, verifique se seu navegador bloqueou pop-ups.
+          ✓ Tentativa de abrir o WhatsApp realizada. Se não abriu, <a href={href} target="_blank" rel="noopener noreferrer" className="font-bold underline">abra a conversa com o atendente</a>.
         </p>
       )}
 
       <p className="text-xs text-muted">
-        Ao enviar, seus dados são organizados diretamente no WhatsApp da central para confirmação imediata de valor e disponibilidade.
+        Ao continuar, você abrirá o WhatsApp para enviar seus dados ao atendente. A disponibilidade depende de confirmação.
       </p>
     </form>
   );

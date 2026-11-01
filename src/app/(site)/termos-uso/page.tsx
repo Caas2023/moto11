@@ -5,7 +5,7 @@ import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { PHONE_WA, canonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Condições de Atendimento e Termos de Uso | Moto11",
+  title: "Condições de Atendimento e Termos de Uso",
   description: "Informações sobre condições de atendimento, contratação e regras de transporte da Moto11 em Guarulhos e SP.",
   alternates: { canonical: canonical("/termos-uso") },
   robots: { index: false, follow: true },
@@ -45,10 +45,10 @@ export default function TermosUsoPage() {
 
             <h2 className="font-display text-2xl font-bold text-brand-950">3. Precificação, Cotação e Espera</h2>
             <p className="leading-relaxed">
-              Os valores dos fretes são orçados de forma transparente com base na rota viária percorrida, tipo de volume e condições de atendimento:
+              As solicitações de transporte são avaliadas pelo atendente conforme a rota, o item e as condições de atendimento:
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Cotação prévia obrigatória:</strong> O valor final do serviço é sempre informado e acordado previamente com o contratante pelo WhatsApp antes do deslocamento do piloto.</li>
+              <li><strong>Confirmação prévia:</strong> A disponibilidade e as condições do serviço são confirmadas pelo atendente no WhatsApp antes do deslocamento do piloto.</li>
               <li><strong>Critério de distância:</strong> A rota é calculada com base no trajeto viário real de moto entre os pontos de coleta e entrega, sem cobrança de taxas dinâmicas não combinadas.</li>
               <li><strong>Franquia de espera:</strong> É concedida tolerância de cortesia para localização de responsáveis, liberação em portarias ou conferência simples no local.</li>
               <li><strong>Tempo adicional de espera:</strong> Em casos de retenção prolongada além da franquia, eventuais adicionais são comunicados e aprovados previamente junto ao contratante pelo canal de atendimento.</li>
@@ -60,7 +60,7 @@ export default function TermosUsoPage() {
               São aceitos para transporte em baú de motocicleta volumes de até aproximadamente 20 kg que caibam com segurança no compartimento vedado (baú de até 90–100 litros) ou na grelha de fixação apropriada, tais como documentos, contratos, chaves, peças automotivas de pequeno porte, materiais de escritório, exames laboratoriais e pacotes de e-commerce devidamente embalados.
             </p>
             <p className="leading-relaxed">
-              <strong>Restrições absolutas:</strong> É terminantemente proibido o transporte de substâncias ilícitas, armas, munições, produtos inflamáveis, botijões de gás, animais vivos, materiais explosivos ou corrosivos, bem como valores em espécie sem prévia declaração formal de numerário operacional de baixo valor.
+              <strong>Restrições absolutas:</strong> É proibido o transporte de substâncias ilícitas, armas, munições, produtos inflamáveis, botijões de gás, animais vivos, materiais explosivos ou corrosivos, além de dinheiro em espécie.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-brand-950">5. Responsabilidades do Contratante</h2>

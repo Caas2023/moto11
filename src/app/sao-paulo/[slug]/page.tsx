@@ -10,7 +10,6 @@ import {
   HelpCircle,
   MapPin,
   Route,
-  ShieldCheck,
 } from "lucide-react";
 import {
   getSpNeighborhood,
@@ -23,6 +22,7 @@ import {
   buildMetadata,
   jsonLdFAQ,
 } from "@/lib/seo";
+import { publicCopy } from "@/lib/public-copy";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
@@ -43,7 +43,7 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: `Motoboy entre Guarulhos e ${area.nome}, São Paulo`,
-    description: `Rota de motoboy de Guarulhos para ${area.nome}, São Paulo. Entregas expressas, malotes e documentos. Cotação por quilometragem viária no WhatsApp.`,
+    description: `Rota de motoboy de Guarulhos para ${area.nome}, São Paulo. Entregas expressas, malotes e documentos. Solicite cotação ao atendente pelo WhatsApp.`,
     path: `/sao-paulo/${area.slug}`,
     keywords: [
       `motoboy guarulhos ${area.nome}`,
@@ -64,9 +64,14 @@ export default async function SaoPauloPage({
   const { slug } = await params;
   const area = getSpNeighborhood(slug);
   if (!area) notFound();
+  const subtitle = publicCopy(area.subtitulo) || `Consulte referências da região e solicite uma cotação para ${area.nome}.`;
+  const summary = publicCopy(area.resumoRota) || `Esta página reúne referências de rota para ajudar você a informar o destino em ${area.nome}.`;
+  const faqItems = area.faq
+    .map((item) => ({ pergunta: publicCopy(item.pergunta), resposta: publicCopy(item.resposta) }))
+    .filter((item) => item.pergunta && item.resposta);
 
   const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
-    `Olá! Quero cotar uma rota entre Guarulhos e ${area.nome}, São Paulo. Origem: (informar) / Destino: (informar) / Item: (informar).`,
+    `Olá! Quero solicitar uma cotação com o atendente para uma rota entre Guarulhos e ${area.nome}, São Paulo. Origem: (informar) / Destino: (informar) / Item: (informar).`,
   )}`;
 
   const serviceSchema = {
@@ -74,7 +79,7 @@ export default async function SaoPauloPage({
     "@type": "Service",
     name: `Serviço de Motoboy entre Guarulhos e ${area.nome}, São Paulo`,
     serviceType: "Serviço de Motoboy e Entregas Intermunicipais",
-    description: area.subtitulo,
+    description: subtitle,
     url: `${SITE_URL}/sao-paulo/${area.slug}`,
     provider: {
       "@type": "LocalBusiness",
@@ -137,7 +142,7 @@ export default async function SaoPauloPage({
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ(area.faq)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ(faqItems)) }}
       />
 
       <PageHero
@@ -146,9 +151,9 @@ export default async function SaoPauloPage({
         title={<>Motoboy entre Guarulhos e {area.nome}</>}
         description={
           <>
-            {area.subtitulo}. Despacho intermunicipal ágil com valor fixado
-            antes da saída e comprovação digital de entrega, de segunda a sexta,
-            das 8h às 18h.
+            {subtitle} Atendimento de segunda a sexta, das 8h às 18h.
+            Toda cotação é avaliada pelo atendente no WhatsApp e depende de
+            confirmação de disponibilidade e condições.
           </>
         }
       >
@@ -185,15 +190,12 @@ export default async function SaoPauloPage({
             </h2>
           </div>
           <div className="mt-6 text-base sm:text-lg leading-relaxed text-muted space-y-4">
-            <p>{area.resumoRota}</p>
+            <p>{summary}</p>
             <p>
               Rotas intermunicipais entre Guarulhos e a capital exigem
-              planejamento detalhado. A Moto11 monitora as condições viárias da
-              Rodovia Presidente Dutra, da Rodovia Ayrton Senna e das Marginais
-              Tietê e Pinheiros em tempo real. O cliente informa os dois
-              endereços completos e o material transportado, recebendo o valor
-              fechado da corrida e a estimativa realista de entrega antes do
-              piloto iniciar a viagem.
+              planejamento detalhado. Informe os dois endereços completos, o item
+              e o horário desejado. O atendente avalia a solicitação pelo WhatsApp
+              antes de confirmar disponibilidade e condições.
             </p>
           </div>
         </section>
@@ -213,8 +215,9 @@ export default async function SaoPauloPage({
             </h2>
           </div>
           <p className="mt-3 text-muted leading-relaxed">
-            O deslocamento de moto entre Guarulhos e {area.nome} utiliza os
-            principais corredores metropolitanos:
+              Estes são corredores metropolitanos que ajudam a contextualizar o
+              destino. O percurso real depende dos endereços e das condições no
+              momento da solicitação:
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {area.eixosViarios.map((eixo) => (
@@ -235,7 +238,7 @@ export default async function SaoPauloPage({
               Condições viárias e horários de pico
             </p>
             <p className="mt-1 text-sm text-muted leading-relaxed">
-              {area.orientacaoTransito}
+              {publicCopy(area.orientacaoTransito)}
             </p>
           </div>
         </section>
@@ -244,18 +247,18 @@ export default async function SaoPauloPage({
         <section aria-labelledby="demandas-rota">
           <div className="border-l-4 border-primary-700 pl-4 sm:pl-6">
             <span className="text-xs font-bold uppercase tracking-wider text-primary-700">
-              Aplicações práticas
+              Informações para a cotação
             </span>
             <h2
               id="demandas-rota"
               className="mt-1 font-display text-2xl font-bold text-brand-950 sm:text-3xl"
             >
-              O que mais transportamos para {area.nome}
+              Situações comuns em rotas para {area.nome}
             </h2>
           </div>
           <p className="mt-3 text-muted leading-relaxed">
-            As necessidades mais recorrentes atendidas pela Moto11 neste trajeto
-            incluem:
+              A lista abaixo ajuda a explicar a necessidade. Confirme com o
+              atendente se a tarefa e o item podem ser atendidos:
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {area.demandasComuns.map((demanda) => (
@@ -268,7 +271,7 @@ export default async function SaoPauloPage({
                   aria-hidden="true"
                 />
                 <span className="text-sm font-medium text-brand-950 leading-relaxed">
-                  {demanda}
+                  {publicCopy(demanda)}
                 </span>
               </div>
             ))}
@@ -302,17 +305,17 @@ export default async function SaoPauloPage({
             </article>
             <article className="border-t-2 border-brand-950 pt-5">
               <Clock3 className="h-6 w-6 text-primary-700" aria-hidden="true" />
-              <h3 className="mt-4 font-bold text-brand-950">Valor fechado no WhatsApp</h3>
+              <h3 className="mt-4 font-bold text-brand-950">Confirmação pelo atendente</h3>
               <p className="mt-2 text-sm leading-6 text-muted">
-                Receba a proposta calculada pela quilometragem viária real e
-                confirme a saída imediata do piloto.
+                O atendente confirma disponibilidade e condições antes de
+                qualquer coleta.
               </p>
             </article>
           </div>
         </section>
 
         {/* FAQ Rota SP */}
-        <section aria-labelledby="faq-rota">
+        {faqItems.length > 0 && <section aria-labelledby="faq-rota">
           <div className="flex items-center gap-3">
             <HelpCircle className="h-6 w-6 text-primary-700" aria-hidden="true" />
             <h2
@@ -323,7 +326,7 @@ export default async function SaoPauloPage({
             </h2>
           </div>
           <div className="mt-6 divide-y divide-line rounded-xl border border-line bg-white px-6">
-            {area.faq.map((item) => (
+            {faqItems.map((item) => (
               <details key={item.pergunta} className="group py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-brand-950">
                   <span className="text-base sm:text-lg">{item.pergunta}</span>
@@ -340,7 +343,7 @@ export default async function SaoPauloPage({
               </details>
             ))}
           </div>
-        </section>
+        </section>}
 
         {/* Rotas Relacionadas (Links Internos Semânticos) */}
         {area.rotasRelacionadas && area.rotasRelacionadas.length > 0 && (
@@ -392,8 +395,8 @@ export default async function SaoPauloPage({
               Precisa de motoboy para {area.nome}?
             </h2>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed">
-              Envie os endereços completos no WhatsApp. Calculamos a melhor rota
-              viária e confirmamos valor e previsão antes de qualquer coleta.
+              Envie os endereços completos no WhatsApp para avaliação do
+              atendente. Disponibilidade e condições dependem de confirmação.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a
@@ -409,7 +412,13 @@ export default async function SaoPauloPage({
                 href="/precos"
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:border-white hover:bg-white/10 transition-colors"
               >
-                Critérios de preço e rota
+                Solicitar cotação
+              </Link>
+              <Link
+                href="/servicos"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:border-white hover:bg-white/10 transition-colors"
+              >
+                Ver serviços de motoboy
               </Link>
             </div>
           </div>

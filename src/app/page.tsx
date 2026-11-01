@@ -36,29 +36,33 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
-  "Olá! Quero calcular uma entrega. Origem: (informar) / Destino: (informar) / Item: (informar).",
+  "Olá! Quero solicitar uma cotação com o atendente. Origem: (informar) / Destino: (informar) / Item: (informar).",
 )}`;
 
 const services = [
   {
     icon: FileText,
     title: "Documentos e pequenos volumes",
+    href: "/servicos/entrega-documentos",
     text: "Coleta e entrega ponto a ponto para documentos, chaves e encomendas compatíveis com o transporte em moto. Informe o item para validarmos antes da saída.",
   },
   {
     icon: BriefcaseBusiness,
     title: "Rotas para empresas",
+    href: "/servicos/motoboy-escritorios",
     text: "Atendimento avulso ou programado para escritórios, comércios e operações que precisam organizar coletas durante o expediente.",
   },
   {
     icon: Store,
     title: "Apoio ao comércio local",
+    href: "/servicos/entrega-encomendas",
     text: "Entregas para lojas e e-commerces com origem, destino, contato do recebedor e condições combinadas antes do deslocamento.",
   },
   {
     icon: Building2,
     title: "Cartório, shopping e aeroporto",
-    text: "Esses locais podem envolver acesso, estacionamento e espera. Por isso, cada missão recebe cotação específica, sem preço genérico enganoso.",
+    href: "/servicos/cartorio",
+    text: "Esses locais podem envolver acesso, estacionamento e espera. O atendente avalia cada solicitação pelo WhatsApp.",
   },
 ];
 
@@ -71,7 +75,7 @@ const steps = [
   {
     number: "02",
     title: "Receba a cotação",
-    text: "Calculamos a distância, explicamos eventuais exceções e confirmamos o valor antes da saída.",
+    text: "O atendente analisa os detalhes e confirma disponibilidade e condições pelo WhatsApp.",
   },
   {
     number: "03",
@@ -84,7 +88,7 @@ const faq = [
   {
     pergunta: "Como é calculada a cotação de motoboy?",
     resposta:
-      "O valor depende da distância da rota viária, do tipo de volume e das condições de acesso. Você informa a origem e o destino no WhatsApp e recebe o valor fechado antes da moto sair.",
+      "Envie origem, destino e descrição do item pelo WhatsApp. O atendente avalia a solicitação e confirma disponibilidade e condições antes da coleta.",
   },
   {
     pergunta: "Qual é o horário de atendimento?",
@@ -99,7 +103,7 @@ const faq = [
   {
     pergunta: "A Moto11 atende São Paulo capital?",
     resposta:
-      "Rotas entre Guarulhos e São Paulo podem ser cotadas. A disponibilidade, o valor e a previsão dependem dos endereços completos e das condições do trânsito no momento do pedido.",
+      "Rotas entre Guarulhos e São Paulo devem ser avaliadas pelo atendente, conforme os endereços e as condições do trânsito no momento do pedido.",
   },
 ];
 
@@ -107,7 +111,7 @@ export default function Home() {
   const serviceSchema = jsonLdService({
     name: "Serviço de motoboy em Guarulhos",
     description:
-      "Entregas e coletas de moto em Guarulhos, com orçamento por rota e atendimento de segunda a sexta, das 8h às 18h.",
+      "Entregas e coletas de moto em Guarulhos, com solicitação pelo WhatsApp e atendimento de segunda a sexta, das 8h às 18h.",
     path: "/",
   });
 
@@ -139,10 +143,10 @@ export default function Home() {
                 Guarulhos e rotas para São Paulo · Seg–sex, 8h–18h
               </p>
               <h1 className="mt-2 font-display text-2xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-[2.65rem]">
-                Motoboy em Guarulhos com preço claro antes da saída.
+                Motoboy em Guarulhos com atendimento direto pelo WhatsApp.
               </h1>
               <p className="mt-2.5 max-w-xl text-sm leading-relaxed text-slate-200 sm:text-base">
-                Envie origem, destino e item. Calculamos a rota pela quilometragem real e confirmamos as condições pelo WhatsApp antes de qualquer coleta.
+                Envie origem, destino e item. O atendente avalia a solicitação e confirma disponibilidade e condições antes de qualquer coleta.
               </p>
               <div className="mt-4 flex flex-wrap gap-2.5 sm:gap-3">
                 <a
@@ -168,7 +172,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 shrink-0 text-primary-400" aria-hidden="true" />
-                  <span>Preço fechado</span>
+                  <span>Atendente no WhatsApp</span>
                 </li>
                 <li className="flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 shrink-0 text-primary-400" aria-hidden="true" />
@@ -193,7 +197,7 @@ export default function Home() {
               Entregas de moto parecem simples até surgir uma portaria sem autorização, um destinatário que não está no local ou um item sem embalagem adequada. Por isso, o pedido mais útil é o que descreve a rota inteira: endereço completo de coleta, destino, nome e telefone de quem entrega e de quem recebe, além do tipo de item. Se existe senha, protocolo, retorno ou horário-limite, essa informação também precisa entrar na primeira mensagem.
             </p>
             <p>
-              A confirmação da rota evita que uma cotação seja baseada só no nome de um bairro. Condomínios, centros comerciais, cartórios e aeroportos têm regras próprias de acesso e podem exigir tempo adicional. A Moto11 atende de segunda a sexta, das 8h às 18h; fora desse período, a mensagem pode ficar para o próximo dia útil. Para entender como avaliamos cada rota, acesse a página de <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">cotação e preços</Link>. Informe também se haverá assinatura, protocolo, retorno ou múltiplas paradas. Esses dados ajudam a equipe a explicar o escopo antes do preço e reduzem o risco de uma etapa importante ficar fora da solicitação inicial.
+              A confirmação da rota evita que a solicitação seja avaliada apenas pelo nome de um bairro. Condomínios, centros comerciais, cartórios e aeroportos têm regras próprias de acesso e podem exigir tempo adicional. A Moto11 atende de segunda a sexta, das 8h às 18h; fora desse período, a mensagem pode ficar para o próximo dia útil. Para entender como funciona o atendimento, acesse a página de <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/precos">solicitação de cotação</Link>. Informe também se haverá assinatura, protocolo, retorno ou múltiplas paradas. Esses dados ajudam o atendente a avaliar o escopo da solicitação.
             </p>
             <p>
               Se a entrega cruza municípios, informe os dois endereços sem abreviações. Uma rota entre Guarulhos e São Paulo não tem uma duração fixa: trânsito, sentido da viagem, horário de recebimento e acesso ao destino mudam a viabilidade. Nas páginas de <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/areas-atendidas">áreas atendidas</Link> e <Link className="font-semibold text-primary-700 underline underline-offset-4" href="/sao-paulo">rotas para São Paulo</Link>, você encontra os locais organizados para consulta; o atendimento confirma a rota real. Para entregas empresariais, vale reunir contatos, janelas e instruções em uma mensagem única. Para pedidos particulares, descreva o item e diga quem estará disponível para receber. A clareza no início protege o remetente, o destinatário e o profissional que executa a missão.
@@ -222,12 +226,13 @@ export default function Home() {
               </Link>
             </div>
             <div className="grid gap-px bg-line sm:grid-cols-2">
-              {services.map(({ icon: Icon, title, text }) => (
-                <article key={title} className="bg-white p-6 sm:p-8">
+              {services.map(({ icon: Icon, title, text, href }) => (
+                <Link key={title} href={href} className="group bg-white p-6 sm:p-8 transition-colors hover:bg-surface-warm">
                   <Icon className="h-7 w-7 text-primary-700" aria-hidden="true" />
-                  <h3 className="mt-5 font-display text-xl font-bold text-brand-950">{title}</h3>
+                  <h3 className="mt-5 font-display text-xl font-bold text-brand-950 group-hover:text-primary-700">{title}</h3>
                   <p className="mt-3 leading-7 text-muted">{text}</p>
-                </article>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary-700">Ver serviço <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+                </Link>
               ))}
             </div>
           </div>
@@ -279,16 +284,15 @@ export default function Home() {
               <p>
                 A Moto11 recebe solicitações para bairros de Guarulhos e também
                 para trajetos com origem ou destino em São Paulo. Como distância
-                e trânsito mudam muito entre regiões, não publicamos um prazo
-                único para toda a cidade. A previsão é informada depois que os
+                e trânsito mudam entre regiões, não publicamos um prazo único
+                para toda a cidade. A disponibilidade é avaliada depois que os
                 endereços são conferidos.
               </p>
               <p>
                 Em locais como aeroporto, shopping e cartórios, o tempo de
                 acesso pode ser maior que o próprio deslocamento. Por isso,
-                essas missões são avaliadas separadamente. A cotação considera
-                as condições apresentadas pelo cliente e deixa claro o que está
-                ou não incluído.
+                essas missões são avaliadas separadamente pelo atendente, de
+                acordo com as informações enviadas no WhatsApp.
               </p>
               <p>
                 A página de cada região serve para organizar a navegação local,
@@ -353,16 +357,16 @@ export default function Home() {
           </div>
           <div className="space-y-5 text-lg leading-8 text-muted">
             <p>
-              Guarulhos possui dinâmicas viárias singulares que exigem planejamento preventivo de rotas. O fluxo intenso ao longo da Rodovia Presidente Dutra, da Rodovia Ayrton Senna, do corredor Tiradentes e do acesso ao Aeroporto Internacional de Guarulhos (GRU) pode transformar uma entrega simples em atraso se o piloto não conhecer os desvios locais e os horários de carregamento de cada polo comercial. A Moto11 monitora o trânsito antes do deslocamento e confirma a previsão real de atendimento no momento da cotação.
+              Guarulhos reúne corredores com tráfego intenso, como a Rodovia Presidente Dutra, a Rodovia Ayrton Senna, a Avenida Tiradentes e o acesso ao Aeroporto Internacional de Guarulhos. Informe os endereços completos, o horário desejado e as instruções de acesso para que o atendente avalie a solicitação com contexto.
             </p>
             <p>
-              Para escritórios, clínicas e indústrias, a pontualidade na entrega de malotes bancários, contratos para assinatura, laudos médicos e reposição de componentes de linha de produção depende de protocolos formais. Todos os chamados contam com confirmação nominal de quem recebeu, registro de horário e retorno digital do comprovante. Isso garante rastreabilidade completa para a controladoria e para o departamento fiscal das empresas contratantes, sem surpresas no encerramento do expediente.
+              Para escritórios, clínicas e indústrias, uma solicitação clara evita idas improdutivas. Informe se haverá portaria, protocolo, assinatura, retorno, volume sensível ou contato específico no destino. O atendente confirma o que pode ser atendido antes de qualquer coleta.
             </p>
             <p>
-              A transparência de preços é o pilar central da nossa relação com o cliente. O valor da entrega é calculado de forma justa pela quilometragem viária real de moto, com tolerância combinada antecipadamente para esperas pontuais em portarias ou balcões comerciais. O valor informado no WhatsApp antes do início do trajeto é exatamente o valor final da entrega, eliminando tarifas dinâmicas ocultas ou adicionais não combinados.
+              Toda cotação é tratada pelo atendente no WhatsApp. Envie os detalhes da rota e do item para que a equipe avalie a solicitação e confirme disponibilidade e condições antes de qualquer coleta.
             </p>
             <p>
-              Atendemos de segunda a sexta-feira, das 8h às 18h, priorizando a segurança viária dos nossos profissionais e a integridade dos itens transportados. Operamos com baús vedados resistentes à água e adequados para cargas de até 20 kg. Caso sua missão envolva cartórios, shoppings ou o Terminal de Cargas do Aeroporto, os detalhes de credenciamento e acesso são avaliados previamente para que a entrega ocorra com total previsibilidade.
+              Atendemos de segunda a sexta-feira, das 8h às 18h. Para cartórios, shoppings ou o Terminal de Cargas do Aeroporto, informe as exigências de acesso e o horário-limite. O atendente avaliará a solicitação antes de confirmar qualquer condição.
             </p>
           </div>
         </div>
@@ -397,10 +401,10 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h2 id="cta-final" className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Tem origem, destino e item?</h2>
-            <p className="mt-2 text-orange-50">Envie os dados e receba a cotação antes de confirmar a coleta.</p>
+            <p className="mt-2 text-orange-50">Envie os dados e aguarde a avaliação do atendente antes de confirmar a coleta.</p>
           </div>
           <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-7 py-3 font-bold text-primary-700 hover:bg-brand-950 hover:text-white">
-            Pedir orçamento <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            Solicitar cotação <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
       </section>

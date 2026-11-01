@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, HelpCircle } from "lucide-react";
 import { JsonLd } from "@/components/site/json-ld";
 import { PageHero } from "@/components/site/PageHero";
 import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
@@ -8,7 +7,7 @@ import { SITE } from "@/lib/site";
 import { PHONE_WA } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Perguntas Frequentes sobre Motoboy em Guarulhos | Moto11",
+  title: "Perguntas Frequentes sobre Motoboy em Guarulhos",
   description:
     "Tire suas dúvidas sobre cotação, horários de atendimento, tempo de espera, áreas atendidas e como solicitar sua entrega de moto.",
   alternates: { canonical: `${SITE.baseUrl}/faq` },
@@ -26,36 +25,36 @@ const whatsappHref = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(
 
 const FAQS = [
   {
-    q: "Como é calculada a cotação de motoboy?",
-    a: "O valor é calculado com base na quilometragem viária real de moto entre os pontos de coleta e entrega, considerando o tipo de volume e as particularidades do local. Você recebe o valor fechado no WhatsApp antes da saída, sem taxas ocultas.",
+    q: "Como solicito uma cotação de motoboy?",
+    a: "Envie origem, destino e descrição do item pelo WhatsApp. Toda cotação é avaliada pelo atendente, que confirma disponibilidade e condições antes de qualquer coleta.",
   },
   {
     q: "Qual é o horário de atendimento da Moto11?",
-    a: "Nosso atendimento opera de segunda a sexta-feira, das 08h às 18h. Não realizamos entregas noturnas, de madrugada ou aos finais de semana. Mensagens enviadas fora do expediente são respondidas no início do próximo dia útil.",
+    a: "Nosso atendimento funciona de segunda a sexta-feira, das 8h às 18h. Solicitações enviadas fora desse período são avaliadas pelo atendente durante o horário comercial.",
   },
   {
-    q: "Como funciona a tolerância de espera?",
-    a: "Oferecemos uma tolerância de cortesia para localização de responsáveis e liberação em portarias ou balcões. Caso o local exija espera prolongada (como filas em cartórios), combinamos as condições previamente pelo WhatsApp antes de aguardar.",
+    q: "Como a necessidade de espera é avaliada?",
+    a: "Informe ao atendente se o local pode exigir espera, como em portarias, balcões ou cartórios. As condições são avaliadas antes da confirmação da coleta.",
   },
   {
     q: "Cartório, shopping e aeroporto têm regras especiais?",
-    a: "Sim. Esses locais exigem procedimentos específicos de estacionamento, credenciamento em docas ou espera em guichês. Por isso, recebem cotação sob medida no momento do pedido para total previsibilidade.",
+    a: "Sim. Esses locais podem exigir procedimentos específicos de estacionamento, credenciamento ou espera. Informe os detalhes ao atendente pelo WhatsApp para avaliação.",
   },
   {
-    q: "Qual é a previsão de chegada do motoboy?",
-    a: "A previsão depende do ponto de coleta, do trânsito viário no momento e da disponibilidade de pilotos na região. O prazo estimado é sempre informado no WhatsApp antes de você confirmar a corrida.",
+    q: "Como são avaliados os horários da entrega?",
+    a: "O horário desejado, os endereços e a disponibilidade são avaliados pelo atendente antes da confirmação da coleta.",
   },
   {
     q: "Quais regiões e bairros são atendidos?",
-    a: "Atendemos todos os bairros e polos industriais de Guarulhos (Centro, Cumbica, Macedo, Bonsucesso, Pimentas, Vila Augusta, etc.) e realizamos rotas diárias para São Paulo Capital e Região Metropolitana.",
+    a: "A possibilidade de atendimento é avaliada pelo atendente conforme os endereços de origem e destino informados.",
   },
   {
     q: "O que preciso enviar para cotar uma entrega?",
     a: "Basta informar: 1. Endereço completo de coleta; 2. Endereço completo de entrega; 3. O que vai transportar (documentos, caixas, etc.); 4. Horário desejado.",
   },
   {
-    q: "O valor informado pode mudar após a corrida?",
-    a: "Não. A transparência é nosso compromisso. O preço fechado no WhatsApp antes do início do trajeto é exatamente o valor final da entrega, eliminando tarifas dinâmicas ou surpresas.",
+    q: "Quem confirma as condições da entrega?",
+    a: "O atendente confirma as condições pelo WhatsApp antes de qualquer coleta. O envio de uma solicitação não confirma disponibilidade nem contratação.",
   },
 ];
 
@@ -77,7 +76,7 @@ export default function FAQPage() {
       <PageHero
         eyebrow="Tire suas Dúvidas"
         title="Perguntas frequentes sobre o serviço de motoboy."
-        description="Respostas claras sobre cotação, horários de funcionamento, regras de espera e como solicitar a sua entrega com segurança e agilidade."
+        description="Respostas sobre cotação, horários de atendimento, espera e como enviar uma solicitação para avaliação."
       >
         <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
           <Link href="/" className="hover:text-white">Início</Link>
@@ -92,7 +91,7 @@ export default function FAQPage() {
           <div className="max-w-2xl mb-10">
             <p className="text-sm font-semibold text-primary-700">Dúvidas Comuns</p>
             <h2 id="faq-list-title" className="mt-2 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-4xl">
-              Informação direta para decidir com rapidez.
+              Informações para sua solicitação.
             </h2>
           </div>
 
@@ -115,6 +114,9 @@ export default function FAQPage() {
               </details>
             ))}
           </div>
+          <p className="mt-8 text-sm leading-7 text-muted">
+            Para enviar os dados da entrega, <Link href="/precos" className="font-semibold text-primary-700 hover:underline">solicite uma cotação</Link>. Para outras dúvidas, acesse a página de <Link href="/contato" className="font-semibold text-primary-700 hover:underline">contato</Link>.
+          </p>
         </div>
       </section>
 
@@ -125,15 +127,15 @@ export default function FAQPage() {
             <div>
               <p className="text-sm font-semibold text-primary-700">Dica Prática</p>
               <h2 id="dicas-title" className="mt-3 font-display text-3xl font-bold tracking-tight text-brand-950 sm:text-5xl">
-                Como agilizar sua cotação no WhatsApp.
+                Como informar os dados da cotação.
               </h2>
             </div>
             <div className="space-y-5 text-lg leading-8 text-muted">
               <p>
-                O detalhe que mais acelera a liberação do motoboy é enviar os endereços completos logo na primeira mensagem. Apenas o nome do bairro ajuda a situar a região, mas não permite traçar a rota viária real de moto, calcular a distância e verificar o trânsito do trajeto.
+                Para a avaliação da solicitação, envie os endereços completos logo na primeira mensagem. Apenas o nome do bairro não permite ao atendente avaliar a rota entre os pontos de coleta e entrega.
               </p>
               <p>
-                Para condomínios, prédios empresariais ou centros comerciais, inclua bloco, sala, número de portaria ou nome do destinatário. Se houver protocolo de assinatura ou retorno de documento, mencione antecipadamente para que a missão seja planejada do início ao fim sem interrupções.
+                Para condomínios, prédios empresariais ou centros comerciais, inclua bloco, sala, número de portaria ou nome do destinatário. Se houver necessidade de assinatura ou retorno de documento, mencione antecipadamente para avaliação do atendente.
               </p>
             </div>
           </div>
@@ -148,7 +150,7 @@ export default function FAQPage() {
               Sua dúvida não estava aqui?
             </h2>
             <p className="mt-2 text-orange-50">
-              Chame nossa equipe pelo WhatsApp e receba a resposta para a sua rota na hora.
+              Envie sua dúvida pelo WhatsApp para avaliação do atendente durante o horário comercial.
             </p>
           </div>
           <a
